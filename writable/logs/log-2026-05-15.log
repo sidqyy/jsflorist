@@ -1,0 +1,628 @@
+CRITICAL - 2026-05-15 09:51:48 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "岁岁平安"
+[Method: GET, Route: products/%E5%B2%81%E5%B2%81%E5%B9%B3%E5%AE%89]
+in SYSTEMPATH/Router/Router.php on line 741.
+ 1 SYSTEMPATH/Router/Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH/CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-15 10:27:06 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "姬"
+[Method: GET, Route: products/%E5%A7%AC]
+in SYSTEMPATH/Router/Router.php on line 741.
+ 1 SYSTEMPATH/Router/Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH/CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-15 10:43:07 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "如意吉祥"
+[Method: GET, Route: products/%E5%A6%82%E6%84%8F%E5%90%89%E7%A5%A5]
+in SYSTEMPATH/Router/Router.php on line 741.
+ 1 SYSTEMPATH/Router/Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH/CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-15 10:43:49 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "喜迎春"
+[Method: GET, Route: products/%E5%96%9C%E8%BF%8E%E6%98%A5]
+in SYSTEMPATH/Router/Router.php on line 741.
+ 1 SYSTEMPATH/Router/Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH/CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-15 10:43:56 --> ErrorException: Undefined array key "final_price"
+[Method: GET, Route: api/shop]
+in APPPATH/Controllers/Api/ShopController.php on line 265.
+ 1 APPPATH/Controllers/Api/ShopController.php(265): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Api/ShopController.php(61): App\Controllers\Api\ShopController->transformProduct()
+ 3 [internal function]: App\Controllers\Api\ShopController->App\Controllers\Api\{closure}()
+ 4 APPPATH/Controllers/Api/ShopController.php(61): array_map()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Api\ShopController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-15 10:43:57 --> ErrorException: Undefined array key "final_price"
+[Method: GET, Route: api/shop]
+in APPPATH/Controllers/Api/ShopController.php on line 265.
+ 1 APPPATH/Controllers/Api/ShopController.php(265): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Api/ShopController.php(61): App\Controllers\Api\ShopController->transformProduct()
+ 3 [internal function]: App\Controllers\Api\ShopController->App\Controllers\Api\{closure}()
+ 4 APPPATH/Controllers/Api/ShopController.php(61): array_map()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Api\ShopController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-15 10:44:29 --> ErrorException: Undefined array key "final_price"
+[Method: GET, Route: api/shop]
+in APPPATH/Controllers/Api/ShopController.php on line 265.
+ 1 APPPATH/Controllers/Api/ShopController.php(265): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Api/ShopController.php(61): App\Controllers\Api\ShopController->transformProduct()
+ 3 [internal function]: App\Controllers\Api\ShopController->App\Controllers\Api\{closure}()
+ 4 APPPATH/Controllers/Api/ShopController.php(61): array_map()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Api\ShopController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-15 10:44:30 --> ErrorException: Undefined array key "final_price"
+[Method: GET, Route: api/shop]
+in APPPATH/Controllers/Api/ShopController.php on line 265.
+ 1 APPPATH/Controllers/Api/ShopController.php(265): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Api/ShopController.php(61): App\Controllers\Api\ShopController->transformProduct()
+ 3 [internal function]: App\Controllers\Api\ShopController->App\Controllers\Api\{closure}()
+ 4 APPPATH/Controllers/Api/ShopController.php(61): array_map()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Api\ShopController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-15 10:44:34 --> ErrorException: Undefined array key "final_price"
+[Method: GET, Route: api/shop]
+in APPPATH/Controllers/Api/ShopController.php on line 265.
+ 1 APPPATH/Controllers/Api/ShopController.php(265): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Api/ShopController.php(61): App\Controllers\Api\ShopController->transformProduct()
+ 3 [internal function]: App\Controllers\Api\ShopController->App\Controllers\Api\{closure}()
+ 4 APPPATH/Controllers/Api/ShopController.php(61): array_map()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Api\ShopController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-15 10:44:35 --> ErrorException: Undefined array key "final_price"
+[Method: GET, Route: api/shop]
+in APPPATH/Controllers/Api/ShopController.php on line 265.
+ 1 APPPATH/Controllers/Api/ShopController.php(265): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Api/ShopController.php(61): App\Controllers\Api\ShopController->transformProduct()
+ 3 [internal function]: App\Controllers\Api\ShopController->App\Controllers\Api\{closure}()
+ 4 APPPATH/Controllers/Api/ShopController.php(61): array_map()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Api\ShopController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-15 10:45:25 --> ErrorException: Undefined array key "final_price"
+[Method: GET, Route: api/shop]
+in APPPATH/Controllers/Api/ShopController.php on line 265.
+ 1 APPPATH/Controllers/Api/ShopController.php(265): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Api/ShopController.php(61): App\Controllers\Api\ShopController->transformProduct()
+ 3 [internal function]: App\Controllers\Api\ShopController->App\Controllers\Api\{closure}()
+ 4 APPPATH/Controllers/Api/ShopController.php(61): array_map()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Api\ShopController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-15 10:45:26 --> ErrorException: Undefined array key "final_price"
+[Method: GET, Route: api/shop]
+in APPPATH/Controllers/Api/ShopController.php on line 265.
+ 1 APPPATH/Controllers/Api/ShopController.php(265): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Api/ShopController.php(61): App\Controllers\Api\ShopController->transformProduct()
+ 3 [internal function]: App\Controllers\Api\ShopController->App\Controllers\Api\{closure}()
+ 4 APPPATH/Controllers/Api/ShopController.php(61): array_map()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Api\ShopController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-15 10:48:35 --> ErrorException: Undefined array key "final_price"
+[Method: GET, Route: api/shop]
+in APPPATH/Controllers/Api/ShopController.php on line 266.
+ 1 APPPATH/Controllers/Api/ShopController.php(266): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Api/ShopController.php(62): App\Controllers\Api\ShopController->transformProduct()
+ 3 [internal function]: App\Controllers\Api\ShopController->App\Controllers\Api\{closure}()
+ 4 APPPATH/Controllers/Api/ShopController.php(62): array_map()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Api\ShopController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-15 10:48:36 --> ErrorException: Undefined array key "final_price"
+[Method: GET, Route: api/shop]
+in APPPATH/Controllers/Api/ShopController.php on line 266.
+ 1 APPPATH/Controllers/Api/ShopController.php(266): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Api/ShopController.php(62): App\Controllers\Api\ShopController->transformProduct()
+ 3 [internal function]: App\Controllers\Api\ShopController->App\Controllers\Api\{closure}()
+ 4 APPPATH/Controllers/Api/ShopController.php(62): array_map()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Api\ShopController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-15 10:48:38 --> ErrorException: Undefined array key "final_price"
+[Method: GET, Route: api/shop]
+in APPPATH/Controllers/Api/ShopController.php on line 266.
+ 1 APPPATH/Controllers/Api/ShopController.php(266): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Api/ShopController.php(62): App\Controllers\Api\ShopController->transformProduct()
+ 3 [internal function]: App\Controllers\Api\ShopController->App\Controllers\Api\{closure}()
+ 4 APPPATH/Controllers/Api/ShopController.php(62): array_map()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Api\ShopController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-15 10:48:39 --> ErrorException: Undefined array key "final_price"
+[Method: GET, Route: api/shop]
+in APPPATH/Controllers/Api/ShopController.php on line 266.
+ 1 APPPATH/Controllers/Api/ShopController.php(266): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Api/ShopController.php(62): App\Controllers\Api\ShopController->transformProduct()
+ 3 [internal function]: App\Controllers\Api\ShopController->App\Controllers\Api\{closure}()
+ 4 APPPATH/Controllers/Api/ShopController.php(62): array_map()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Api\ShopController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-15 10:48:55 --> ErrorException: Undefined array key "final_price"
+[Method: GET, Route: api/shop]
+in APPPATH/Controllers/Api/ShopController.php on line 266.
+ 1 APPPATH/Controllers/Api/ShopController.php(266): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Api/ShopController.php(62): App\Controllers\Api\ShopController->transformProduct()
+ 3 [internal function]: App\Controllers\Api\ShopController->App\Controllers\Api\{closure}()
+ 4 APPPATH/Controllers/Api/ShopController.php(62): array_map()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Api\ShopController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-15 10:48:57 --> ErrorException: Undefined array key "final_price"
+[Method: GET, Route: api/shop]
+in APPPATH/Controllers/Api/ShopController.php on line 266.
+ 1 APPPATH/Controllers/Api/ShopController.php(266): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Api/ShopController.php(62): App\Controllers\Api\ShopController->transformProduct()
+ 3 [internal function]: App\Controllers\Api\ShopController->App\Controllers\Api\{closure}()
+ 4 APPPATH/Controllers/Api/ShopController.php(62): array_map()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Api\ShopController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-15 10:49:29 --> ErrorException: Undefined array key "final_price"
+[Method: GET, Route: api/shop]
+in APPPATH/Controllers/Api/ShopController.php on line 266.
+ 1 APPPATH/Controllers/Api/ShopController.php(266): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Api/ShopController.php(62): App\Controllers\Api\ShopController->transformProduct()
+ 3 [internal function]: App\Controllers\Api\ShopController->App\Controllers\Api\{closure}()
+ 4 APPPATH/Controllers/Api/ShopController.php(62): array_map()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Api\ShopController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-15 10:49:30 --> ErrorException: Undefined array key "final_price"
+[Method: GET, Route: api/shop]
+in APPPATH/Controllers/Api/ShopController.php on line 266.
+ 1 APPPATH/Controllers/Api/ShopController.php(266): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Api/ShopController.php(62): App\Controllers\Api\ShopController->transformProduct()
+ 3 [internal function]: App\Controllers\Api\ShopController->App\Controllers\Api\{closure}()
+ 4 APPPATH/Controllers/Api/ShopController.php(62): array_map()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Api\ShopController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-15 10:50:59 --> ErrorException: Undefined array key "final_price"
+[Method: GET, Route: api/shop]
+in APPPATH/Controllers/Api/ShopController.php on line 182.
+ 1 APPPATH/Controllers/Api/ShopController.php(182): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Api/ShopController.php(62): App\Controllers\Api\ShopController->transformProduct()
+ 3 [internal function]: App\Controllers\Api\ShopController->App\Controllers\Api\{closure}()
+ 4 APPPATH/Controllers/Api/ShopController.php(62): array_map()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Api\ShopController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-15 10:51:01 --> ErrorException: Undefined array key "final_price"
+[Method: GET, Route: api/shop]
+in APPPATH/Controllers/Api/ShopController.php on line 182.
+ 1 APPPATH/Controllers/Api/ShopController.php(182): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Api/ShopController.php(62): App\Controllers\Api\ShopController->transformProduct()
+ 3 [internal function]: App\Controllers\Api\ShopController->App\Controllers\Api\{closure}()
+ 4 APPPATH/Controllers/Api/ShopController.php(62): array_map()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Api\ShopController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-15 10:51:03 --> ErrorException: Undefined array key "final_price"
+[Method: GET, Route: api/shop]
+in APPPATH/Controllers/Api/ShopController.php on line 182.
+ 1 APPPATH/Controllers/Api/ShopController.php(182): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Api/ShopController.php(62): App\Controllers\Api\ShopController->transformProduct()
+ 3 [internal function]: App\Controllers\Api\ShopController->App\Controllers\Api\{closure}()
+ 4 APPPATH/Controllers/Api/ShopController.php(62): array_map()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Api\ShopController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-15 10:51:04 --> ErrorException: Undefined array key "final_price"
+[Method: GET, Route: api/shop]
+in APPPATH/Controllers/Api/ShopController.php on line 182.
+ 1 APPPATH/Controllers/Api/ShopController.php(182): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Api/ShopController.php(62): App\Controllers\Api\ShopController->transformProduct()
+ 3 [internal function]: App\Controllers\Api\ShopController->App\Controllers\Api\{closure}()
+ 4 APPPATH/Controllers/Api/ShopController.php(62): array_map()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Api\ShopController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-15 10:51:27 --> ErrorException: Undefined array key "final_price"
+[Method: GET, Route: api/shop]
+in APPPATH/Controllers/Api/ShopController.php on line 182.
+ 1 APPPATH/Controllers/Api/ShopController.php(182): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Api/ShopController.php(62): App\Controllers\Api\ShopController->transformProduct()
+ 3 [internal function]: App\Controllers\Api\ShopController->App\Controllers\Api\{closure}()
+ 4 APPPATH/Controllers/Api/ShopController.php(62): array_map()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Api\ShopController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-15 10:51:28 --> ErrorException: Undefined array key "final_price"
+[Method: GET, Route: api/shop]
+in APPPATH/Controllers/Api/ShopController.php on line 182.
+ 1 APPPATH/Controllers/Api/ShopController.php(182): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Api/ShopController.php(62): App\Controllers\Api\ShopController->transformProduct()
+ 3 [internal function]: App\Controllers\Api\ShopController->App\Controllers\Api\{closure}()
+ 4 APPPATH/Controllers/Api/ShopController.php(62): array_map()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Api\ShopController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-15 10:54:05 --> ErrorException: Undefined array key "final_price"
+[Method: GET, Route: api/shop]
+in APPPATH/Controllers/Api/ShopController.php on line 162.
+ 1 APPPATH/Controllers/Api/ShopController.php(162): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Api/ShopController.php(63): App\Controllers\Api\ShopController->transformProduct()
+ 3 [internal function]: App\Controllers\Api\ShopController->App\Controllers\Api\{closure}()
+ 4 APPPATH/Controllers/Api/ShopController.php(63): array_map()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Api\ShopController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-15 10:54:06 --> ErrorException: Undefined array key "final_price"
+[Method: GET, Route: api/shop]
+in APPPATH/Controllers/Api/ShopController.php on line 162.
+ 1 APPPATH/Controllers/Api/ShopController.php(162): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Api/ShopController.php(63): App\Controllers\Api\ShopController->transformProduct()
+ 3 [internal function]: App\Controllers\Api\ShopController->App\Controllers\Api\{closure}()
+ 4 APPPATH/Controllers/Api/ShopController.php(63): array_map()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Api\ShopController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-15 11:07:33 --> ErrorException: Undefined variable $basePrice
+[Method: GET, Route: api/shop]
+in APPPATH/Controllers/Api/ShopController.php on line 298.
+ 1 APPPATH/Controllers/Api/ShopController.php(298): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Api/ShopController.php(62): App\Controllers\Api\ShopController->transformProduct()
+ 3 [internal function]: App\Controllers\Api\ShopController->App\Controllers\Api\{closure}()
+ 4 APPPATH/Controllers/Api/ShopController.php(62): array_map()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Api\ShopController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-15 11:07:34 --> ErrorException: Undefined variable $basePrice
+[Method: GET, Route: api/shop]
+in APPPATH/Controllers/Api/ShopController.php on line 298.
+ 1 APPPATH/Controllers/Api/ShopController.php(298): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Api/ShopController.php(62): App\Controllers\Api\ShopController->transformProduct()
+ 3 [internal function]: App\Controllers\Api\ShopController->App\Controllers\Api\{closure}()
+ 4 APPPATH/Controllers/Api/ShopController.php(62): array_map()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Api\ShopController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-15 11:07:36 --> ErrorException: Undefined variable $basePrice
+[Method: GET, Route: api/shop]
+in APPPATH/Controllers/Api/ShopController.php on line 298.
+ 1 APPPATH/Controllers/Api/ShopController.php(298): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Api/ShopController.php(62): App\Controllers\Api\ShopController->transformProduct()
+ 3 [internal function]: App\Controllers\Api\ShopController->App\Controllers\Api\{closure}()
+ 4 APPPATH/Controllers/Api/ShopController.php(62): array_map()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Api\ShopController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-15 11:07:37 --> ErrorException: Undefined variable $basePrice
+[Method: GET, Route: api/shop]
+in APPPATH/Controllers/Api/ShopController.php on line 298.
+ 1 APPPATH/Controllers/Api/ShopController.php(298): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Api/ShopController.php(62): App\Controllers\Api\ShopController->transformProduct()
+ 3 [internal function]: App\Controllers\Api\ShopController->App\Controllers\Api\{closure}()
+ 4 APPPATH/Controllers/Api/ShopController.php(62): array_map()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Api\ShopController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-15 11:07:47 --> ErrorException: Undefined variable $basePrice
+[Method: GET, Route: api/shop]
+in APPPATH/Controllers/Api/ShopController.php on line 298.
+ 1 APPPATH/Controllers/Api/ShopController.php(298): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Api/ShopController.php(62): App\Controllers\Api\ShopController->transformProduct()
+ 3 [internal function]: App\Controllers\Api\ShopController->App\Controllers\Api\{closure}()
+ 4 APPPATH/Controllers/Api/ShopController.php(62): array_map()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Api\ShopController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-15 11:07:48 --> ErrorException: Undefined variable $basePrice
+[Method: GET, Route: api/shop]
+in APPPATH/Controllers/Api/ShopController.php on line 298.
+ 1 APPPATH/Controllers/Api/ShopController.php(298): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Api/ShopController.php(62): App\Controllers\Api\ShopController->transformProduct()
+ 3 [internal function]: App\Controllers\Api\ShopController->App\Controllers\Api\{closure}()
+ 4 APPPATH/Controllers/Api/ShopController.php(62): array_map()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Api\ShopController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-15 11:07:52 --> ErrorException: Undefined variable $basePrice
+[Method: GET, Route: api/shop]
+in APPPATH/Controllers/Api/ShopController.php on line 298.
+ 1 APPPATH/Controllers/Api/ShopController.php(298): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Api/ShopController.php(62): App\Controllers\Api\ShopController->transformProduct()
+ 3 [internal function]: App\Controllers\Api\ShopController->App\Controllers\Api\{closure}()
+ 4 APPPATH/Controllers/Api/ShopController.php(62): array_map()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Api\ShopController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-15 11:07:54 --> ErrorException: Undefined variable $basePrice
+[Method: GET, Route: api/shop]
+in APPPATH/Controllers/Api/ShopController.php on line 298.
+ 1 APPPATH/Controllers/Api/ShopController.php(298): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Api/ShopController.php(62): App\Controllers\Api\ShopController->transformProduct()
+ 3 [internal function]: App\Controllers\Api\ShopController->App\Controllers\Api\{closure}()
+ 4 APPPATH/Controllers/Api/ShopController.php(62): array_map()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Api\ShopController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-15 11:08:11 --> ErrorException: Undefined variable $basePrice
+[Method: GET, Route: api/shop]
+in APPPATH/Controllers/Api/ShopController.php on line 298.
+ 1 APPPATH/Controllers/Api/ShopController.php(298): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Api/ShopController.php(62): App\Controllers\Api\ShopController->transformProduct()
+ 3 [internal function]: App\Controllers\Api\ShopController->App\Controllers\Api\{closure}()
+ 4 APPPATH/Controllers/Api/ShopController.php(62): array_map()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Api\ShopController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-15 11:08:13 --> ErrorException: Undefined variable $basePrice
+[Method: GET, Route: api/shop]
+in APPPATH/Controllers/Api/ShopController.php on line 298.
+ 1 APPPATH/Controllers/Api/ShopController.php(298): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Api/ShopController.php(62): App\Controllers\Api\ShopController->transformProduct()
+ 3 [internal function]: App\Controllers\Api\ShopController->App\Controllers\Api\{closure}()
+ 4 APPPATH/Controllers/Api/ShopController.php(62): array_map()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Api\ShopController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-15 11:08:14 --> ErrorException: Undefined variable $basePrice
+[Method: GET, Route: api/shop]
+in APPPATH/Controllers/Api/ShopController.php on line 298.
+ 1 APPPATH/Controllers/Api/ShopController.php(298): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Api/ShopController.php(62): App\Controllers\Api\ShopController->transformProduct()
+ 3 [internal function]: App\Controllers\Api\ShopController->App\Controllers\Api\{closure}()
+ 4 APPPATH/Controllers/Api/ShopController.php(62): array_map()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Api\ShopController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-15 11:08:15 --> ErrorException: Undefined variable $basePrice
+[Method: GET, Route: api/shop]
+in APPPATH/Controllers/Api/ShopController.php on line 298.
+ 1 APPPATH/Controllers/Api/ShopController.php(298): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Api/ShopController.php(62): App\Controllers\Api\ShopController->transformProduct()
+ 3 [internal function]: App\Controllers\Api\ShopController->App\Controllers\Api\{closure}()
+ 4 APPPATH/Controllers/Api/ShopController.php(62): array_map()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Api\ShopController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-15 11:08:16 --> ErrorException: Undefined variable $basePrice
+[Method: GET, Route: api/shop]
+in APPPATH/Controllers/Api/ShopController.php on line 298.
+ 1 APPPATH/Controllers/Api/ShopController.php(298): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Api/ShopController.php(62): App\Controllers\Api\ShopController->transformProduct()
+ 3 [internal function]: App\Controllers\Api\ShopController->App\Controllers\Api\{closure}()
+ 4 APPPATH/Controllers/Api/ShopController.php(62): array_map()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Api\ShopController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-15 11:10:26 --> ParseError: syntax error, unexpected token "protected"
+[Method: GET, Route: api/shop]
+in APPPATH/Controllers/Api/ShopController.php on line 307.
+ 1 VENDORPATH/composer/ClassLoader.php(427): Composer\Autoload\{closure}()
+ 2 [internal function]: Composer\Autoload\ClassLoader->loadClass()
+ 3 SYSTEMPATH/CodeIgniter.php(885): class_exists()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-15 11:10:27 --> ParseError: syntax error, unexpected token "protected"
+[Method: GET, Route: api/shop]
+in APPPATH/Controllers/Api/ShopController.php on line 307.
+ 1 VENDORPATH/composer/ClassLoader.php(427): Composer\Autoload\{closure}()
+ 2 [internal function]: Composer\Autoload\ClassLoader->loadClass()
+ 3 SYSTEMPATH/CodeIgniter.php(885): class_exists()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-15 11:10:29 --> ParseError: syntax error, unexpected token "protected"
+[Method: GET, Route: api/shop]
+in APPPATH/Controllers/Api/ShopController.php on line 307.
+ 1 VENDORPATH/composer/ClassLoader.php(427): Composer\Autoload\{closure}()
+ 2 [internal function]: Composer\Autoload\ClassLoader->loadClass()
+ 3 SYSTEMPATH/CodeIgniter.php(885): class_exists()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-15 11:10:30 --> ParseError: syntax error, unexpected token "protected"
+[Method: GET, Route: api/shop]
+in APPPATH/Controllers/Api/ShopController.php on line 307.
+ 1 VENDORPATH/composer/ClassLoader.php(427): Composer\Autoload\{closure}()
+ 2 [internal function]: Composer\Autoload\ClassLoader->loadClass()
+ 3 SYSTEMPATH/CodeIgniter.php(885): class_exists()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ERROR - 2026-05-15 11:41:39 --> [CHECKOUT DEBUG] Menerima data POST: {"csrf_test_name":"e5d46d20b64ecb204f872960acf2d408","geocode_mismatch":"0","rev_address_json":"","pickup_location":"Banjarbaru","nama_depan":"ophi","nama_belakang":"dayat","penerima_nomor_hp":"","nomor_pemesan":"081253448699","alamat_pengiriman_teks":"","alamat_detail":"","alamat_latitude":"","alamat_longitude":"","email_anda":"rizqiatthoillah@gmail.com","tanggal_pengantaran":"2026-05-15T14:00","tipe_pengantaran":"Self-Pickup","catatan_penerima":"","metode_pembayaran":"QRIS"}
+ERROR - 2026-05-15 11:41:39 --> [CHECKOUT DEBUG] Exception caught: Undefined variable $discounts
+ERROR - 2026-05-15 11:43:42 --> [CHECKOUT DEBUG] Menerima data POST: {"csrf_test_name":"e5d46d20b64ecb204f872960acf2d408","geocode_mismatch":"0","rev_address_json":"","pickup_location":"Banjarbaru","nama_depan":"ophi","nama_belakang":"dayat","penerima_nomor_hp":"","nomor_pemesan":"081253448699","alamat_pengiriman_teks":"","alamat_detail":"","alamat_latitude":"","alamat_longitude":"","email_anda":"rizqiatthoillah@gmail.com","tanggal_pengantaran":"2026-05-15T14:00","tipe_pengantaran":"Self-Pickup","catatan_penerima":"","metode_pembayaran":"Direct Bank Transfer"}
+ERROR - 2026-05-15 11:43:42 --> [CHECKOUT DEBUG] Exception caught: Undefined variable $discounts
+ERROR - 2026-05-15 11:54:16 --> [CHECKOUT DEBUG] Menerima data POST: {"csrf_test_name":"e5d46d20b64ecb204f872960acf2d408","geocode_mismatch":"0","rev_address_json":"","pickup_location":"Banjarbaru","nama_depan":"ophi","nama_belakang":"dayat","penerima_nomor_hp":"","nomor_pemesan":"081253448699","alamat_pengiriman_teks":"","alamat_detail":"","alamat_latitude":"","alamat_longitude":"","email_anda":"rizqiatthoillah@gmail.com","tanggal_pengantaran":"2026-05-15T14:00","tipe_pengantaran":"Self-Pickup","catatan_penerima":"","metode_pembayaran":"Direct Bank Transfer"}
+ERROR - 2026-05-15 11:54:16 --> [CHECKOUT DEBUG] Exception caught: Undefined variable $discounts
+ERROR - 2026-05-15 11:54:36 --> [CHECKOUT DEBUG] Menerima data POST: {"csrf_test_name":"e5d46d20b64ecb204f872960acf2d408","geocode_mismatch":"0","rev_address_json":"","pickup_location":"Banjarbaru","nama_depan":"ophi","nama_belakang":"dayat","penerima_nomor_hp":"","nomor_pemesan":"081253448699","alamat_pengiriman_teks":"","alamat_detail":"","alamat_latitude":"","alamat_longitude":"","email_anda":"rizqiatthoillah@gmail.com","tanggal_pengantaran":"2026-05-15T14:00","tipe_pengantaran":"Self-Pickup","catatan_penerima":"","metode_pembayaran":"QRIS"}
+ERROR - 2026-05-15 11:54:36 --> [CHECKOUT DEBUG] Exception caught: Undefined variable $discounts
+ERROR - 2026-05-15 11:55:12 --> [CHECKOUT DEBUG] Menerima data POST: {"csrf_test_name":"e5d46d20b64ecb204f872960acf2d408","geocode_mismatch":"0","rev_address_json":"","pickup_location":"Banjarbaru","nama_depan":"ophi","nama_belakang":"dayat","penerima_nomor_hp":"","nomor_pemesan":"081253448699","alamat_pengiriman_teks":"","alamat_detail":"","alamat_latitude":"","alamat_longitude":"","email_anda":"rizqiatthoillah@gmail.com","tanggal_pengantaran":"2026-05-15T14:00","tipe_pengantaran":"Self-Pickup","catatan_penerima":"","metode_pembayaran":"QRIS"}
+ERROR - 2026-05-15 11:55:12 --> [CHECKOUT DEBUG] Exception caught: Undefined variable $discounts
+CRITICAL - 2026-05-15 13:49:44 --> ErrorException: Undefined array key "HTTP_HOST"
+[Method: GET, Route: /]
+in APPPATH/Controllers/BaseController.php on line 48.
+ 1 APPPATH/Controllers/BaseController.php(48): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\BaseController->initController()
+ 3 SYSTEMPATH/CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-15 13:49:51 --> ErrorException: Undefined array key "HTTP_HOST"
+[Method: GET, Route: /]
+in APPPATH/Controllers/BaseController.php on line 48.
+ 1 APPPATH/Controllers/BaseController.php(48): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\BaseController->initController()
+ 3 SYSTEMPATH/CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ERROR - 2026-05-15 13:52:56 --> [CHECKOUT DEBUG] Menerima data POST: {"csrf_test_name":"8dd4614e3fcc8b62b480ddf22d456655","geocode_mismatch":"0","rev_address_json":"","pickup_location":"Banjarbaru","nama_depan":"rizqi","nama_belakang":"atthoillah","penerima_nomor_hp":"","nomor_pemesan":"081253448699","alamat_pengiriman_teks":"","alamat_detail":"","alamat_latitude":"","alamat_longitude":"","email_anda":"","tanggal_pengantaran":"2026-05-15T19:30","tipe_pengantaran":"Self-Pickup","catatan_penerima":"","metode_pembayaran":"QRIS"}
+ERROR - 2026-05-15 13:52:56 --> [CHECKOUT DEBUG] Exception caught: Undefined variable $discounts
+ERROR - 2026-05-15 13:56:49 --> [CHECKOUT DEBUG] Menerima data POST: {"csrf_test_name":"8dd4614e3fcc8b62b480ddf22d456655","geocode_mismatch":"0","rev_address_json":"","pickup_location":"Banjarbaru","nama_depan":"rizqi","nama_belakang":"atthoillah","penerima_nomor_hp":"","nomor_pemesan":"081253448699","alamat_pengiriman_teks":"","alamat_detail":"","alamat_latitude":"","alamat_longitude":"","email_anda":"","tanggal_pengantaran":"2026-05-15T19:30","tipe_pengantaran":"Self-Pickup","catatan_penerima":"","metode_pembayaran":"Direct Bank Transfer"}
+ERROR - 2026-05-15 13:56:49 --> [CHECKOUT DEBUG] Exception caught: Undefined variable $discounts
+ERROR - 2026-05-15 14:01:41 --> [CHECKOUT DEBUG] Menerima data POST: {"csrf_test_name":"6ff11ce15f88375e6323d248ba6256ee","geocode_mismatch":"0","rev_address_json":"","pickup_location":"Banjarbaru","nama_depan":"tes","nama_belakang":"tes","penerima_nomor_hp":"","nomor_pemesan":"222","alamat_pengiriman_teks":"","alamat_detail":"","alamat_latitude":"","alamat_longitude":"","email_anda":"admin@jsflorist.com","tanggal_pengantaran":"2026-05-15T19:01","tipe_pengantaran":"Self-Pickup","catatan_penerima":"","metode_pembayaran":"Direct Bank Transfer"}
+ERROR - 2026-05-15 14:01:41 --> [CHECKOUT DEBUG] Exception caught: Undefined variable $discounts
+ERROR - 2026-05-15 14:09:09 --> [CHECKOUT DEBUG] Menerima data POST: {"csrf_test_name":"6ff11ce15f88375e6323d248ba6256ee","geocode_mismatch":"0","rev_address_json":"","pickup_location":"Banjarbaru","nama_depan":"tes","nama_belakang":"tes","penerima_nomor_hp":"","nomor_pemesan":"234","alamat_pengiriman_teks":"","alamat_detail":"","alamat_latitude":"","alamat_longitude":"","email_anda":"admin@jsflorist.com","tanggal_pengantaran":"2026-05-15T17:09","tipe_pengantaran":"Self-Pickup","catatan_penerima":"","metode_pembayaran":"Direct Bank Transfer"}
+ERROR - 2026-05-15 14:10:24 --> [CHECKOUT DEBUG] Menerima data POST: {"csrf_test_name":"6ff11ce15f88375e6323d248ba6256ee","geocode_mismatch":"0","rev_address_json":"{\"village\":\"Guntung Payung\",\"city\":\"Banjarbaru\",\"state\":\"South Kalimantan\",\"ISO3166-2-lvl4\":\"ID-KS\",\"region\":\"Kalimantan\",\"ISO3166-2-lvl3\":\"ID-KA\",\"postcode\":\"70721\",\"country\":\"Indonesia\",\"country_code\":\"id\"}","pickup_location":"","nama_depan":"tes","nama_belakang":"del","penerima_nomor_hp":"236","nomor_pemesan":"444","alamat_pengiriman_teks":"Guntung Payung, Banjarbaru, South Kalimantan, Kalimantan, 70721, Indonesia","alamat_detail":"12","alamat_latitude":"-3.439285559133065","alamat_longitude":"114.78057861240815","email_anda":"admin@jsflorist.com","tanggal_pengantaran":"2026-05-15T18:10","tipe_pengantaran":"Delivery","catatan_penerima":"","metode_pembayaran":"Direct Bank Transfer"}
+ERROR - 2026-05-15 14:14:15 --> [CHECKOUT DEBUG] Menerima data POST: {"csrf_test_name":"8dd4614e3fcc8b62b480ddf22d456655","geocode_mismatch":"0","rev_address_json":"","pickup_location":"Banjarbaru","nama_depan":"rizqi","nama_belakang":"atthoillah","penerima_nomor_hp":"","nomor_pemesan":"081253448699","alamat_pengiriman_teks":"","alamat_detail":"","alamat_latitude":"","alamat_longitude":"","email_anda":"rizqiatthoillah@gmail.com","tanggal_pengantaran":"2026-05-15T19:30","tipe_pengantaran":"Self-Pickup","catatan_penerima":"","metode_pembayaran":"QRIS"}
+CRITICAL - 2026-05-15 17:06:46 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "招财进宝"
+[Method: GET, Route: products/%E6%8B%9B%E8%B4%A2%E8%BF%9B%E5%AE%9D]
+in SYSTEMPATH/Router/Router.php on line 741.
+ 1 SYSTEMPATH/Router/Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH/CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ERROR - 2026-05-15 17:35:04 --> [CHECKOUT DEBUG] Menerima data POST: {"csrf_test_name":"73ab7b8671670b6302690cb61f2d55a3","geocode_mismatch":"0","rev_address_json":"","pickup_location":"Banjarbaru","nama_depan":"tes","nama_belakang":"ting","penerima_nomor_hp":"","nomor_pemesan":"333","alamat_pengiriman_teks":"","alamat_detail":"","alamat_latitude":"","alamat_longitude":"","email_anda":"admin@jsflorist.com","tanggal_pengantaran":"2026-05-15T20:35","tipe_pengantaran":"Self-Pickup","catatan_penerima":"","metode_pembayaran":"QRIS"}
+ERROR - 2026-05-15 17:46:34 --> [CHECKOUT DEBUG] Menerima data POST: {"csrf_test_name":"73ab7b8671670b6302690cb61f2d55a3","geocode_mismatch":"0","rev_address_json":"","pickup_location":"Banjarbaru","nama_depan":"rrr","nama_belakang":"tes","penerima_nomor_hp":"","nomor_pemesan":"2425","alamat_pengiriman_teks":"","alamat_detail":"","alamat_latitude":"","alamat_longitude":"","email_anda":"admin@jsflorist.com","tanggal_pengantaran":"2026-05-15T21:45","tipe_pengantaran":"Self-Pickup","catatan_penerima":"","metode_pembayaran":"QRIS"}
+ERROR - 2026-05-15 17:46:52 --> [CHECKOUT DEBUG] Menerima data POST: {"csrf_test_name":"cae6b5f5931da85d9a3a269b45e3e70e","geocode_mismatch":"0","rev_address_json":"{\"village\":\"Syamsudin Noor\",\"city\":\"Banjarbaru\",\"state\":\"South Kalimantan\",\"ISO3166-2-lvl4\":\"ID-KS\",\"region\":\"Kalimantan\",\"ISO3166-2-lvl3\":\"ID-KA\",\"postcode\":\"70724\",\"country\":\"Indonesia\",\"country_code\":\"id\"}","pickup_location":"","nama_depan":"Pertiwi","nama_belakang":"Pertiwi","penerima_nomor_hp":"089685894434","nomor_pemesan":"085959221411","alamat_pengiriman_teks":"Syamsudin Noor, Banjarbaru, South Kalimantan, Kalimantan, 70724, Indonesia","alamat_detail":"Perumahan Familia Residence Blok G-2 ","alamat_latitude":"-3.415416336619292","alamat_longitude":"114.76153945082082","email_anda":"diskamauliyaa@gmail.com","tanggal_pengantaran":"2026-05-15T19:00","tipe_pengantaran":"Delivery","catatan_penerima":"Barakallahu fiik ibu\ud83d\udc97\r\nSemoga sehat selalu dan rezekinya lancar Aamiin \ud83e\udd32\u2764\ufe0f\r\nSemoga tahun depan bisa rayakan sama sama ya Bu minimal kite makan makan lah hehe. Love u ibu \r\n-Diska","metode_pembayaran":"QRIS"}
+ERROR - 2026-05-15 17:54:29 --> [CHECKOUT DEBUG] Menerima data POST: {"csrf_test_name":"c90ea415b0cb985cfaf5f143a7c7790d","geocode_mismatch":"0","rev_address_json":"","pickup_location":"Banjarbaru","nama_depan":"muffizar ","nama_belakang":"adiyatama ","penerima_nomor_hp":"","nomor_pemesan":"087840204129","alamat_pengiriman_teks":"","alamat_detail":"","alamat_latitude":"","alamat_longitude":"","email_anda":"","tanggal_pengantaran":"2026-05-15T20:00","tipe_pengantaran":"Self-Pickup","catatan_penerima":"Happy birthday Istriku Sayangku Cintaku Cantikku Duniaku Pintu Rezekiku. Selamat bertambah usia sayangku Semoga selalu bahagia dalam segala hal, sehat selalu sayangku dan selalu di tambahkan rezekinya sayang \ud83e\udd70\ud83d\udc8b\ud83d\ude0d","metode_pembayaran":"QRIS"}
+CRITICAL - 2026-05-15 23:28:22 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "富贵平安"
+[Method: GET, Route: products/%E5%AF%8C%E8%B4%B5%E5%B9%B3%E5%AE%89]
+in SYSTEMPATH/Router/Router.php on line 741.
+ 1 SYSTEMPATH/Router/Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH/CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()

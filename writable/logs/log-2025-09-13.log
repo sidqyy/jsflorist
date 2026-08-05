@@ -1,0 +1,667 @@
+DEBUG - 2025-09-13 17:07:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 17:07:31 --> TrafficLog Debug - URL: /index.php/shop, Title: Index.php Shop, Path: /index.php/shop
+DEBUG - 2025-09-13 17:08:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:09:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 17:09:10 --> TrafficLog Debug - URL: /index.php/, Title: Index.php, Path: /index.php/
+DEBUG - 2025-09-13 17:09:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:09:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:09:49 --> [WhatsApp Debug] Cart items: {"PRDK002":{"id":"PRDK002","cart_id":"PRDK002","name":"Bucket Roses 2","price":590000,"quantity":1,"image":"1752745415_6f556809de23fbf3138d.png","options":{"custom_details":null}}}
+DEBUG - 2025-09-13 17:09:49 --> [WhatsApp Debug] Customer data: {"nama":"gina anig","nomor_hp":"0822532281274","alamat":"Jl. pandohop, Panarung, Palangka Raya, Central Kalimantan, Kalimantan, 73111, Indonesia - samping rumah pak dannys","tanggal_pengantaran":"2025-09-13T20:06","catatan":""}
+DEBUG - 2025-09-13 17:09:49 --> [WhatsApp Debug] Processing item PRDK002: {"id":"PRDK002","cart_id":"PRDK002","name":"Bucket Roses 2","price":590000,"quantity":1,"image":"1752745415_6f556809de23fbf3138d.png","options":{"custom_details":null}}
+DEBUG - 2025-09-13 17:09:49 --> [WhatsApp Debug] Calculated - Price: 590000, Qty: 1, Subtotal: 590000, Running Total: 590000
+DEBUG - 2025-09-13 17:09:49 --> [WhatsApp Debug] Final message length: 565
+DEBUG - 2025-09-13 17:10:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:10:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:10:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:10:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:10:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:10:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:10:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:10:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:10:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:10:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:10:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 17:10:53 --> TrafficLog Debug - URL: /index.php/cart, Title: Index.php Cart, Path: /index.php/cart
+DEBUG - 2025-09-13 17:10:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:10:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:10:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:11:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 17:11:02 --> [DISCOUNT] Subtotal: 610000, Rule: {"discount_id":"14","min_amount":"301000.00","max_amount":"999000.00","discount_percentage":"3.00","is_active":"1","created_at":"2025-08-28 18:11:16","updated_at":"2025-09-07 10:39:11"}, Percentage: 3, Amount: 18300
+DEBUG - 2025-09-13 17:11:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 17:11:07 --> [DISCOUNT] Subtotal: 610000, Rule: {"discount_id":"14","min_amount":"301000.00","max_amount":"999000.00","discount_percentage":"3.00","is_active":"1","created_at":"2025-08-28 18:11:16","updated_at":"2025-09-07 10:39:11"}, Percentage: 3, Amount: 18300
+DEBUG - 2025-09-13 17:11:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:11:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:11:23 --> [WhatsApp Debug] Cart items: {"PRDK001":{"id":"PRDK001","cart_id":"PRDK001","name":"Bucket Roses 1","price":610000,"quantity":1,"image":"1756365247_3fd4e9420c40511eb1e4.png","options":{"custom_details":null}}}
+DEBUG - 2025-09-13 17:11:23 --> [WhatsApp Debug] Customer data: {"nama":"Ardi Wibowo","nomor_hp":"0822532281274","alamat":"Bingkulu, Tanah Laut, South Kalimantan, Kalimantan, Indonesia - ajjda","tanggal_pengantaran":"2025-09-13T21:11","catatan":""}
+DEBUG - 2025-09-13 17:11:23 --> [WhatsApp Debug] Processing item PRDK001: {"id":"PRDK001","cart_id":"PRDK001","name":"Bucket Roses 1","price":610000,"quantity":1,"image":"1756365247_3fd4e9420c40511eb1e4.png","options":{"custom_details":null}}
+DEBUG - 2025-09-13 17:11:23 --> [WhatsApp Debug] Calculated - Price: 610000, Qty: 1, Subtotal: 610000, Running Total: 610000
+DEBUG - 2025-09-13 17:11:23 --> [WhatsApp Debug] Final message length: 522
+DEBUG - 2025-09-13 17:11:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 17:11:33 --> [DISCOUNT] Subtotal: 610000, Rule: {"discount_id":"14","min_amount":"301000.00","max_amount":"999000.00","discount_percentage":"3.00","is_active":"1","created_at":"2025-08-28 18:11:16","updated_at":"2025-09-07 10:39:11"}, Percentage: 3, Amount: 18300
+DEBUG - 2025-09-13 17:11:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-09-13 17:11:43 --> [CHECKOUT DEBUG] Menerima data POST: {"csrf_test_name":"181b7f71fefe38267aa7abe2627f2fa3","geocode_mismatch":"0","rev_address_json":"{\"road\":\"Taurus II\",\"village\":\"Sungai Besar\",\"city\":\"Banjarbaru\",\"state\":\"South Kalimantan\",\"ISO3166-2-lvl4\":\"ID-KS\",\"region\":\"Kalimantan\",\"ISO3166-2-lvl3\":\"ID-KA\",\"postcode\":\"70714\",\"country\":\"Indonesia\",\"country_code\":\"id\"}","pickup_location":"","nama_depan":"Ardi","nama_belakang":"Wibowo","penerima_nomor_hp":"083854672921","nomor_pemesan":"0822532281274","alamat_pengiriman_teks":"Taurus II, Sungai Besar, Banjarbaru, South Kalimantan, Kalimantan, 70714, Indonesia","alamat_detail":"ajjda","alamat_latitude":"-3.456763333779393","alamat_longitude":"114.8464965785388","email_anda":"","tanggal_pengantaran":"2025-09-13T21:11","tipe_pengantaran":"Delivery","catatan_penerima":"","metode_pembayaran":"Direct Bank Transfer"}
+INFO - 2025-09-13 17:11:43 --> [CHECKOUT DEBUG] rev_address_json: {"road":"Taurus II","village":"Sungai Besar","city":"Banjarbaru","state":"South Kalimantan","ISO3166-2-lvl4":"ID-KS","region":"Kalimantan","ISO3166-2-lvl3":"ID-KA","postcode":"70714","country":"Indonesia","country_code":"id"}
+INFO - 2025-09-13 17:11:43 --> [CART DEBUG] Isi keranjang saat proses dimulai: {"PRDK001":{"id":"PRDK001","cart_id":"PRDK001","name":"Bucket Roses 1","price":610000,"quantity":1,"image":"1756365247_3fd4e9420c40511eb1e4.png","options":{"custom_details":null}}}
+INFO - 2025-09-13 17:11:43 --> [DISCOUNT] Subtotal: 610000, Rule: {"discount_id":"14","min_amount":"301000.00","max_amount":"999000.00","discount_percentage":"3.00","is_active":"1","created_at":"2025-08-28 18:11:16","updated_at":"2025-09-07 10:39:11"}, Percentage: 3, Amount: 18300
+DEBUG - 2025-09-13 17:11:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 17:11:43 --> [PAYMENT DEBUG] showBankTransfer called for order PESW012
+DEBUG - 2025-09-13 17:11:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:12:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:12:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 17:12:27 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK177, Title: Shop -  Index.php Shop Product PRDK177, Path: /index.php/shop/product/PRDK177
+DEBUG - 2025-09-13 17:12:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 17:12:29 --> TrafficLog Debug - URL: /index.php/, Title: Index.php, Path: /index.php/
+DEBUG - 2025-09-13 17:12:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 17:12:45 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK090, Title: Shop -  Index.php Shop Product PRDK090, Path: /index.php/shop/product/PRDK090
+DEBUG - 2025-09-13 17:13:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 17:13:05 --> [PAYMENT DEBUG] showBankTransfer called for order PESW012
+ERROR - 2025-09-13 17:13:05 --> [PAYMENT DEBUG] Order not found for ID: PESW012
+DEBUG - 2025-09-13 17:13:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:13:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:13:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:13:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:13:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:14:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:15:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:16:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:16:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 17:16:28 --> TrafficLog Debug - URL: /index.php/, Title: Index.php, Path: /index.php/
+DEBUG - 2025-09-13 17:16:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 17:16:43 --> TrafficLog Debug - URL: /index.php/artikel/tips-perawatan-untuk-buket-bunga-ala-kami-agar-tetap-segar-lebih-lama, Title: Index.php Artikel Tips Perawatan Untuk Buket Bunga Ala Kami Agar Tetap Segar Lebih Lama, Path: /index.php/artikel/tips-perawatan-untuk-buket-bunga-ala-kami-agar-tetap-segar-lebih-lama
+DEBUG - 2025-09-13 17:16:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 17:16:49 --> TrafficLog Debug - URL: /index.php/shop, Title: Index.php Shop, Path: /index.php/shop
+DEBUG - 2025-09-13 17:17:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:18:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:19:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:19:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 17:19:51 --> TrafficLog Debug - URL: /index.php/, Title: Index.php, Path: /index.php/
+DEBUG - 2025-09-13 17:20:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:21:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:21:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 17:21:25 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK049, Title: Shop -  Index.php Shop Product PRDK049, Path: /index.php/shop/product/PRDK049
+DEBUG - 2025-09-13 17:22:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 17:22:15 --> TrafficLog Debug - URL: /index.php/, Title: Index.php, Path: /index.php/
+DEBUG - 2025-09-13 17:22:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:23:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:24:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:25:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:25:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 17:25:49 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK104, Title: Shop -  Index.php Shop Product PRDK104, Path: /index.php/shop/product/PRDK104
+DEBUG - 2025-09-13 17:26:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:27:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:27:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 17:27:54 --> TrafficLog Debug - URL: /index.php, Title: Index.php, Path: /index.php
+DEBUG - 2025-09-13 17:27:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 17:27:55 --> TrafficLog Debug - URL: /index.php, Title: Index.php, Path: /index.php
+DEBUG - 2025-09-13 17:28:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:28:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 17:28:29 --> TrafficLog Debug - URL: /index.php/shop, Title: Index.php Shop, Path: /index.php/shop
+DEBUG - 2025-09-13 17:28:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 17:28:30 --> TrafficLog Debug - URL: /index.php, Title: Index.php, Path: /index.php
+DEBUG - 2025-09-13 17:28:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:28:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 17:28:37 --> TrafficLog Debug - URL: /index.php, Title: Index.php, Path: /index.php
+DEBUG - 2025-09-13 17:29:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:29:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 17:29:00 --> TrafficLog Debug - URL: /index.php, Title: Index.php, Path: /index.php
+DEBUG - 2025-09-13 17:29:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:29:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:29:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:29:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 17:29:11 --> TrafficLog Debug - URL: /index.php, Title: Index.php, Path: /index.php
+DEBUG - 2025-09-13 17:29:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:30:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 17:30:16 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK148, Title: Shop -  Index.php Shop Product PRDK148, Path: /index.php/shop/product/PRDK148
+DEBUG - 2025-09-13 17:30:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:31:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:32:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:32:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 17:32:39 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK166, Title: Shop -  Index.php Shop Product PRDK166, Path: /index.php/shop/product/PRDK166
+DEBUG - 2025-09-13 17:32:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 17:32:54 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK166, Title: Shop -  Index.php Shop Product PRDK166, Path: /index.php/shop/product/PRDK166
+DEBUG - 2025-09-13 17:33:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:34:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:34:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:34:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:34:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 17:34:24 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK007, Title: Shop -  Index.php Shop Product PRDK007, Path: /index.php/shop/product/PRDK007
+DEBUG - 2025-09-13 17:34:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:34:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:34:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:34:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:35:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:36:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:37:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:38:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:38:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 17:38:39 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK151, Title: Shop -  Index.php Shop Product PRDK151, Path: /index.php/shop/product/PRDK151
+DEBUG - 2025-09-13 17:39:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:40:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:40:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 17:40:44 --> TrafficLog Debug - URL: /index.php, Title: Index.php, Path: /index.php
+DEBUG - 2025-09-13 17:40:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:41:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:42:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:42:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:42:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:42:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:42:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:42:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:42:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:42:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:42:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:43:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:43:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:43:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:43:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 17:43:21 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK151, Title: Shop -  Index.php Shop Product PRDK151, Path: /index.php/shop/product/PRDK151
+DEBUG - 2025-09-13 17:43:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:43:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:43:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:43:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:44:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:44:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:44:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:44:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:44:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:45:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:45:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:45:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:45:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 17:45:51 --> TrafficLog Debug - URL: /index.php/shop, Title: Index.php Shop, Path: /index.php/shop
+DEBUG - 2025-09-13 17:45:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:46:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:46:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:46:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:46:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:46:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:46:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:46:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:46:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 17:46:50 --> TrafficLog Debug - URL: /index.php/shop, Title: Index.php Shop, Path: /index.php/shop
+DEBUG - 2025-09-13 17:47:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:47:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:47:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:47:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:47:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:47:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:47:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:47:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:47:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:48:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:48:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:48:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:48:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 17:48:39 --> TrafficLog Debug - URL: /index.php/shop, Title: Index.php Shop, Path: /index.php/shop
+DEBUG - 2025-09-13 17:48:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:48:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:49:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:49:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:49:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:49:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:49:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:50:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 17:50:39 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK111, Title: Shop -  Index.php Shop Product PRDK111, Path: /index.php/shop/product/PRDK111
+DEBUG - 2025-09-13 17:51:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:51:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 17:51:59 --> TrafficLog Debug - URL: /index.php/shop, Title: Index.php Shop, Path: /index.php/shop
+DEBUG - 2025-09-13 17:52:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:52:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:52:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:52:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:52:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:52:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 17:52:41 --> TrafficLog Debug - URL: /index.php/tracking, Title: Index.php Tracking, Path: /index.php/tracking
+DEBUG - 2025-09-13 17:52:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:52:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:53:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:53:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:54:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:54:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 17:54:45 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK099, Title: Shop -  Index.php Shop Product PRDK099, Path: /index.php/shop/product/PRDK099
+DEBUG - 2025-09-13 17:55:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:56:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:57:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:58:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 17:58:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 17:58:48 --> TrafficLog Debug - URL: /index.php/shop, Title: Index.php Shop, Path: /index.php/shop
+DEBUG - 2025-09-13 17:59:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:00:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:01:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:02:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 18:02:07 --> TrafficLog Debug - URL: /index.php/, Title: Index.php, Path: /index.php/
+DEBUG - 2025-09-13 18:02:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:02:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:02:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:02:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:02:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 18:02:48 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK021, Title: Shop -  Index.php Shop Product PRDK021, Path: /index.php/shop/product/PRDK021
+DEBUG - 2025-09-13 18:03:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:04:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:05:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:06:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:06:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 18:06:21 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK194, Title: Shop -  Index.php Shop Product PRDK194, Path: /index.php/shop/product/PRDK194
+DEBUG - 2025-09-13 18:06:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 18:06:49 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK149, Title: Shop -  Index.php Shop Product PRDK149, Path: /index.php/shop/product/PRDK149
+DEBUG - 2025-09-13 18:07:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:08:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:09:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:10:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:10:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 18:10:58 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK112, Title: Shop -  Index.php Shop Product PRDK112, Path: /index.php/shop/product/PRDK112
+DEBUG - 2025-09-13 18:11:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:12:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:13:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:14:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:15:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 18:15:08 --> TrafficLog Debug - URL: /index.php/shop, Title: Index.php Shop, Path: /index.php/shop
+DEBUG - 2025-09-13 18:15:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:16:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:17:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:18:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:18:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 18:18:56 --> TrafficLog Debug - URL: /index.php/shop, Title: Index.php Shop, Path: /index.php/shop
+DEBUG - 2025-09-13 18:19:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:20:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:21:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:22:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:22:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 18:22:49 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK124, Title: Shop -  Index.php Shop Product PRDK124, Path: /index.php/shop/product/PRDK124
+DEBUG - 2025-09-13 18:23:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:24:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:25:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:26:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:26:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 18:26:43 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK108, Title: Shop -  Index.php Shop Product PRDK108, Path: /index.php/shop/product/PRDK108
+DEBUG - 2025-09-13 18:27:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:27:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:27:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:27:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:28:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:28:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:28:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:28:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:28:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:29:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:30:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:30:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 18:30:39 --> TrafficLog Debug - URL: /index.php/, Title: Index.php, Path: /index.php/
+DEBUG - 2025-09-13 18:30:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 18:30:54 --> TrafficLog Debug - URL: /index.php/shop, Title: Index.php Shop, Path: /index.php/shop
+DEBUG - 2025-09-13 18:31:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:32:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:33:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:34:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:35:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 18:35:06 --> TrafficLog Debug - URL: /index.php/shop, Title: Index.php Shop, Path: /index.php/shop
+DEBUG - 2025-09-13 18:35:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:35:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:35:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:36:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:36:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:36:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:36:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:36:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 18:36:40 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK145, Title: Shop -  Index.php Shop Product PRDK145, Path: /index.php/shop/product/PRDK145
+DEBUG - 2025-09-13 18:36:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:37:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 18:37:17 --> TrafficLog Debug - URL: /index.php/, Title: Index.php, Path: /index.php/
+DEBUG - 2025-09-13 18:37:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:37:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:38:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:39:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 18:39:05 --> TrafficLog Debug - URL: /index.php/shop, Title: Index.php Shop, Path: /index.php/shop
+DEBUG - 2025-09-13 18:39:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:40:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:41:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:42:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:42:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 18:42:45 --> TrafficLog Debug - URL: /index.php/shop, Title: Index.php Shop, Path: /index.php/shop
+DEBUG - 2025-09-13 18:42:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:43:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 18:43:18 --> TrafficLog Debug - URL: /index.php/shop, Title: Index.php Shop, Path: /index.php/shop
+DEBUG - 2025-09-13 18:43:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:44:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:44:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 18:44:43 --> TrafficLog Debug - URL: /index.php/, Title: Index.php, Path: /index.php/
+DEBUG - 2025-09-13 18:45:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:46:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:47:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:47:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 18:47:43 --> TrafficLog Debug - URL: /index.php/shop, Title: Index.php Shop, Path: /index.php/shop
+DEBUG - 2025-09-13 18:48:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:49:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 18:49:03 --> TrafficLog Debug - URL: /index.php/, Title: Index.php, Path: /index.php/
+DEBUG - 2025-09-13 18:49:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:49:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:50:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:51:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:52:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:53:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 18:53:14 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK009, Title: Shop -  Index.php Shop Product PRDK009, Path: /index.php/shop/product/PRDK009
+DEBUG - 2025-09-13 18:53:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:54:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:55:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:56:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:57:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:58:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 18:58:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 18:58:21 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK088, Title: Shop -  Index.php Shop Product PRDK088, Path: /index.php/shop/product/PRDK088
+DEBUG - 2025-09-13 18:59:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 19:00:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 19:01:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 19:02:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 19:03:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 19:03:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 19:03:22 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK172, Title: Shop -  Index.php Shop Product PRDK172, Path: /index.php/shop/product/PRDK172
+DEBUG - 2025-09-13 19:04:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 19:05:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 19:06:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 19:07:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 19:07:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 19:07:56 --> TrafficLog Debug - URL: /index.php/shop, Title: Index.php Shop, Path: /index.php/shop
+DEBUG - 2025-09-13 19:08:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 19:09:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 19:10:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 19:12:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 19:13:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 19:13:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 19:13:25 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK086, Title: Shop -  Index.php Shop Product PRDK086, Path: /index.php/shop/product/PRDK086
+DEBUG - 2025-09-13 19:14:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 19:15:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 19:16:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 19:17:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 19:17:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 19:17:30 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK088, Title: Shop -  Index.php Shop Product PRDK088, Path: /index.php/shop/product/PRDK088
+DEBUG - 2025-09-13 19:18:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 19:18:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 19:18:51 --> TrafficLog Debug - URL: /index.php/shop, Title: Index.php Shop, Path: /index.php/shop
+DEBUG - 2025-09-13 19:19:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 19:20:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 19:21:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 19:22:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 19:23:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 19:23:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 19:23:41 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK146, Title: Shop -  Index.php Shop Product PRDK146, Path: /index.php/shop/product/PRDK146
+DEBUG - 2025-09-13 19:24:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 19:25:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 19:26:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 19:27:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 19:28:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 19:28:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 19:28:34 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK043, Title: Shop -  Index.php Shop Product PRDK043, Path: /index.php/shop/product/PRDK043
+DEBUG - 2025-09-13 19:29:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 19:29:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 19:29:55 --> TrafficLog Debug - URL: /index.php/, Title: Index.php, Path: /index.php/
+DEBUG - 2025-09-13 19:30:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 19:31:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 19:32:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 19:33:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 19:33:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 19:33:23 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK124, Title: Shop -  Index.php Shop Product PRDK124, Path: /index.php/shop/product/PRDK124
+DEBUG - 2025-09-13 19:33:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 19:33:34 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK148, Title: Shop -  Index.php Shop Product PRDK148, Path: /index.php/shop/product/PRDK148
+DEBUG - 2025-09-13 19:34:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 19:35:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 19:36:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 19:36:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 19:36:26 --> TrafficLog Debug - URL: /index.php, Title: Index.php, Path: /index.php
+DEBUG - 2025-09-13 19:36:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 19:37:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 19:38:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 19:38:11 --> TrafficLog Debug - URL: /index.php, Title: Index.php, Path: /index.php
+DEBUG - 2025-09-13 19:38:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 19:38:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 19:38:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 19:38:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 19:38:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 19:38:54 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK024, Title: Shop -  Index.php Shop Product PRDK024, Path: /index.php/shop/product/PRDK024
+DEBUG - 2025-09-13 19:39:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 19:40:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 19:41:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 19:42:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 19:43:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 19:43:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 19:43:35 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK189, Title: Shop -  Index.php Shop Product PRDK189, Path: /index.php/shop/product/PRDK189
+DEBUG - 2025-09-13 19:43:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 19:43:44 --> TrafficLog Debug - URL: /index.php/tracking, Title: Index.php Tracking, Path: /index.php/tracking
+DEBUG - 2025-09-13 19:44:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 19:45:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 19:46:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 19:46:02 --> TrafficLog Debug - URL: /index.php/, Title: Index.php, Path: /index.php/
+DEBUG - 2025-09-13 19:46:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 19:46:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 19:46:48 --> TrafficLog Debug - URL: /index.php/artikel/fun-fact-fresh-flower-yang-jarang-diketahui-orang-no-5-kamu-gak-bakal-nyangka, Title: Index.php Artikel Fun Fact Fresh Flower Yang Jarang Diketahui Orang No 5 Kamu Gak Bakal Nyangka, Path: /index.php/artikel/fun-fact-fresh-flower-yang-jarang-diketahui-orang-no-5-kamu-gak-bakal-nyangka
+DEBUG - 2025-09-13 19:47:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 19:48:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 19:48:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 19:48:40 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK175, Title: Shop -  Index.php Shop Product PRDK175, Path: /index.php/shop/product/PRDK175
+DEBUG - 2025-09-13 19:49:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 19:50:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 19:50:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 19:50:26 --> TrafficLog Debug - URL: /index.php/, Title: Index.php, Path: /index.php/
+DEBUG - 2025-09-13 19:50:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 19:50:47 --> TrafficLog Debug - URL: /index.php/, Title: Index.php, Path: /index.php/
+DEBUG - 2025-09-13 19:50:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 19:50:54 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK145, Title: Shop -  Index.php Shop Product PRDK145, Path: /index.php/shop/product/PRDK145
+DEBUG - 2025-09-13 19:50:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 19:51:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 19:52:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 19:53:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 19:53:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 19:53:22 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK162, Title: Shop -  Index.php Shop Product PRDK162, Path: /index.php/shop/product/PRDK162
+DEBUG - 2025-09-13 19:54:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 19:54:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 19:54:22 --> TrafficLog Debug - URL: /index.php, Title: Index.php, Path: /index.php
+DEBUG - 2025-09-13 19:54:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 19:55:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 19:56:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 19:57:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 19:57:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 19:57:22 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK149, Title: Shop -  Index.php Shop Product PRDK149, Path: /index.php/shop/product/PRDK149
+DEBUG - 2025-09-13 19:58:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 19:58:06 --> TrafficLog Debug - URL: /index.php/, Title: Index.php, Path: /index.php/
+DEBUG - 2025-09-13 19:58:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 19:58:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 19:58:18 --> TrafficLog Debug - URL: /index.php/, Title: Index.php, Path: /index.php/
+DEBUG - 2025-09-13 19:58:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 19:58:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 19:58:27 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK098, Title: Shop -  Index.php Shop Product PRDK098, Path: /index.php/shop/product/PRDK098
+DEBUG - 2025-09-13 19:59:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 19:59:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 20:00:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 20:00:03 --> TrafficLog Debug - URL: /index.php, Title: Index.php, Path: /index.php
+DEBUG - 2025-09-13 20:00:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 20:00:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 20:00:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 20:00:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 20:00:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 20:00:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 20:00:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 20:03:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 20:03:22 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK008, Title: Shop -  Index.php Shop Product PRDK008, Path: /index.php/shop/product/PRDK008
+DEBUG - 2025-09-13 20:07:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 20:07:25 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK167, Title: Shop -  Index.php Shop Product PRDK167, Path: /index.php/shop/product/PRDK167
+DEBUG - 2025-09-13 20:08:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 20:08:18 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK167, Title: Shop -  Index.php Shop Product PRDK167, Path: /index.php/shop/product/PRDK167
+DEBUG - 2025-09-13 20:08:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 20:08:35 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK097, Title: Shop -  Index.php Shop Product PRDK097, Path: /index.php/shop/product/PRDK097
+DEBUG - 2025-09-13 20:13:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 20:13:45 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK095, Title: Shop -  Index.php Shop Product PRDK095, Path: /index.php/shop/product/PRDK095
+DEBUG - 2025-09-13 20:14:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 20:14:55 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK167, Title: Shop -  Index.php Shop Product PRDK167, Path: /index.php/shop/product/PRDK167
+DEBUG - 2025-09-13 20:16:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 20:16:44 --> TrafficLog Debug - URL: /index.php/, Title: Index.php, Path: /index.php/
+DEBUG - 2025-09-13 20:18:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 20:18:53 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK115, Title: Shop -  Index.php Shop Product PRDK115, Path: /index.php/shop/product/PRDK115
+DEBUG - 2025-09-13 20:23:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 20:23:43 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK118, Title: Shop -  Index.php Shop Product PRDK118, Path: /index.php/shop/product/PRDK118
+DEBUG - 2025-09-13 20:24:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 20:24:48 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK110, Title: Shop -  Index.php Shop Product PRDK110, Path: /index.php/shop/product/PRDK110
+DEBUG - 2025-09-13 20:35:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 20:35:01 --> TrafficLog Debug - URL: /index.php/, Title: Index.php, Path: /index.php/
+DEBUG - 2025-09-13 20:36:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 20:36:23 --> TrafficLog Debug - URL: /index.php/shop, Title: Index.php Shop, Path: /index.php/shop
+DEBUG - 2025-09-13 20:38:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 20:38:02 --> TrafficLog Debug - URL: /index.php/shop, Title: Index.php Shop, Path: /index.php/shop
+DEBUG - 2025-09-13 20:44:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 20:44:52 --> TrafficLog Debug - URL: /index.php/shop, Title: Index.php Shop, Path: /index.php/shop
+DEBUG - 2025-09-13 20:55:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 20:55:47 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK004, Title: Shop -  Index.php Shop Product PRDK004, Path: /index.php/shop/product/PRDK004
+DEBUG - 2025-09-13 21:01:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 21:01:58 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK180, Title: Shop -  Index.php Shop Product PRDK180, Path: /index.php/shop/product/PRDK180
+DEBUG - 2025-09-13 21:07:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 21:07:09 --> TrafficLog Debug - URL: /index.php/, Title: Index.php, Path: /index.php/
+DEBUG - 2025-09-13 21:07:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 21:07:41 --> TrafficLog Debug - URL: /index.php/shop, Title: Index.php Shop, Path: /index.php/shop
+DEBUG - 2025-09-13 21:08:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 21:08:39 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK086, Title: Shop -  Index.php Shop Product PRDK086, Path: /index.php/shop/product/PRDK086
+DEBUG - 2025-09-13 21:13:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 21:13:07 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK017, Title: Shop -  Index.php Shop Product PRDK017, Path: /index.php/shop/product/PRDK017
+DEBUG - 2025-09-13 21:17:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 21:17:31 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK120, Title: Shop -  Index.php Shop Product PRDK120, Path: /index.php/shop/product/PRDK120
+DEBUG - 2025-09-13 21:20:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 21:20:01 --> TrafficLog Debug - URL: /index.php/, Title: Index.php, Path: /index.php/
+DEBUG - 2025-09-13 21:20:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 21:21:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 21:21:43 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK122, Title: Shop -  Index.php Shop Product PRDK122, Path: /index.php/shop/product/PRDK122
+DEBUG - 2025-09-13 21:26:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 21:26:02 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK121, Title: Shop -  Index.php Shop Product PRDK121, Path: /index.php/shop/product/PRDK121
+DEBUG - 2025-09-13 21:30:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 21:30:09 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK146, Title: Shop -  Index.php Shop Product PRDK146, Path: /index.php/shop/product/PRDK146
+DEBUG - 2025-09-13 21:32:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 21:32:16 --> TrafficLog Debug - URL: /index.php/, Title: Index.php, Path: /index.php/
+DEBUG - 2025-09-13 21:34:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 21:34:41 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK153, Title: Shop -  Index.php Shop Product PRDK153, Path: /index.php/shop/product/PRDK153
+DEBUG - 2025-09-13 21:38:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 21:38:17 --> TrafficLog Debug - URL: /index.php/, Title: Index.php, Path: /index.php/
+DEBUG - 2025-09-13 21:38:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 21:38:56 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK057, Title: Shop -  Index.php Shop Product PRDK057, Path: /index.php/shop/product/PRDK057
+DEBUG - 2025-09-13 21:40:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 21:40:51 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK145, Title: Shop -  Index.php Shop Product PRDK145, Path: /index.php/shop/product/PRDK145
+DEBUG - 2025-09-13 21:41:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 21:41:55 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK114, Title: Shop -  Index.php Shop Product PRDK114, Path: /index.php/shop/product/PRDK114
+DEBUG - 2025-09-13 21:43:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 21:43:13 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK083, Title: Shop -  Index.php Shop Product PRDK083, Path: /index.php/shop/product/PRDK083
+DEBUG - 2025-09-13 21:43:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 21:43:40 --> TrafficLog Debug - URL: /index.php, Title: Index.php, Path: /index.php
+DEBUG - 2025-09-13 21:43:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 21:44:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 21:44:26 --> TrafficLog Debug - URL: /index.php, Title: Index.php, Path: /index.php
+DEBUG - 2025-09-13 21:44:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 21:45:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 21:45:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 21:47:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 21:47:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 21:50:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 21:50:12 --> TrafficLog Debug - URL: /index.php, Title: Index.php, Path: /index.php
+DEBUG - 2025-09-13 21:50:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 21:50:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 21:50:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 21:50:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 21:50:56 --> TrafficLog Debug - URL: /index.php, Title: Index.php, Path: /index.php
+DEBUG - 2025-09-13 21:51:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 21:51:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 21:51:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 21:51:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 21:51:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 21:51:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 21:51:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 21:51:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 21:51:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 21:51:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 21:51:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 21:51:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 21:51:34 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK012, Title: Shop -  Index.php Shop Product PRDK012, Path: /index.php/shop/product/PRDK012
+DEBUG - 2025-09-13 21:51:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 21:51:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 21:51:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 21:51:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 21:52:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 21:52:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 21:52:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 21:52:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 21:52:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 21:52:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 21:52:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 21:52:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 21:52:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 21:52:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 21:53:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 21:53:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 21:53:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 21:53:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 21:59:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 21:59:39 --> TrafficLog Debug - URL: /index.php/shop, Title: Index.php Shop, Path: /index.php/shop
+DEBUG - 2025-09-13 22:07:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 22:07:33 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK046, Title: Shop -  Index.php Shop Product PRDK046, Path: /index.php/shop/product/PRDK046
+DEBUG - 2025-09-13 22:14:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 22:14:47 --> TrafficLog Debug - URL: /index.php/checkout, Title: Index.php Checkout, Path: /index.php/checkout
+DEBUG - 2025-09-13 22:15:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 22:15:08 --> TrafficLog Debug - URL: /index.php/dashboard, Title: Index.php Dashboard, Path: /index.php/dashboard
+DEBUG - 2025-09-13 22:15:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 22:15:38 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK123, Title: Shop -  Index.php Shop Product PRDK123, Path: /index.php/shop/product/PRDK123
+DEBUG - 2025-09-13 22:17:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 22:17:25 --> TrafficLog Debug - URL: /index.php/, Title: Index.php, Path: /index.php/
+DEBUG - 2025-09-13 22:20:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 22:20:55 --> TrafficLog Debug - URL: /index.php/, Title: Index.php, Path: /index.php/
+DEBUG - 2025-09-13 22:21:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 22:21:56 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK036, Title: Shop -  Index.php Shop Product PRDK036, Path: /index.php/shop/product/PRDK036
+DEBUG - 2025-09-13 22:23:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 22:23:08 --> TrafficLog Debug - URL: /index.php/shop, Title: Index.php Shop, Path: /index.php/shop
+DEBUG - 2025-09-13 22:23:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 22:23:14 --> TrafficLog Debug - URL: /index.php/shop, Title: Index.php Shop, Path: /index.php/shop
+DEBUG - 2025-09-13 22:24:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 22:24:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 22:24:45 --> TrafficLog Debug - URL: /index.php/, Title: Index.php, Path: /index.php/
+DEBUG - 2025-09-13 22:29:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 22:29:50 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK082, Title: Shop -  Index.php Shop Product PRDK082, Path: /index.php/shop/product/PRDK082
+DEBUG - 2025-09-13 22:31:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 22:31:11 --> TrafficLog Debug - URL: /index.php/shop, Title: Index.php Shop, Path: /index.php/shop
+DEBUG - 2025-09-13 22:33:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 22:33:33 --> TrafficLog Debug - URL: /index.php/cart, Title: Index.php Cart, Path: /index.php/cart
+DEBUG - 2025-09-13 22:37:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 22:37:03 --> TrafficLog Debug - URL: /index.php/tracking, Title: Index.php Tracking, Path: /index.php/tracking
+DEBUG - 2025-09-13 22:39:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 22:39:11 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK111, Title: Shop -  Index.php Shop Product PRDK111, Path: /index.php/shop/product/PRDK111
+DEBUG - 2025-09-13 22:44:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 22:44:57 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK126, Title: Shop -  Index.php Shop Product PRDK126, Path: /index.php/shop/product/PRDK126
+DEBUG - 2025-09-13 22:50:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 22:50:32 --> TrafficLog Debug - URL: /index.php/, Title: Index.php, Path: /index.php/
+DEBUG - 2025-09-13 22:52:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 22:52:13 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK100, Title: Shop -  Index.php Shop Product PRDK100, Path: /index.php/shop/product/PRDK100
+DEBUG - 2025-09-13 22:54:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 22:54:32 --> TrafficLog Debug - URL: /index.php/, Title: Index.php, Path: /index.php/
+DEBUG - 2025-09-13 22:54:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 22:54:46 --> TrafficLog Debug - URL: /index.php/artikel/fun-fact-fresh-flower-yang-jarang-diketahui-orang-no-5-kamu-gak-bakal-nyangka, Title: Index.php Artikel Fun Fact Fresh Flower Yang Jarang Diketahui Orang No 5 Kamu Gak Bakal Nyangka, Path: /index.php/artikel/fun-fact-fresh-flower-yang-jarang-diketahui-orang-no-5-kamu-gak-bakal-nyangka
+DEBUG - 2025-09-13 23:00:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 23:00:08 --> TrafficLog Debug - URL: /index.php/shop, Title: Index.php Shop, Path: /index.php/shop
+DEBUG - 2025-09-13 23:00:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 23:00:54 --> TrafficLog Debug - URL: /index.php/artikel, Title: Index.php Artikel, Path: /index.php/artikel
+DEBUG - 2025-09-13 23:01:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 23:01:54 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK127, Title: Shop -  Index.php Shop Product PRDK127, Path: /index.php/shop/product/PRDK127
+DEBUG - 2025-09-13 23:02:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 23:02:38 --> TrafficLog Debug - URL: /index.php/shop, Title: Index.php Shop, Path: /index.php/shop
+DEBUG - 2025-09-13 23:13:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 23:13:12 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK143, Title: Shop -  Index.php Shop Product PRDK143, Path: /index.php/shop/product/PRDK143
+DEBUG - 2025-09-13 23:24:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 23:24:23 --> TrafficLog Debug - URL: /index.php/, Title: Index.php, Path: /index.php/
+DEBUG - 2025-09-13 23:31:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 23:31:08 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK089, Title: Shop -  Index.php Shop Product PRDK089, Path: /index.php/shop/product/PRDK089
+DEBUG - 2025-09-13 23:31:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 23:31:11 --> TrafficLog Debug - URL: /index.php/shop, Title: Index.php Shop, Path: /index.php/shop
+DEBUG - 2025-09-13 23:34:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 23:34:42 --> TrafficLog Debug - URL: /index.php/artikel/rekomendasi-bunga-untuk-setiap-mood-dari-patah-hati-sampai-happy-banget, Title: Index.php Artikel Rekomendasi Bunga Untuk Setiap Mood Dari Patah Hati Sampai Happy Banget, Path: /index.php/artikel/rekomendasi-bunga-untuk-setiap-mood-dari-patah-hati-sampai-happy-banget
+DEBUG - 2025-09-13 23:40:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 23:40:53 --> TrafficLog Debug - URL: /index.php/, Title: Index.php, Path: /index.php/
+DEBUG - 2025-09-13 23:42:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 23:42:01 --> TrafficLog Debug - URL: /index.php/tracking, Title: Index.php Tracking, Path: /index.php/tracking
+DEBUG - 2025-09-13 23:45:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 23:45:01 --> TrafficLog Debug - URL: /index.php/, Title: Index.php, Path: /index.php/
+DEBUG - 2025-09-13 23:46:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 23:46:02 --> TrafficLog Debug - URL: /index.php/shop/product/PRDK006, Title: Shop -  Index.php Shop Product PRDK006, Path: /index.php/shop/product/PRDK006
+DEBUG - 2025-09-13 23:47:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 23:47:26 --> TrafficLog Debug - URL: /index.php/shop, Title: Index.php Shop, Path: /index.php/shop
+DEBUG - 2025-09-13 23:50:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-13 23:50:22 --> TrafficLog Debug - URL: /index.php/tracking, Title: Index.php Tracking, Path: /index.php/tracking

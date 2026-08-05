@@ -1,0 +1,150 @@
+ERROR - 2026-03-20 20:06:40 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/BaseModel.php(717): CodeIgniter\Model->doFirst()
+#6 /home/jsff5967/CI4/app/Filters/TrafficLogFilter.php(154): CodeIgniter\BaseModel->first()
+#7 /home/jsff5967/CI4/app/Filters/TrafficLogFilter.php(41): App\Filters\TrafficLogFilter->isRecentlyLogged()
+#8 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Filters/Filters.php(241): App\Filters\TrafficLogFilter->before()
+#9 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Filters/Filters.php(221): CodeIgniter\Filters\Filters->runBefore()
+#10 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/CodeIgniter.php(479): CodeIgniter\Filters\Filters->run()
+#11 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#12 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#13 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#14 /home/jsff5967/public_html/index.php(59): CodeIgniter\Boot::bootWeb()
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/BaseModel.php(717): CodeIgniter\Model->doFirst()
+#5 /home/jsff5967/CI4/app/Filters/TrafficLogFilter.php(154): CodeIgniter\BaseModel->first()
+#6 /home/jsff5967/CI4/app/Filters/TrafficLogFilter.php(41): App\Filters\TrafficLogFilter->isRecentlyLogged()
+#7 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Filters/Filters.php(241): App\Filters\TrafficLogFilter->before()
+#8 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Filters/Filters.php(221): CodeIgniter\Filters\Filters->runBefore()
+#9 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/CodeIgniter.php(479): CodeIgniter\Filters\Filters->run()
+#10 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/jsff5967/public_html/index.php(59): CodeIgniter\Boot::bootWeb()
+#14 {main}
+ERROR - 2026-03-20 20:06:40 --> Error checking recent visit: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+ERROR - 2026-03-20 20:06:40 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/BaseModel.php(717): CodeIgniter\Model->doFirst()
+#6 /home/jsff5967/CI4/app/Models/TrafficLogModel.php(60): CodeIgniter\BaseModel->first()
+#7 /home/jsff5967/CI4/app/Filters/TrafficLogFilter.php(61): App\Models\TrafficLogModel->logVisitor()
+#8 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Filters/Filters.php(241): App\Filters\TrafficLogFilter->before()
+#9 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Filters/Filters.php(221): CodeIgniter\Filters\Filters->runBefore()
+#10 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/CodeIgniter.php(479): CodeIgniter\Filters\Filters->run()
+#11 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#12 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#13 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#14 /home/jsff5967/public_html/index.php(59): CodeIgniter\Boot::bootWeb()
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/BaseModel.php(717): CodeIgniter\Model->doFirst()
+#5 /home/jsff5967/CI4/app/Models/TrafficLogModel.php(60): CodeIgniter\BaseModel->first()
+#6 /home/jsff5967/CI4/app/Filters/TrafficLogFilter.php(61): App\Models\TrafficLogModel->logVisitor()
+#7 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Filters/Filters.php(241): App\Filters\TrafficLogFilter->before()
+#8 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Filters/Filters.php(221): CodeIgniter\Filters\Filters->runBefore()
+#9 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/CodeIgniter.php(479): CodeIgniter\Filters\Filters->run()
+#10 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/jsff5967/public_html/index.php(59): CodeIgniter\Boot::bootWeb()
+#14 {main}
+ERROR - 2026-03-20 20:06:40 --> Failed to log visitor: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+ERROR - 2026-03-20 20:06:40 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(849): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(783): CodeIgniter\Database\BaseConnection->transBegin()
+#4 /home/jsff5967/CI4/app/Models/SettingModel.php(42): CodeIgniter\Database\BaseConnection->transStart()
+#5 /home/jsff5967/CI4/app/Controllers/BaseController.php(115): App\Models\SettingModel->increment()
+#6 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\BaseController->initController()
+#7 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+#8 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#11 /home/jsff5967/public_html/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(849): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(783): CodeIgniter\Database\BaseConnection->transBegin()
+#3 /home/jsff5967/CI4/app/Models/SettingModel.php(42): CodeIgniter\Database\BaseConnection->transStart()
+#4 /home/jsff5967/CI4/app/Controllers/BaseController.php(115): App\Models\SettingModel->increment()
+#5 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\BaseController->initController()
+#6 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+#7 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#10 /home/jsff5967/public_html/index.php(59): CodeIgniter\Boot::bootWeb()
+#11 {main}
+CRITICAL - 2026-03-20 20:06:40 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+[Method: GET, Route: shop/product/PRDK167]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(849): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(783): CodeIgniter\Database\BaseConnection->transBegin()
+ 3 APPPATH/Models/SettingModel.php(42): CodeIgniter\Database\BaseConnection->transStart()
+ 4 APPPATH/Controllers/BaseController.php(115): App\Models\SettingModel->increment()
+ 5 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\BaseController->initController()
+ 6 SYSTEMPATH/CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-03-20 20:24:09 --> ErrorException: Undefined array key "HTTP_HOST"
+[Method: GET, Route: /]
+in APPPATH/Controllers/BaseController.php on line 48.
+ 1 APPPATH/Controllers/BaseController.php(48): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\BaseController->initController()
+ 3 SYSTEMPATH/CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-03-20 20:26:10 --> ErrorException: Undefined array key "HTTP_HOST"
+[Method: GET, Route: /]
+in APPPATH/Controllers/BaseController.php on line 48.
+ 1 APPPATH/Controllers/BaseController.php(48): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\BaseController->initController()
+ 3 SYSTEMPATH/CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-03-20 20:39:59 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "招财进宝-2"
+[Method: GET, Route: products/%E6%8B%9B%E8%B4%A2%E8%BF%9B%E5%AE%9D-2]
+in SYSTEMPATH/Router/Router.php on line 741.
+ 1 SYSTEMPATH/Router/Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH/CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()

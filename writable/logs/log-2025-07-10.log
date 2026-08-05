@@ -1,0 +1,128 @@
+DEBUG - 2025-07-10 08:59:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-10 08:59:31 --> User tidak login saat akses checkout.
+DEBUG - 2025-07-10 09:04:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-10 09:04:20 --> User tidak login saat akses checkout.
+DEBUG - 2025-07-10 09:06:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-10 09:06:40 --> Memulai proses pesanan di processOrder().
+DEBUG - 2025-07-10 09:06:40 --> Validasi dasar form BERHASIL.
+DEBUG - 2025-07-10 09:06:40 --> Keranjang memiliki 2 item.
+DEBUG - 2025-07-10 09:06:40 --> Subtotal produk: 288000
+DEBUG - 2025-07-10 09:06:40 --> Tipe pengantaran: Delivery. Biaya: 0. Lat: -3.454407270912839, Lng: 114.80863094264353
+DEBUG - 2025-07-10 09:06:40 --> Total keseluruhan pesanan (produk + pengiriman): 288000
+DEBUG - 2025-07-10 09:06:40 --> Nama Penerima Lengkap: Ardi Wibowo
+DEBUG - 2025-07-10 09:06:40 --> Nomor HP Penerima: 098765431232
+DEBUG - 2025-07-10 09:06:40 --> Alamat Teks: Loktabat Selatan, Banjarbaru, South Kalimantan, Kalimantan, 70713, Indonesia
+DEBUG - 2025-07-10 09:06:40 --> Tanggal Pengantaran: 2025-07-11
+DEBUG - 2025-07-10 09:06:40 --> Metode Pembayaran: Cash On Delivery
+DEBUG - 2025-07-10 09:06:40 --> Final $orderData untuk insert: {"user_id":null,"tanggal_pesan":"2025-07-10 09:06:40","status_pesanan":"Pending","total_harga":288000,"metode_pembayaran":"Cash On Delivery","tanggal_pengantaran":"2025-07-11","tipe_pengantaran":"Delivery","catatan_penerima":"","penerima_nama":"Ardi Wibowo","penerima_nomor_hp":"098765431232","alamat_pengiriman_teks":"Loktabat Selatan, Banjarbaru, South Kalimantan, Kalimantan, 70713, Indonesia","alamat_latitude":"-3.454407270912839","alamat_longitude":"114.80863094264353"}
+CRITICAL - 2025-07-10 09:06:40 --> TypeError: CodeIgniter\Database\BaseBuilder::setBind(): Argument #1 ($key) must be of type string, int given, called in C:\xampp\htdocs\jsflorist\vendor\codeigniter4\framework\system\Database\BaseBuilder.php on line 1575
+[Method: POST, Route: checkout/process]
+in SYSTEMPATH\Database\BaseBuilder.php on line 3529.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1575): CodeIgniter\Database\BaseBuilder->setBind(0, '2025-07-10 09:06:40', true)
+ 2 SYSTEMPATH\Model.php(365): CodeIgniter\Database\BaseBuilder->set([...], '2025-07-10 09:06:40', true)
+ 3 SYSTEMPATH\BaseModel.php(843): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+ 5 APPPATH\Controllers\CheckoutController.php(187): CodeIgniter\Model->insert([...], false)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CheckoutController->processOrder()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CheckoutController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\jsflorist\\public\\index.php')
+DEBUG - 2025-07-10 09:09:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-10 09:09:16 --> User tidak login saat akses checkout.
+DEBUG - 2025-07-10 09:09:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-10 09:09:23 --> Memulai proses pesanan di processOrder().
+DEBUG - 2025-07-10 09:09:23 --> Validasi dasar form BERHASIL.
+DEBUG - 2025-07-10 09:09:23 --> Keranjang memiliki 2 item.
+DEBUG - 2025-07-10 09:09:23 --> Subtotal produk: 288000
+ERROR - 2025-07-10 09:09:23 --> Koordinat kosong atau tidak valid untuk pengiriman Tipe "Delivery". Lat: , Lng: 
+DEBUG - 2025-07-10 09:09:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-10 09:09:23 --> User tidak login saat akses checkout.
+DEBUG - 2025-07-10 09:09:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-10 09:09:35 --> Memulai proses pesanan di processOrder().
+DEBUG - 2025-07-10 09:09:35 --> Validasi dasar form BERHASIL.
+DEBUG - 2025-07-10 09:09:35 --> Keranjang memiliki 2 item.
+DEBUG - 2025-07-10 09:09:35 --> Subtotal produk: 288000
+DEBUG - 2025-07-10 09:09:35 --> Tipe pengantaran: Delivery. Biaya: 0. Lat: -3.4540931336359058, Lng: 114.80605602264406
+DEBUG - 2025-07-10 09:09:35 --> Total keseluruhan pesanan (produk + pengiriman): 288000
+DEBUG - 2025-07-10 09:09:35 --> Nama Penerima Lengkap: Ardi Wibowo
+DEBUG - 2025-07-10 09:09:35 --> Nomor HP Penerima: 098765431232
+DEBUG - 2025-07-10 09:09:35 --> Alamat Teks: Loktabat Selatan, Banjarbaru, South Kalimantan, Kalimantan, 70713, Indonesia
+DEBUG - 2025-07-10 09:09:35 --> Tanggal Pengantaran: 2025-07-11
+DEBUG - 2025-07-10 09:09:35 --> Metode Pembayaran: Cash On Delivery
+DEBUG - 2025-07-10 09:09:35 --> Final $orderData untuk insert: {"user_id":null,"tanggal_pesan":"2025-07-10 09:09:35","status_pesanan":"Pending","total_harga":288000,"metode_pembayaran":"Cash On Delivery","tanggal_pengantaran":"2025-07-11","tipe_pengantaran":"Delivery","catatan_penerima":"","penerima_nama":"Ardi Wibowo","penerima_nomor_hp":"098765431232","alamat_pengiriman_teks":"Loktabat Selatan, Banjarbaru, South Kalimantan, Kalimantan, 70713, Indonesia","alamat_latitude":"-3.4540931336359058","alamat_longitude":"114.80605602264406"}
+CRITICAL - 2025-07-10 09:09:35 --> TypeError: CodeIgniter\Database\BaseBuilder::setBind(): Argument #1 ($key) must be of type string, int given, called in C:\xampp\htdocs\jsflorist\vendor\codeigniter4\framework\system\Database\BaseBuilder.php on line 1575
+[Method: POST, Route: checkout/process]
+in SYSTEMPATH\Database\BaseBuilder.php on line 3529.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1575): CodeIgniter\Database\BaseBuilder->setBind(0, '2025-07-10 09:09:35', true)
+ 2 SYSTEMPATH\Model.php(365): CodeIgniter\Database\BaseBuilder->set([...], '2025-07-10 09:09:35', true)
+ 3 SYSTEMPATH\BaseModel.php(843): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+ 5 APPPATH\Controllers\CheckoutController.php(183): CodeIgniter\Model->insert([...], false)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CheckoutController->processOrder()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CheckoutController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\jsflorist\\public\\index.php')
+DEBUG - 2025-07-10 09:11:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-10 09:11:51 --> User tidak login saat akses checkout.
+DEBUG - 2025-07-10 09:12:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-10 09:12:20 --> Memulai proses pesanan di processOrder().
+DEBUG - 2025-07-10 09:12:20 --> Validasi dasar form BERHASIL.
+DEBUG - 2025-07-10 09:12:20 --> Keranjang memiliki 2 item.
+DEBUG - 2025-07-10 09:12:20 --> Subtotal produk: 288000
+DEBUG - 2025-07-10 09:12:20 --> Tipe pengantaran: Delivery. Biaya: 0. Lat: -3.456963234014962, Lng: 114.80180740356447
+DEBUG - 2025-07-10 09:12:20 --> Total keseluruhan pesanan (produk + pengiriman): 288000
+DEBUG - 2025-07-10 09:12:20 --> Nama Penerima Lengkap: Ardi Wibowo
+DEBUG - 2025-07-10 09:12:20 --> Nomor HP Penerima: 098765431232
+DEBUG - 2025-07-10 09:12:20 --> Alamat Teks: Loktabat Selatan, Banjarbaru, South Kalimantan, Kalimantan, 70721, Indonesia
+DEBUG - 2025-07-10 09:12:20 --> Tanggal Pengantaran: 2025-07-10
+DEBUG - 2025-07-10 09:12:20 --> Metode Pembayaran: Cash On Delivery
+DEBUG - 2025-07-10 09:12:20 --> Final $orderData untuk insert: {"user_id":null,"status_pesanan":"Pending","total_harga":288000,"metode_pembayaran":"Cash On Delivery","tanggal_pengantaran":"2025-07-10","tipe_pengantaran":"Delivery","catatan_penerima":"","penerima_nama":"Ardi Wibowo","penerima_nomor_hp":"098765431232","alamat_pengiriman_teks":"Loktabat Selatan, Banjarbaru, South Kalimantan, Kalimantan, 70721, Indonesia","alamat_latitude":"-3.456963234014962","alamat_longitude":"114.80180740356447"}
+CRITICAL - 2025-07-10 09:12:20 --> TypeError: CodeIgniter\Database\BaseBuilder::setBind(): Argument #1 ($key) must be of type string, int given, called in C:\xampp\htdocs\jsflorist\vendor\codeigniter4\framework\system\Database\BaseBuilder.php on line 1575
+[Method: POST, Route: checkout/process]
+in SYSTEMPATH\Database\BaseBuilder.php on line 3529.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1575): CodeIgniter\Database\BaseBuilder->setBind(0, '2025-07-10 09:12:20', true)
+ 2 SYSTEMPATH\Model.php(365): CodeIgniter\Database\BaseBuilder->set([...], '2025-07-10 09:12:20', true)
+ 3 SYSTEMPATH\BaseModel.php(843): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+ 5 APPPATH\Controllers\CheckoutController.php(183): CodeIgniter\Model->insert([...], false)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CheckoutController->processOrder()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CheckoutController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\jsflorist\\public\\index.php')
+DEBUG - 2025-07-10 09:13:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-10 09:13:39 --> Memulai proses pesanan di processOrder().
+DEBUG - 2025-07-10 09:13:39 --> Validasi dasar form BERHASIL.
+DEBUG - 2025-07-10 09:13:39 --> Keranjang memiliki 2 item.
+DEBUG - 2025-07-10 09:13:39 --> Subtotal produk: 288000
+DEBUG - 2025-07-10 09:13:39 --> Tipe pengantaran: Delivery. Biaya: 0. Lat: -3.456963234014962, Lng: 114.80180740356447
+DEBUG - 2025-07-10 09:13:39 --> Total keseluruhan pesanan (produk + pengiriman): 288000
+DEBUG - 2025-07-10 09:13:39 --> Nama Penerima Lengkap: Ardi Wibowo
+DEBUG - 2025-07-10 09:13:39 --> Nomor HP Penerima: 098765431232
+DEBUG - 2025-07-10 09:13:39 --> Alamat Teks: Loktabat Selatan, Banjarbaru, South Kalimantan, Kalimantan, 70721, Indonesia
+DEBUG - 2025-07-10 09:13:39 --> Tanggal Pengantaran: 2025-07-10
+DEBUG - 2025-07-10 09:13:39 --> Metode Pembayaran: Cash On Delivery
+DEBUG - 2025-07-10 09:13:39 --> Final $orderData untuk insert: {"user_id":null,"status_pesanan":"Pending","total_harga":288000,"metode_pembayaran":"Cash On Delivery","tanggal_pengantaran":"2025-07-10","tipe_pengantaran":"Delivery","catatan_penerima":"","penerima_nama":"Ardi Wibowo","penerima_nomor_hp":"098765431232","alamat_pengiriman_teks":"Loktabat Selatan, Banjarbaru, South Kalimantan, Kalimantan, 70721, Indonesia","alamat_latitude":"-3.456963234014962","alamat_longitude":"114.80180740356447"}
+CRITICAL - 2025-07-10 09:13:39 --> TypeError: CodeIgniter\Database\BaseBuilder::setBind(): Argument #1 ($key) must be of type string, int given, called in C:\xampp\htdocs\jsflorist\vendor\codeigniter4\framework\system\Database\BaseBuilder.php on line 1575
+[Method: POST, Route: checkout/process]
+in SYSTEMPATH\Database\BaseBuilder.php on line 3529.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1575): CodeIgniter\Database\BaseBuilder->setBind(0, '2025-07-10 09:13:39', true)
+ 2 SYSTEMPATH\Model.php(365): CodeIgniter\Database\BaseBuilder->set([...], '2025-07-10 09:13:39', true)
+ 3 SYSTEMPATH\BaseModel.php(843): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+ 5 APPPATH\Controllers\CheckoutController.php(183): CodeIgniter\Model->insert([...], false)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CheckoutController->processOrder()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CheckoutController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\jsflorist\\public\\index.php')

@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /index.php/
+Disallow: /admin/
+Disallow: /login/
+Disallow: /register/
+Disallow: /api/
+Disallow: /cart/
+Disallow: /search/
+
+Sitemap: https://poppyflorist.com/sitemap.xml

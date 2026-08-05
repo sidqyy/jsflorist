@@ -1,0 +1,558 @@
+CRITICAL - 2026-05-17 08:45:38 --> ErrorException: Undefined array key "HTTP_HOST"
+[Method: GET, Route: /]
+in APPPATH/Controllers/BaseController.php on line 48.
+ 1 APPPATH/Controllers/BaseController.php(48): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\BaseController->initController()
+ 3 SYSTEMPATH/CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-17 09:41:39 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "紫馨"
+[Method: GET, Route: products/%E7%B4%AB%E9%A6%A8]
+in SYSTEMPATH/Router/Router.php on line 741.
+ 1 SYSTEMPATH/Router/Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH/CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-17 12:48:02 --> Error: Call to undefined method App\Controllers\CartController::calculateBonusByDate()
+[Method: POST, Route: checkout/checkBonusAjax]
+in APPPATH/Controllers/CheckoutController.php on line 1030.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\CheckoutController->checkBonusAjax()
+ 2 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-17 13:24:42 --> ErrorException: Undefined variable $rule
+[Method: GET, Route: admin/bonus/rules/create]
+in APPPATH/Views/admin/bonus/create.php on line 30.
+ 1 APPPATH/Views/admin/bonus/create.php(30): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/jsff5967/CI4/app/Views/admin/bonus/create.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Admin/BonusController.php(40): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Admin\BonusController->create()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-17 14:22:19 --> Error: Call to undefined method App\Controllers\CartController::calculateBonusByDate()
+[Method: POST, Route: checkout/checkBonusAjax]
+in APPPATH/Controllers/CheckoutController.php on line 1030.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\CheckoutController->checkBonusAjax()
+ 2 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ERROR - 2026-05-17 14:29:15 --> [CHECKOUT DEBUG] Menerima data POST: {"csrf_test_name":"3b32c7c3c8f87b66bb2b7240faf6b792","geocode_mismatch":"0","rev_address_json":"","pickup_location":"Banjarbaru","nama_depan":"tes","nama_belakang":"ting","penerima_nomor_hp":"","nomor_pemesan":"233","alamat_pengiriman_teks":"","alamat_detail":"","alamat_latitude":"","alamat_longitude":"","email_anda":"admin@jsflorist.com","tanggal_pengantaran":"2026-05-17T18:28","tipe_pengantaran":"Self-Pickup","catatan_penerima":"","metode_pembayaran":"Direct Bank Transfer"}
+CRITICAL - 2026-05-17 16:34:56 --> Error: Call to undefined method App\Controllers\Api\CheckoutController::geocodeCacheGet()
+[Method: POST, Route: api/checkout/estimate-shipping]
+in APPPATH/Controllers/Api/CheckoutController.php on line 738.
+ 1 APPPATH/Controllers/Api/CheckoutController.php(118): App\Controllers\Api\CheckoutController->getReverseGeocode()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Api\CheckoutController->estimateShipping()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-17 16:34:57 --> Error: Call to undefined method App\Controllers\Api\CheckoutController::geocodeCacheGet()
+[Method: POST, Route: api/checkout/estimate-shipping]
+in APPPATH/Controllers/Api/CheckoutController.php on line 738.
+ 1 APPPATH/Controllers/Api/CheckoutController.php(118): App\Controllers\Api\CheckoutController->getReverseGeocode()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Api\CheckoutController->estimateShipping()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-17 16:35:14 --> Error: Call to undefined method App\Controllers\Api\CheckoutController::geocodeCacheGet()
+[Method: POST, Route: api/checkout/estimate-shipping]
+in APPPATH/Controllers/Api/CheckoutController.php on line 738.
+ 1 APPPATH/Controllers/Api/CheckoutController.php(118): App\Controllers\Api\CheckoutController->getReverseGeocode()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Api\CheckoutController->estimateShipping()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-17 16:35:15 --> Error: Call to undefined method App\Controllers\Api\CheckoutController::geocodeCacheGet()
+[Method: POST, Route: api/checkout/estimate-shipping]
+in APPPATH/Controllers/Api/CheckoutController.php on line 738.
+ 1 APPPATH/Controllers/Api/CheckoutController.php(118): App\Controllers\Api\CheckoutController->getReverseGeocode()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Api\CheckoutController->estimateShipping()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-17 16:35:18 --> Error: Call to undefined method App\Controllers\Api\CheckoutController::geocodeCacheGet()
+[Method: POST, Route: api/checkout/estimate-shipping]
+in APPPATH/Controllers/Api/CheckoutController.php on line 738.
+ 1 APPPATH/Controllers/Api/CheckoutController.php(118): App\Controllers\Api\CheckoutController->getReverseGeocode()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Api\CheckoutController->estimateShipping()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-17 16:35:19 --> Error: Call to undefined method App\Controllers\Api\CheckoutController::geocodeCacheGet()
+[Method: POST, Route: api/checkout/estimate-shipping]
+in APPPATH/Controllers/Api/CheckoutController.php on line 738.
+ 1 APPPATH/Controllers/Api/CheckoutController.php(118): App\Controllers\Api\CheckoutController->getReverseGeocode()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Api\CheckoutController->estimateShipping()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-17 16:38:16 --> Error: Call to undefined method App\Controllers\Api\CheckoutController::geocodeCacheGet()
+[Method: POST, Route: api/checkout/estimate-shipping]
+in APPPATH/Controllers/Api/CheckoutController.php on line 736.
+ 1 APPPATH/Controllers/Api/CheckoutController.php(118): App\Controllers\Api\CheckoutController->getReverseGeocode()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Api\CheckoutController->estimateShipping()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-17 16:38:18 --> Error: Call to undefined method App\Controllers\Api\CheckoutController::geocodeCacheGet()
+[Method: POST, Route: api/checkout/estimate-shipping]
+in APPPATH/Controllers/Api/CheckoutController.php on line 736.
+ 1 APPPATH/Controllers/Api/CheckoutController.php(118): App\Controllers\Api\CheckoutController->getReverseGeocode()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Api\CheckoutController->estimateShipping()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-17 16:48:14 --> Error: Call to undefined method App\Controllers\Api\CheckoutController::geocodeCacheGet()
+[Method: POST, Route: api/checkout/estimate-shipping]
+in APPPATH/Controllers/Api/CheckoutController.php on line 736.
+ 1 APPPATH/Controllers/Api/CheckoutController.php(118): App\Controllers\Api\CheckoutController->getReverseGeocode()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Api\CheckoutController->estimateShipping()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-17 16:48:15 --> Error: Call to undefined method App\Controllers\Api\CheckoutController::geocodeCacheGet()
+[Method: POST, Route: api/checkout/estimate-shipping]
+in APPPATH/Controllers/Api/CheckoutController.php on line 736.
+ 1 APPPATH/Controllers/Api/CheckoutController.php(118): App\Controllers\Api\CheckoutController->getReverseGeocode()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Api\CheckoutController->estimateShipping()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-17 16:50:32 --> Error: Call to undefined method App\Controllers\Api\CheckoutController::geocodeCacheGet()
+[Method: POST, Route: api/checkout/estimate-shipping]
+in APPPATH/Controllers/Api/CheckoutController.php on line 735.
+ 1 APPPATH/Controllers/Api/CheckoutController.php(118): App\Controllers\Api\CheckoutController->getReverseGeocode()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Api\CheckoutController->estimateShipping()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-17 16:50:33 --> Error: Call to undefined method App\Controllers\Api\CheckoutController::geocodeCacheGet()
+[Method: POST, Route: api/checkout/estimate-shipping]
+in APPPATH/Controllers/Api/CheckoutController.php on line 735.
+ 1 APPPATH/Controllers/Api/CheckoutController.php(118): App\Controllers\Api\CheckoutController->getReverseGeocode()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Api\CheckoutController->estimateShipping()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-17 16:53:53 --> Error: Call to undefined method App\Controllers\Api\CheckoutController::geocodeCacheGet()
+[Method: POST, Route: api/checkout/estimate-shipping]
+in APPPATH/Controllers/Api/CheckoutController.php on line 735.
+ 1 APPPATH/Controllers/Api/CheckoutController.php(118): App\Controllers\Api\CheckoutController->getReverseGeocode()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Api\CheckoutController->estimateShipping()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-17 16:53:54 --> Error: Call to undefined method App\Controllers\Api\CheckoutController::geocodeCacheGet()
+[Method: POST, Route: api/checkout/estimate-shipping]
+in APPPATH/Controllers/Api/CheckoutController.php on line 735.
+ 1 APPPATH/Controllers/Api/CheckoutController.php(118): App\Controllers\Api\CheckoutController->getReverseGeocode()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Api\CheckoutController->estimateShipping()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-17 16:54:53 --> Error: Call to undefined method App\Controllers\Api\CheckoutController::geocodeCacheGet()
+[Method: POST, Route: api/checkout/estimate-shipping]
+in APPPATH/Controllers/Api/CheckoutController.php on line 735.
+ 1 APPPATH/Controllers/Api/CheckoutController.php(118): App\Controllers\Api\CheckoutController->getReverseGeocode()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Api\CheckoutController->estimateShipping()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-17 16:55:32 --> Error: Call to undefined method App\Controllers\Api\CheckoutController::geocodeCacheGet()
+[Method: POST, Route: api/checkout/estimate-shipping]
+in APPPATH/Controllers/Api/CheckoutController.php on line 735.
+ 1 APPPATH/Controllers/Api/CheckoutController.php(118): App\Controllers\Api\CheckoutController->getReverseGeocode()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Api\CheckoutController->estimateShipping()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-17 16:55:49 --> Error: Call to undefined method App\Controllers\Api\CheckoutController::geocodeCacheGet()
+[Method: POST, Route: api/checkout/estimate-shipping]
+in APPPATH/Controllers/Api/CheckoutController.php on line 735.
+ 1 APPPATH/Controllers/Api/CheckoutController.php(118): App\Controllers\Api\CheckoutController->getReverseGeocode()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Api\CheckoutController->estimateShipping()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-17 16:55:50 --> Error: Call to undefined method App\Controllers\Api\CheckoutController::geocodeCacheGet()
+[Method: POST, Route: api/checkout/estimate-shipping]
+in APPPATH/Controllers/Api/CheckoutController.php on line 735.
+ 1 APPPATH/Controllers/Api/CheckoutController.php(118): App\Controllers\Api\CheckoutController->getReverseGeocode()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Api\CheckoutController->estimateShipping()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-17 16:58:54 --> Error: Call to undefined method App\Controllers\Api\CheckoutController::geocodeCacheGet()
+[Method: POST, Route: api/checkout/estimate-shipping]
+in APPPATH/Controllers/Api/CheckoutController.php on line 735.
+ 1 APPPATH/Controllers/Api/CheckoutController.php(118): App\Controllers\Api\CheckoutController->getReverseGeocode()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Api\CheckoutController->estimateShipping()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-17 16:58:55 --> Error: Call to undefined method App\Controllers\Api\CheckoutController::geocodeCacheGet()
+[Method: POST, Route: api/checkout/estimate-shipping]
+in APPPATH/Controllers/Api/CheckoutController.php on line 735.
+ 1 APPPATH/Controllers/Api/CheckoutController.php(118): App\Controllers\Api\CheckoutController->getReverseGeocode()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Api\CheckoutController->estimateShipping()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-17 16:59:48 --> ParseError: syntax error, unexpected token "<", expecting end of file
+[Method: GET, Route: api/discounts/rules]
+in APPPATH/Filters/ApiCorsFilter.php on line 54.
+ 1 VENDORPATH/composer/ClassLoader.php(427): Composer\Autoload\{closure}()
+ 2 SYSTEMPATH/Filters/Filters.php(299): Composer\Autoload\ClassLoader->loadClass()
+ 3 SYSTEMPATH/Filters/Filters.php(239): CodeIgniter\Filters\Filters->createFilter()
+ 4 SYSTEMPATH/Filters/Filters.php(221): CodeIgniter\Filters\Filters->runBefore()
+ 5 SYSTEMPATH/CodeIgniter.php(479): CodeIgniter\Filters\Filters->run()
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-17 16:59:48 --> ParseError: syntax error, unexpected token "<", expecting end of file
+[Method: GET, Route: api/checkout/config]
+in APPPATH/Filters/ApiCorsFilter.php on line 54.
+ 1 VENDORPATH/composer/ClassLoader.php(427): Composer\Autoload\{closure}()
+ 2 SYSTEMPATH/Filters/Filters.php(299): Composer\Autoload\ClassLoader->loadClass()
+ 3 SYSTEMPATH/Filters/Filters.php(239): CodeIgniter\Filters\Filters->createFilter()
+ 4 SYSTEMPATH/Filters/Filters.php(221): CodeIgniter\Filters\Filters->runBefore()
+ 5 SYSTEMPATH/CodeIgniter.php(479): CodeIgniter\Filters\Filters->run()
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-17 16:59:48 --> ParseError: syntax error, unexpected token "<", expecting end of file
+[Method: POST, Route: api/checkout/estimate-shipping]
+in APPPATH/Filters/ApiCorsFilter.php on line 54.
+ 1 VENDORPATH/composer/ClassLoader.php(427): Composer\Autoload\{closure}()
+ 2 SYSTEMPATH/Filters/Filters.php(299): Composer\Autoload\ClassLoader->loadClass()
+ 3 SYSTEMPATH/Filters/Filters.php(239): CodeIgniter\Filters\Filters->createFilter()
+ 4 SYSTEMPATH/Filters/Filters.php(221): CodeIgniter\Filters\Filters->runBefore()
+ 5 SYSTEMPATH/CodeIgniter.php(479): CodeIgniter\Filters\Filters->run()
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-17 16:59:49 --> ParseError: syntax error, unexpected token "<", expecting end of file
+[Method: GET, Route: api/checkout/config]
+in APPPATH/Filters/ApiCorsFilter.php on line 54.
+ 1 VENDORPATH/composer/ClassLoader.php(427): Composer\Autoload\{closure}()
+ 2 SYSTEMPATH/Filters/Filters.php(299): Composer\Autoload\ClassLoader->loadClass()
+ 3 SYSTEMPATH/Filters/Filters.php(239): CodeIgniter\Filters\Filters->createFilter()
+ 4 SYSTEMPATH/Filters/Filters.php(221): CodeIgniter\Filters\Filters->runBefore()
+ 5 SYSTEMPATH/CodeIgniter.php(479): CodeIgniter\Filters\Filters->run()
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-17 16:59:49 --> ParseError: syntax error, unexpected token "<", expecting end of file
+[Method: POST, Route: api/checkout/estimate-shipping]
+in APPPATH/Filters/ApiCorsFilter.php on line 54.
+ 1 VENDORPATH/composer/ClassLoader.php(427): Composer\Autoload\{closure}()
+ 2 SYSTEMPATH/Filters/Filters.php(299): Composer\Autoload\ClassLoader->loadClass()
+ 3 SYSTEMPATH/Filters/Filters.php(239): CodeIgniter\Filters\Filters->createFilter()
+ 4 SYSTEMPATH/Filters/Filters.php(221): CodeIgniter\Filters\Filters->runBefore()
+ 5 SYSTEMPATH/CodeIgniter.php(479): CodeIgniter\Filters\Filters->run()
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-17 16:59:51 --> ParseError: syntax error, unexpected token "<", expecting end of file
+[Method: GET, Route: api/checkout/config]
+in APPPATH/Filters/ApiCorsFilter.php on line 54.
+ 1 VENDORPATH/composer/ClassLoader.php(427): Composer\Autoload\{closure}()
+ 2 SYSTEMPATH/Filters/Filters.php(299): Composer\Autoload\ClassLoader->loadClass()
+ 3 SYSTEMPATH/Filters/Filters.php(239): CodeIgniter\Filters\Filters->createFilter()
+ 4 SYSTEMPATH/Filters/Filters.php(221): CodeIgniter\Filters\Filters->runBefore()
+ 5 SYSTEMPATH/CodeIgniter.php(479): CodeIgniter\Filters\Filters->run()
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-17 17:00:56 --> Error: Call to undefined method App\Controllers\Api\CheckoutController::geocodeCacheGet()
+[Method: POST, Route: api/checkout/estimate-shipping]
+in APPPATH/Controllers/Api/CheckoutController.php on line 735.
+ 1 APPPATH/Controllers/Api/CheckoutController.php(118): App\Controllers\Api\CheckoutController->getReverseGeocode()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Api\CheckoutController->estimateShipping()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-17 17:00:57 --> Error: Call to undefined method App\Controllers\Api\CheckoutController::geocodeCacheGet()
+[Method: POST, Route: api/checkout/estimate-shipping]
+in APPPATH/Controllers/Api/CheckoutController.php on line 735.
+ 1 APPPATH/Controllers/Api/CheckoutController.php(118): App\Controllers\Api\CheckoutController->getReverseGeocode()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Api\CheckoutController->estimateShipping()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-17 17:04:18 --> Error: Call to undefined method App\Controllers\Api\CheckoutController::calculateHaversineDistance()
+[Method: POST, Route: api/checkout/estimate-shipping]
+in APPPATH/Controllers/Api/CheckoutController.php on line 121.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Api\CheckoutController->estimateShipping()
+ 2 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-17 17:04:19 --> Error: Call to undefined method App\Controllers\Api\CheckoutController::calculateHaversineDistance()
+[Method: POST, Route: api/checkout/estimate-shipping]
+in APPPATH/Controllers/Api/CheckoutController.php on line 121.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Api\CheckoutController->estimateShipping()
+ 2 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-17 17:07:06 --> Error: Call to undefined method App\Controllers\Api\CheckoutController::computeItemPricing()
+[Method: POST, Route: api/checkout/estimate-shipping]
+in APPPATH/Controllers/Api/CheckoutController.php on line 129.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Api\CheckoutController->estimateShipping()
+ 2 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-17 17:07:07 --> Error: Call to undefined method App\Controllers\Api\CheckoutController::computeItemPricing()
+[Method: POST, Route: api/checkout/estimate-shipping]
+in APPPATH/Controllers/Api/CheckoutController.php on line 129.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Api\CheckoutController->estimateShipping()
+ 2 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-17 17:09:58 --> Error: Call to undefined method App\Controllers\Api\CheckoutController::getShippingCostByDistance()
+[Method: POST, Route: api/checkout/estimate-shipping]
+in APPPATH/Controllers/Api/CheckoutController.php on line 165.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Api\CheckoutController->estimateShipping()
+ 2 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-17 17:09:59 --> Error: Call to undefined method App\Controllers\Api\CheckoutController::getShippingCostByDistance()
+[Method: POST, Route: api/checkout/estimate-shipping]
+in APPPATH/Controllers/Api/CheckoutController.php on line 165.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Api\CheckoutController->estimateShipping()
+ 2 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ERROR - 2026-05-17 17:44:53 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`jsff5967_jsfloristnew`.`order_items`, CONSTRAINT `order_items_ibfk_2` FOREIGN KEY (`product_id`) REFERENCES `products` (`product_id`)) in /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(327): mysqli->query()
+#1 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query()
+#4 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/BaseModel.php(843): CodeIgniter\Model->doInsert()
+#6 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Model.php(800): CodeIgniter\BaseModel->insert()
+#7 /home/jsff5967/CI4/app/Controllers/Api/CheckoutController.php(452): CodeIgniter\Model->insert()
+#8 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\Api\CheckoutController->placeOrder()
+#9 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#10 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/jsff5967/public_html/index.php(59): CodeIgniter\Boot::bootWeb()
+#14 {main}
+ERROR - 2026-05-17 17:45:29 --> [CHECKOUT DEBUG] Menerima data POST: {"csrf_test_name":"5b3ec31d924b512f9021d7efb45cd211","geocode_mismatch":"0","rev_address_json":"","pickup_location":"Banjarbaru","nama_depan":"tes","nama_belakang":"ting","penerima_nomor_hp":"","nomor_pemesan":"234","alamat_pengiriman_teks":"","alamat_detail":"","alamat_latitude":"","alamat_longitude":"","email_anda":"admin@jsflorist.com","tanggal_pengantaran":"2026-05-17T19:53","tipe_pengantaran":"Self-Pickup","catatan_penerima":"","metode_pembayaran":"QRIS"}
+ERROR - 2026-05-17 17:45:29 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`jsff5967_jsfloristnew`.`order_items`, CONSTRAINT `order_items_ibfk_2` FOREIGN KEY (`product_id`) REFERENCES `products` (`product_id`)) in /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(327): mysqli->query()
+#1 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query()
+#4 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/BaseModel.php(843): CodeIgniter\Model->doInsert()
+#6 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Model.php(800): CodeIgniter\BaseModel->insert()
+#7 /home/jsff5967/CI4/app/Controllers/CheckoutController.php(756): CodeIgniter\Model->insert()
+#8 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\CheckoutController->process()
+#9 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#10 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/jsff5967/public_html/index.php(59): CodeIgniter\Boot::bootWeb()
+#14 {main}
+ERROR - 2026-05-17 17:55:08 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`jsff5967_jsfloristnew`.`order_items`, CONSTRAINT `order_items_ibfk_2` FOREIGN KEY (`product_id`) REFERENCES `products` (`product_id`)) in /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(327): mysqli->query()
+#1 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query()
+#4 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/BaseModel.php(843): CodeIgniter\Model->doInsert()
+#6 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Model.php(800): CodeIgniter\BaseModel->insert()
+#7 /home/jsff5967/CI4/app/Controllers/Api/CheckoutController.php(452): CodeIgniter\Model->insert()
+#8 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\Api\CheckoutController->placeOrder()
+#9 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#10 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/jsff5967/public_html/index.php(59): CodeIgniter\Boot::bootWeb()
+#14 {main}
+ERROR - 2026-05-17 18:02:20 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`jsff5967_jsfloristnew`.`order_items`, CONSTRAINT `order_items_ibfk_2` FOREIGN KEY (`product_id`) REFERENCES `products` (`product_id`)) in /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(327): mysqli->query()
+#1 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query()
+#4 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/BaseModel.php(843): CodeIgniter\Model->doInsert()
+#6 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Model.php(800): CodeIgniter\BaseModel->insert()
+#7 /home/jsff5967/CI4/app/Controllers/Api/CheckoutController.php(454): CodeIgniter\Model->insert()
+#8 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\Api\CheckoutController->placeOrder()
+#9 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#10 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/jsff5967/public_html/index.php(59): CodeIgniter\Boot::bootWeb()
+#14 {main}
+ERROR - 2026-05-17 18:07:50 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`jsff5967_jsfloristnew`.`order_items`, CONSTRAINT `order_items_ibfk_2` FOREIGN KEY (`product_id`) REFERENCES `products` (`product_id`)) in /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(327): mysqli->query()
+#1 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query()
+#4 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/BaseModel.php(843): CodeIgniter\Model->doInsert()
+#6 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Model.php(800): CodeIgniter\BaseModel->insert()
+#7 /home/jsff5967/CI4/app/Controllers/Api/CheckoutController.php(456): CodeIgniter\Model->insert()
+#8 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\Api\CheckoutController->placeOrder()
+#9 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#10 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/jsff5967/public_html/index.php(59): CodeIgniter\Boot::bootWeb()
+#14 {main}
+ERROR - 2026-05-17 18:07:50 --> [API Checkout] Failed to place order: Call to undefined method App\Controllers\Api\CheckoutController::incrementDiscountUsage()
+ERROR - 2026-05-17 18:08:01 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`jsff5967_jsfloristnew`.`order_items`, CONSTRAINT `order_items_ibfk_2` FOREIGN KEY (`product_id`) REFERENCES `products` (`product_id`)) in /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(327): mysqli->query()
+#1 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query()
+#4 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/BaseModel.php(843): CodeIgniter\Model->doInsert()
+#6 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Model.php(800): CodeIgniter\BaseModel->insert()
+#7 /home/jsff5967/CI4/app/Controllers/Api/CheckoutController.php(456): CodeIgniter\Model->insert()
+#8 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\Api\CheckoutController->placeOrder()
+#9 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#10 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/jsff5967/public_html/index.php(59): CodeIgniter\Boot::bootWeb()
+#14 {main}
+ERROR - 2026-05-17 18:08:01 --> [API Checkout] Failed to place order: Call to undefined method App\Controllers\Api\CheckoutController::incrementDiscountUsage()
+ERROR - 2026-05-17 18:11:50 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`jsff5967_jsfloristnew`.`order_items`, CONSTRAINT `order_items_ibfk_2` FOREIGN KEY (`product_id`) REFERENCES `products` (`product_id`)) in /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(327): mysqli->query()
+#1 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query()
+#4 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/BaseModel.php(843): CodeIgniter\Model->doInsert()
+#6 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Model.php(800): CodeIgniter\BaseModel->insert()
+#7 /home/jsff5967/CI4/app/Controllers/Api/CheckoutController.php(453): CodeIgniter\Model->insert()
+#8 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\Api\CheckoutController->placeOrder()
+#9 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#10 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/jsff5967/public_html/index.php(59): CodeIgniter\Boot::bootWeb()
+#14 {main}
+ERROR - 2026-05-17 18:11:50 --> [API Checkout] Failed to place order: Call to undefined method App\Controllers\Api\CheckoutController::incrementDiscountUsage()
+ERROR - 2026-05-17 18:12:19 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`jsff5967_jsfloristnew`.`order_items`, CONSTRAINT `order_items_ibfk_2` FOREIGN KEY (`product_id`) REFERENCES `products` (`product_id`)) in /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(327): mysqli->query()
+#1 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query()
+#4 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/BaseModel.php(843): CodeIgniter\Model->doInsert()
+#6 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Model.php(800): CodeIgniter\BaseModel->insert()
+#7 /home/jsff5967/CI4/app/Controllers/Api/CheckoutController.php(453): CodeIgniter\Model->insert()
+#8 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\Api\CheckoutController->placeOrder()
+#9 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#10 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/jsff5967/public_html/index.php(59): CodeIgniter\Boot::bootWeb()
+#14 {main}
+ERROR - 2026-05-17 18:12:19 --> [API Checkout] Failed to place order: Call to undefined method App\Controllers\Api\CheckoutController::incrementDiscountUsage()
+ERROR - 2026-05-17 20:34:20 --> [CHECKOUT DEBUG] Menerima data POST: {"csrf_test_name":"5b3ec31d924b512f9021d7efb45cd211","geocode_mismatch":"0","rev_address_json":"","pickup_location":"Banjarbaru","nama_depan":"tes","nama_belakang":"ting","penerima_nomor_hp":"","nomor_pemesan":"333","alamat_pengiriman_teks":"","alamat_detail":"","alamat_latitude":"","alamat_longitude":"","email_anda":"admin@jsflorist.com","tanggal_pengantaran":"2026-05-17T22:45","tipe_pengantaran":"Self-Pickup","catatan_penerima":"","metode_pembayaran":"Direct Bank Transfer"}
+ERROR - 2026-05-17 20:34:20 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`jsff5967_jsfloristnew`.`order_items`, CONSTRAINT `order_items_ibfk_2` FOREIGN KEY (`product_id`) REFERENCES `products` (`product_id`)) in /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(327): mysqli->query()
+#1 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query()
+#4 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/BaseModel.php(843): CodeIgniter\Model->doInsert()
+#6 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Model.php(800): CodeIgniter\BaseModel->insert()
+#7 /home/jsff5967/CI4/app/Controllers/CheckoutController.php(756): CodeIgniter\Model->insert()
+#8 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\CheckoutController->process()
+#9 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#10 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 /home/jsff5967/CI4/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/jsff5967/public_html/index.php(59): CodeIgniter\Boot::bootWeb()
+#14 {main}

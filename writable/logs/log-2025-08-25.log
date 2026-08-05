@@ -1,0 +1,25 @@
+CRITICAL - 2025-08-25 14:47:51 --> ErrorException: Undefined array key "HTTP_HOST"
+[Method: GET, Route: /]
+in APPPATH/Controllers/BaseController.php on line 48.
+ 1 APPPATH/Controllers/BaseController.php(48): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\BaseController->initController()
+ 3 SYSTEMPATH/CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ERROR - 2025-08-25 15:41:04 --> [CHECKOUT DEBUG] Menerima data POST: {"csrf_test_name":"6500759c494183c395d13f27a353b60c","pickup_location":"","nama_depan":"wina","nama_belakang":"azzahra","penerima_nomor_hp":"082118553181","nomor_pemesan":"082118553181","alamat_pengiriman_teks":"Jl. A. Yani No.98, Melayu, Kec. Banjarmasin Tengah, Kota Banjarmasin, Kalimantan Selatan 70232 ( Solaria Duta Mall )","alamat_latitude":"-3.32320244588155","alamat_longitude":"114.60222919236307","email_anda":"winaazzahraputri03@gmail.con","tanggal_pengantaran":"2025-09-03T14:15","tipe_pengantaran":"Delivery","catatan_penerima":"happy birthday ya!\r\nsemoga kamu selalu dalam keadaan baik dimana pun itu.","metode_pembayaran":"Direct Bank Transfer"}
+CRITICAL - 2025-08-25 15:42:27 --> ErrorException: Undefined variable $orderId
+[Method: GET, Route: order-success/PESW004]
+in APPPATH/Views/order_success.php on line 43.
+ 1 APPPATH/Views/order_success.php(43): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/jsff5967/CI4/app/Views/order_success.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/CheckoutController.php(352): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\CheckoutController->orderSuccess()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
