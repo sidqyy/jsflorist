@@ -12,7 +12,7 @@ class Payment extends BaseController
 
     public function __construct()
     {
-        helper(['url', 'session', 'form']);
+        helper(['url', 'session', 'form', 'image']);
         $this->orderModel = new OrderModel();
         $this->session = session();
     }
@@ -68,11 +68,11 @@ class Payment extends BaseController
         $validationRule = [
             'bukti_transfer' => [
                 'label' => 'Bukti Transfer',
-                'rules' => 'uploaded[bukti_transfer]|max_size[bukti_transfer,2048]|ext_in[bukti_transfer,jpg,jpeg,png,pdf]',
+                'rules' => 'uploaded[bukti_transfer]|max_size[bukti_transfer,2048]|ext_in[bukti_transfer,jpg,jpeg,png,pdf,webp]',
                 'errors' => [
                     'uploaded' => 'Harap upload file bukti transfer.',
                     'max_size' => 'Ukuran file bukti transfer maksimal 2MB.',
-                    'ext_in'   => 'Format file hanya JPG, JPEG, PNG, atau PDF.'
+                    'ext_in'   => 'Format file hanya JPG, JPEG, PNG, WEBP, atau PDF.'
                 ]
             ],
         ];
@@ -88,14 +88,13 @@ class Payment extends BaseController
 
         $img = $this->request->getFile('bukti_transfer');
         if ($img->isValid() && !$img->hasMoved()) {
-            $newName = $orderId . '_' . $img->getRandomName();
             $uploadPath = ROOTPATH . 'public/uploads/proofs/';
+            $nameWithoutExt = $orderId . '_' . bin2hex(random_bytes(4));
+            $newName = upload_and_convert_to_webp($img, $uploadPath, $nameWithoutExt);
             
-            if (!is_dir($uploadPath)) {
-                mkdir($uploadPath, 0777, true);
+            if (!$newName) {
+                return redirect()->back()->withInput()->with('error', 'Gagal memproses file.');
             }
-
-            $img->move($uploadPath, $newName);
 
             // GANTI NAMA KOLOM DI SINI
             $this->orderModel->update($orderId, [

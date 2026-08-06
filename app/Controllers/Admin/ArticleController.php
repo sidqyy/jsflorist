@@ -20,6 +20,7 @@ class ArticleController extends BaseController
         $this->artikelModel = new ArtikelModel();
         $this->productModel = new ProductModel();
         $this->categoryModel = new CategoryModel();
+        helper(['image']);
     }
 
 
@@ -47,7 +48,7 @@ class ArticleController extends BaseController
         $rules = [
             'judul' => 'required|min_length[5]',
             'isi' => 'required|min_length[20]',
-            'gambar' => 'uploaded[gambar]|max_size[gambar,2048]|is_image[gambar]|mime_in[gambar,image/jpg,image/jpeg,image/png]',
+            'gambar' => 'uploaded[gambar]|max_size[gambar,2048]|is_image[gambar]|mime_in[gambar,image/jpg,image/jpeg,image/png,image/webp]',
         ];
 
         if (!$this->validate($rules)) {
@@ -55,9 +56,9 @@ class ArticleController extends BaseController
         }
 
         $gambarFile = $this->request->getFile('gambar');
-        $namaGambar = $gambarFile->getRandomName();
+        $namaGambar = upload_and_convert_to_webp($gambarFile, FCPATH . 'assets/img/artikel');
 
-        if ($gambarFile->move('assets/img/artikel', $namaGambar)) {
+        if ($namaGambar) {
             // Ambil produk terkait dari input array, lalu encode ke JSON
             $produkTerkait = $this->request->getVar('produk_terkait');
             $produkTerkaitJson = !empty($produkTerkait) ? json_encode($produkTerkait) : null;
@@ -119,7 +120,7 @@ class ArticleController extends BaseController
 
         $gambarFile = $this->request->getFile('gambar');
         if ($gambarFile && $gambarFile->isValid()) {
-            $rules['gambar'] = 'max_size[gambar,2048]|is_image[gambar]|mime_in[gambar,image/jpg,image/jpeg,image/png]';
+            $rules['gambar'] = 'max_size[gambar,2048]|is_image[gambar]|mime_in[gambar,image/jpg,image/jpeg,image/png,image/webp]';
         }
 
         if (!$this->validate($rules)) {
@@ -157,9 +158,10 @@ class ArticleController extends BaseController
                 unlink('assets/img/artikel/' . $artikelLama['gambar']);
             }
             // Pindahkan gambar baru
-            $namaGambar = $gambarFile->getRandomName();
-            $gambarFile->move('assets/img/artikel', $namaGambar);
-            $data['gambar'] = $namaGambar;
+            $namaGambar = upload_and_convert_to_webp($gambarFile, FCPATH . 'assets/img/artikel');
+            if ($namaGambar) {
+                $data['gambar'] = $namaGambar;
+            }
         }
 
         if ($this->artikelModel->update($id, $data)) {

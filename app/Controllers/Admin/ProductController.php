@@ -34,7 +34,7 @@ class ProductController extends BaseController
         $this->productVariantModel = new ProductVariantModel();
         $this->productImageModel = new ProductImageModel();
         $this->productComponentModel = new ProductComponentModel();
-        helper(['form', 'url']);
+        helper(['form', 'url', 'image']);
     }
 
     public function index()
@@ -179,7 +179,7 @@ class ProductController extends BaseController
             if ($gambarFile->getSize() > 2097152) { 
                 return redirect()->back()->withInput()->with('error', 'Ukuran gambar utama tidak boleh lebih dari 2MB. Ukuran file Anda: ' . round($gambarFile->getSize() / 1024 / 1024, 2) . 'MB');
             }
-            $rules['gambar_url'] = 'max_size[gambar_url,2048]|is_image[gambar_url]|mime_in[gambar_url,image/jpg,image/jpeg,image/png]';
+            $rules['gambar_url'] = 'max_size[gambar_url,2048]|is_image[gambar_url]|mime_in[gambar_url,image/jpg,image/jpeg,image/png,image/webp]';
         }
 
         $variantsData = $this->request->getPost('variants');
@@ -190,7 +190,7 @@ class ProductController extends BaseController
                     if ($variantImageFile->getSize() > 2097152) { 
                         return redirect()->back()->withInput()->with('error', 'Ukuran gambar varian tidak boleh lebih dari 2MB. Ukuran file varian ' . ($key + 1) . ': ' . round($variantImageFile->getSize() / 1024 / 1024, 2) . 'MB');
                     }
-                    $rules["variants.{$key}.gambar_varian_url"] = 'max_size[variants.' . $key . '.gambar_varian_url,2048]|is_image[variants.' . $key . '.gambar_varian_url]|mime_in[variants.' . $key . '.gambar_varian_url,image/jpg,image/jpeg,image/png]';
+                    $rules["variants.{$key}.gambar_varian_url"] = 'max_size[variants.' . $key . '.gambar_varian_url,2048]|is_image[variants.' . $key . '.gambar_varian_url]|mime_in[variants.' . $key . '.gambar_varian_url,image/jpg,image/jpeg,image/png,image/webp]';
                 }
             }
         }
@@ -202,7 +202,7 @@ class ProductController extends BaseController
                     if ($img->getSize() > 2097152) { 
                         return redirect()->back()->withInput()->with('error', 'Ukuran gambar tambahan tidak boleh lebih dari 2MB. Ukuran file gambar ' . ($index + 1) . ': ' . round($img->getSize() / 1024 / 1024, 2) . 'MB');
                     }
-                    $rules["additional_images.{$index}"] = 'max_size[additional_images.' . $index . ',2048]|is_image[additional_images.' . $index . ']|mime_in[additional_images.' . $index . ',image/jpg,image/jpeg,image/png]';
+                    $rules["additional_images.{$index}"] = 'max_size[additional_images.' . $index . ',2048]|is_image[additional_images.' . $index . ']|mime_in[additional_images.' . $index . ',image/jpg,image/jpeg,image/png,image/webp]';
                 }
             }
         }
@@ -227,9 +227,10 @@ class ProductController extends BaseController
             if ($productLama && !empty($productLama['gambar_url']) && file_exists(FCPATH . 'assets/img/gambar/' . $productLama['gambar_url'])) {
                 unlink(FCPATH . 'assets/img/gambar/' . $productLama['gambar_url']);
             }
-            $namaGambar = $gambarFile->getRandomName();
-            $gambarFile->move(FCPATH . 'assets/img/gambar', $namaGambar);
-            $dataToUpdate['gambar_url'] = $namaGambar;
+            $namaGambar = upload_and_convert_to_webp($gambarFile, FCPATH . 'assets/img/gambar');
+            if ($namaGambar) {
+                $dataToUpdate['gambar_url'] = $namaGambar;
+            }
         }
 
         if ($this->productModel->update($id, $dataToUpdate)) {
@@ -263,12 +264,10 @@ class ProductController extends BaseController
 
                     $variantImageFile = $this->request->getFile('variants.' . $key . '.gambar_varian_url');
                     if ($variantImageFile && $variantImageFile->isValid() && !$variantImageFile->hasMoved()) {
-                        $newVariantImageName = $variantImageFile->getRandomName();
-                        if (!is_dir(FCPATH . 'assets/img/variants')) {
-                            mkdir(FCPATH . 'assets/img/variants', 0777, true);
+                        $newVariantImageName = upload_and_convert_to_webp($variantImageFile, FCPATH . 'assets/img/variants');
+                        if ($newVariantImageName) {
+                            $variantDataToSave['gambar_varian_url'] = $newVariantImageName;
                         }
-                        $variantImageFile->move(FCPATH . 'assets/img/variants', $newVariantImageName);
-                        $variantDataToSave['gambar_varian_url'] = $newVariantImageName;
 
                         if ($variantId !== 'new') {
                             $oldVariant = $this->productVariantModel->find($variantId);
@@ -306,12 +305,13 @@ class ProductController extends BaseController
             if (isset($allFiles['additional_images']) && is_array($allFiles['additional_images'])) {
                 foreach ($allFiles['additional_images'] as $img) {
                     if ($img && $img->isValid() && !$img->hasMoved()) {
-                        $imageName = $img->getRandomName();
-                        $img->move(FCPATH . 'assets/img/products', $imageName);
-                        $this->productImageModel->insert([
-                            'product_id' => $id,
-                            'image_url'  => $imageName,
-                        ]);
+                        $imageName = upload_and_convert_to_webp($img, FCPATH . 'assets/img/products');
+                        if ($imageName) {
+                            $this->productImageModel->insert([
+                                'product_id' => $id,
+                                'image_url'  => $imageName,
+                            ]);
+                        }
                     }
                 }
             }
@@ -441,7 +441,7 @@ class ProductController extends BaseController
             $rules = [
                 'nama_produk'      => 'required|min_length[3]',
                 'harga'            => 'required|numeric',
-                'gambar_url'       => 'uploaded[gambar_url]|max_size[gambar_url,2048]|is_image[gambar_url]|mime_in[gambar_url,image/jpg,image/jpeg,image/png]',
+                'gambar_url'       => 'uploaded[gambar_url]|max_size[gambar_url,2048]|is_image[gambar_url]|mime_in[gambar_url,image/jpg,image/jpeg,image/png,image/webp]',
                 'sub_category_id'  => 'required',
             ];
 
@@ -456,8 +456,10 @@ class ProductController extends BaseController
                 return redirect()->back()->withInput()->with('errors', ['gambar_url' => $gambarFile->getErrorString()]);
             }
 
-            $namaGambar = $gambarFile->getRandomName();
-            $gambarFile->move('assets/img/gambar', $namaGambar);
+            $namaGambar = upload_and_convert_to_webp($gambarFile, FCPATH . 'assets/img/gambar');
+            if (!$namaGambar) {
+                return redirect()->back()->withInput()->with('error', 'Gagal memproses gambar utama.');
+            }
                 
             $newProductId = $this->productModel->getNextProductId(); 
             

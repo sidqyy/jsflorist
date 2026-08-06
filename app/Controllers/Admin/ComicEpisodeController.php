@@ -59,12 +59,12 @@ class ComicEpisodeController extends BaseController
 
     public function store()
     {
-        helper('text');
+        helper(['text', 'image']);
 
         $rules = [
             'title' => 'required|min_length[3]',
             'episode_number' => 'required|integer',
-            'cover_image' => 'permit_empty|is_image[cover_image]|max_size[cover_image,2048]|mime_in[cover_image,image/jpg,image/jpeg,image/png]',
+            'cover_image' => 'permit_empty|is_image[cover_image]|max_size[cover_image,2048]|mime_in[cover_image,image/jpg,image/jpeg,image/png,image/webp]',
         ];
 
         if (!$this->validate($rules)) {
@@ -86,11 +86,10 @@ class ComicEpisodeController extends BaseController
 
         if ($coverFile && $coverFile->isValid() && !$coverFile->hasMoved()) {
             $uploadPath = FCPATH . 'uploads/comics/episodes/';
-            if (!is_dir($uploadPath)) {
-                mkdir($uploadPath, 0777, true);
+            $newCoverName = upload_and_convert_to_webp($coverFile, $uploadPath);
+            if ($newCoverName) {
+                $coverName = $newCoverName;
             }
-            $coverName = $coverFile->getRandomName();
-            $coverFile->move($uploadPath, $coverName);
         }
 
         $data = [
@@ -127,7 +126,7 @@ class ComicEpisodeController extends BaseController
 
     public function update($id)
     {
-        helper('text');
+        helper(['text', 'image']);
 
         $episode = $this->episodeModel->find($id);
         if (!$episode) {
@@ -137,7 +136,7 @@ class ComicEpisodeController extends BaseController
         $rules = [
             'title' => 'required|min_length[3]',
             'episode_number' => 'required|integer',
-            'cover_image' => 'permit_empty|is_image[cover_image]|max_size[cover_image,2048]|mime_in[cover_image,image/jpg,image/jpeg,image/png]',
+            'cover_image' => 'permit_empty|is_image[cover_image]|max_size[cover_image,2048]|mime_in[cover_image,image/jpg,image/jpeg,image/png,image/webp]',
         ];
 
         if (!$this->validate($rules)) {
@@ -162,16 +161,13 @@ class ComicEpisodeController extends BaseController
 
         if ($coverFile && $coverFile->isValid() && !$coverFile->hasMoved()) {
             $uploadPath = FCPATH . 'uploads/comics/episodes/';
-            if (!is_dir($uploadPath)) {
-                mkdir($uploadPath, 0777, true);
+            $newCoverName = upload_and_convert_to_webp($coverFile, $uploadPath);
+            if ($newCoverName) {
+                if (!empty($coverName) && file_exists($uploadPath . $coverName)) {
+                    unlink($uploadPath . $coverName);
+                }
+                $coverName = $newCoverName;
             }
-
-            if (!empty($coverName) && file_exists($uploadPath . $coverName)) {
-                unlink($uploadPath . $coverName);
-            }
-
-            $coverName = $coverFile->getRandomName();
-            $coverFile->move($uploadPath, $coverName);
         }
 
         $data = [

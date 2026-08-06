@@ -15,6 +15,7 @@ class ComicPanelController extends BaseController
     {
         $this->episodeModel = new ComicEpisodeModel();
         $this->panelModel = new ComicPanelModel();
+        helper(['image']);
     }
 
     public function index($episodeId)
@@ -90,13 +91,17 @@ class ComicPanelController extends BaseController
             }
 
             $mime = $panelFile->getMimeType();
-            $allowed = ['image/jpg', 'image/jpeg', 'image/png'];
+            $allowed = ['image/jpg', 'image/jpeg', 'image/png', 'image/webp'];
             if (!in_array($mime, $allowed, true) || $panelFile->getSize() > 2097152) {
-                return redirect()->back()->withInput()->with('errors', ['Format gambar harus JPG/JPEG/PNG dan maksimal 2MB.']);
+                return redirect()->back()->withInput()->with('errors', ['Format gambar harus JPG/JPEG/PNG/WEBP dan maksimal 2MB.']);
             }
 
-            $panelName = $panelFile->getRandomName();
-            $panelFile->move($uploadPath, $panelName);
+            $newPanelName = upload_and_convert_to_webp($panelFile, $uploadPath);
+            if ($newPanelName) {
+                $panelName = $newPanelName;
+            } else {
+                continue;
+            }
 
             $data = [
                 'episode_id' => (int) $episodeId,
@@ -148,7 +153,7 @@ class ComicPanelController extends BaseController
 
         $rules = [
             'panel_number' => 'required|integer',
-            'panel_image' => 'permit_empty|is_image[panel_image]|max_size[panel_image,2048]|mime_in[panel_image,image/jpg,image/jpeg,image/png]',
+            'panel_image' => 'permit_empty|is_image[panel_image]|max_size[panel_image,2048]|mime_in[panel_image,image/jpg,image/jpeg,image/png,image/webp]',
         ];
 
         if (!$this->validate($rules)) {
@@ -160,16 +165,13 @@ class ComicPanelController extends BaseController
 
         if ($panelFile && $panelFile->isValid() && !$panelFile->hasMoved()) {
             $uploadPath = FCPATH . 'uploads/comics/panels/';
-            if (!is_dir($uploadPath)) {
-                mkdir($uploadPath, 0777, true);
+            $newPanelName = upload_and_convert_to_webp($panelFile, $uploadPath);
+            if ($newPanelName) {
+                if (!empty($panelName) && file_exists($uploadPath . $panelName)) {
+                    unlink($uploadPath . $panelName);
+                }
+                $panelName = $newPanelName;
             }
-
-            if (!empty($panelName) && file_exists($uploadPath . $panelName)) {
-                unlink($uploadPath . $panelName);
-            }
-
-            $panelName = $panelFile->getRandomName();
-            $panelFile->move($uploadPath, $panelName);
         }
 
         $data = [

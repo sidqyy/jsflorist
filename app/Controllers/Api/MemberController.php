@@ -40,6 +40,7 @@ class MemberController extends BaseController
         $this->apiTokenModel = new ApiTokenModel();
         $this->voucherModel = new VoucherModel();
         $this->db = Database::connect();
+        helper(['image']);
     }
 
     public function userProfile(): ResponseInterface
@@ -266,12 +267,13 @@ class MemberController extends BaseController
         }
 
         $uploadDir = FCPATH . 'uploads/profile';
-        if (!is_dir($uploadDir)) {
-            mkdir($uploadDir, 0755, true);
-        }
+        $nameWithoutExt = 'user_' . $userId . '_' . date('YmdHis') . '_' . bin2hex(random_bytes(4));
+        $newName = upload_and_convert_to_webp($file, $uploadDir, $nameWithoutExt);
 
-        $newName = 'user_' . $userId . '_' . date('YmdHis') . '_' . bin2hex(random_bytes(4)) . '.' . $file->getExtension();
-        $file->move($uploadDir, $newName);
+        if (!$newName) {
+            return $this->response->setStatusCode(ResponseInterface::HTTP_INTERNAL_SERVER_ERROR)
+                ->setJSON(['message' => 'Gagal mengunggah foto profil']);
+        }
 
         $relativePath = 'uploads/profile/' . $newName;
         $this->db->table('users')->where('user_id', $userId)->update([

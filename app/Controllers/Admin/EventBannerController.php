@@ -12,6 +12,7 @@ class EventBannerController extends BaseController
     public function __construct()
     {
         $this->eventBannerModel = new EventBannerModel();
+        helper(['image']);
     }
 
     /**
@@ -55,7 +56,7 @@ class EventBannerController extends BaseController
 
         $validation = $this->validate([
             'title' => 'required|min_length[3]|max_length[255]',
-            'image' => 'uploaded[image]|is_image[image]|max_size[image,2048]',
+            'image' => 'uploaded[image]|is_image[image]|max_size[image,2048]|mime_in[image,image/jpg,image/jpeg,image/png,image/webp]',
             'link_url' => 'permit_empty|valid_url',
             'start_date' => 'required|valid_date',
             'end_date' => 'required|valid_date',
@@ -73,8 +74,10 @@ class EventBannerController extends BaseController
         $imageName = null;
 
         if ($image && $image->isValid() && !$image->hasMoved()) {
-            $imageName = $image->getRandomName();
-            $image->move(FCPATH . 'uploads/event_banners/', $imageName);
+            $newImageName = upload_and_convert_to_webp($image, FCPATH . 'uploads/event_banners/');
+            if ($newImageName) {
+                $imageName = $newImageName;
+            }
         }
 
         // Process allowed domains
@@ -151,7 +154,7 @@ class EventBannerController extends BaseController
 
         $validation = $this->validate([
             'title' => 'required|min_length[3]|max_length[255]',
-            'image' => 'permit_empty|is_image[image]|max_size[image,2048]',
+            'image' => 'permit_empty|is_image[image]|max_size[image,2048]|mime_in[image,image/jpg,image/jpeg,image/png,image/webp]',
             'link_url' => 'permit_empty|valid_url',
             'start_date' => 'required|valid_date',
             'end_date' => 'required|valid_date',
@@ -193,14 +196,14 @@ class EventBannerController extends BaseController
         $image = $this->request->getFile('image');
 
         if ($image && $image->isValid() && !$image->hasMoved()) {
-            // Delete old image
-            if ($eventBanner['image_url'] && file_exists(FCPATH . 'uploads/event_banners/' . $eventBanner['image_url'])) {
-                unlink(FCPATH . 'uploads/event_banners/' . $eventBanner['image_url']);
+            $newImageName = upload_and_convert_to_webp($image, FCPATH . 'uploads/event_banners/');
+            if ($newImageName) {
+                // Delete old image
+                if ($eventBanner['image_url'] && file_exists(FCPATH . 'uploads/event_banners/' . $eventBanner['image_url'])) {
+                    unlink(FCPATH . 'uploads/event_banners/' . $eventBanner['image_url']);
+                }
+                $data['image_url'] = $newImageName;
             }
-
-            $imageName = $image->getRandomName();
-            $image->move(FCPATH . 'uploads/event_banners/', $imageName);
-            $data['image_url'] = $imageName;
         }
 
         if ($this->eventBannerModel->update($id, $data)) {
