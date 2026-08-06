@@ -17,6 +17,11 @@ class ApiCorsFilter implements FilterInterface
         'https://www.poppyflorist.com',
         'https://game.jsflorist.com',
         'https://www.game.jsflorist.com',
+        'http://localhost',
+        'http://localhost:8080',
+        'http://localhost:8000',
+        'http://127.0.0.1',
+        'http://poppyflorist.test',
     ];
 
     public function before(RequestInterface $request, $arguments = null)

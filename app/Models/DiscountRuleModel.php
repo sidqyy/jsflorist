@@ -24,6 +24,8 @@ class DiscountRuleModel extends Model
         'usage_count',
         'start_date',
         'end_date',
+        'valid_pickup_start_date',
+        'valid_pickup_end_date',
         'valid_pickup_start_time',
         'valid_pickup_end_time',
         'created_at',
@@ -98,6 +100,19 @@ class DiscountRuleModel extends Model
         // Cek tanggal berakhir
         if (!empty($discount['end_date']) && $now > $discount['end_date']) {
             return false;
+        }
+
+        // Cek tanggal pengambilan/pengantaran
+        if ($strictTimeCheck) {
+            $dateCheck = date('Y-m-d', strtotime($now));
+            
+            if (!empty($discount['valid_pickup_start_date']) && $dateCheck < $discount['valid_pickup_start_date']) {
+                return false;
+            }
+            
+            if (!empty($discount['valid_pickup_end_date']) && $dateCheck > $discount['valid_pickup_end_date']) {
+                return false;
+            }
         }
 
         // Cek waktu pengambilan/pengantaran
@@ -190,6 +205,8 @@ class DiscountRuleModel extends Model
                     'usage_count' => $discount['usage_count'],
                     'start_date' => $discount['start_date'],
                     'end_date' => $discount['end_date'],
+                    'valid_pickup_start_date' => $discount['valid_pickup_start_date'] ?? null,
+                    'valid_pickup_end_date' => $discount['valid_pickup_end_date'] ?? null,
                     'valid_pickup_start_time' => $discount['valid_pickup_start_time'],
                     'valid_pickup_end_time' => $discount['valid_pickup_end_time'],
                 ];
@@ -211,6 +228,8 @@ class DiscountRuleModel extends Model
                     'usage_count' => $discount['usage_count'],
                     'start_date' => $discount['start_date'],
                     'end_date' => $discount['end_date'],
+                    'valid_pickup_start_date' => $discount['valid_pickup_start_date'] ?? null,
+                    'valid_pickup_end_date' => $discount['valid_pickup_end_date'] ?? null,
                     'valid_pickup_start_time' => $discount['valid_pickup_start_time'],
                     'valid_pickup_end_time' => $discount['valid_pickup_end_time'],
                 ];

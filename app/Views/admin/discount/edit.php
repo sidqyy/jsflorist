@@ -190,6 +190,20 @@
                             </div>
                         </div>
 
+                        <!-- Tanggal Pengambilan -->
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="valid_pickup_start_date" class="form-label">Tanggal Mulai Berlaku (Pengambilan/Pengantaran)</label>
+                                <input type="date" class="form-control" id="valid_pickup_start_date" name="valid_pickup_start_date" value="<?= old('valid_pickup_start_date', $discount['valid_pickup_start_date'] ?? '') ?>">
+                                <div class="form-text">Kosongkan jika berlaku tanggal berapa saja</div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="valid_pickup_end_date" class="form-label">Tanggal Akhir Berlaku (Pengambilan/Pengantaran)</label>
+                                <input type="date" class="form-control" id="valid_pickup_end_date" name="valid_pickup_end_date" value="<?= old('valid_pickup_end_date', $discount['valid_pickup_end_date'] ?? '') ?>">
+                                <div class="form-text">Kosongkan jika berlaku tanggal berapa saja</div>
+                            </div>
+                        </div>
+
                         <!-- Jam Pengambilan -->
                         <div class="row">
                             <div class="col-md-6 mb-3">
