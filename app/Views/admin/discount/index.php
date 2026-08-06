@@ -165,6 +165,9 @@
                                                             ∞
                                                         <?php endif; ?>
                                                     </small>
+                                                    <?php if (!empty($discount['valid_pickup_start_time']) && !empty($discount['valid_pickup_end_time'])): ?>
+                                                        <br><small class="text-info"><i class="fas fa-clock"></i> Pickup: <?= date('H:i', strtotime($discount['valid_pickup_start_time'])) ?> - <?= date('H:i', strtotime($discount['valid_pickup_end_time'])) ?></small>
+                                                    <?php endif; ?>
                                                 <?php else: ?>
                                                     <span class="text-muted">Tanpa batas</span>
                                                 <?php endif; ?>

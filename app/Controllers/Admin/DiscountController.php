@@ -85,6 +85,8 @@ class DiscountController extends BaseController
             $usageLimit = $this->request->getPost('usage_limit');
             $startDate = $this->request->getPost('start_date');
             $endDate = $this->request->getPost('end_date');
+            $validPickupStartTime = $this->request->getPost('valid_pickup_start_time');
+            $validPickupEndTime = $this->request->getPost('valid_pickup_end_time');
             
             $min = $this->normalizeNumber($rawMin);
             $max = ($rawMax === '' || $rawMax === null) ? null : $this->normalizeNumber($rawMax);
@@ -153,6 +155,8 @@ class DiscountController extends BaseController
                 'usage_count' => 0,
                 'start_date' => $startDate ?: null,
                 'end_date' => $endDate ?: null,
+                'valid_pickup_start_time' => $validPickupStartTime ?: null,
+                'valid_pickup_end_time' => $validPickupEndTime ?: null,
             ];
 
             if ($discountType === 'subtotal' && !$this->validateDiscountRange($data['min_amount'], $data['max_amount'])) {
@@ -211,6 +215,8 @@ class DiscountController extends BaseController
         $usageLimit = $this->request->getPost('usage_limit');
         $startDate = $this->request->getPost('start_date');
         $endDate = $this->request->getPost('end_date');
+        $validPickupStartTime = $this->request->getPost('valid_pickup_start_time');
+        $validPickupEndTime = $this->request->getPost('valid_pickup_end_time');
         $resetUsage = $this->request->getPost('reset_usage');
 
         $min = $this->normalizeNumber($this->request->getPost('min_amount'));
@@ -274,6 +280,8 @@ class DiscountController extends BaseController
             'usage_limit' => $usageLimit,
             'start_date' => $startDate ?: null,
             'end_date' => $endDate ?: null,
+            'valid_pickup_start_time' => $validPickupStartTime ?: null,
+            'valid_pickup_end_time' => $validPickupEndTime ?: null,
         ];
 
         if ($resetUsage === '1') {

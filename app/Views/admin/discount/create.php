@@ -246,6 +246,32 @@
                             </div>
                         </div>
 
+                        <!-- Jam Pengambilan -->
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="valid_pickup_start_time" class="form-label">Jam Mulai Berlaku (Pengambilan/Pengantaran)</label>
+                                    <input type="time" 
+                                           class="form-control" 
+                                           id="valid_pickup_start_time" 
+                                           name="valid_pickup_start_time" 
+                                           value="<?= old('valid_pickup_start_time') ?>">
+                                    <div class="form-text">Kosongkan jika berlaku jam berapa saja</div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="valid_pickup_end_time" class="form-label">Jam Akhir Berlaku (Pengambilan/Pengantaran)</label>
+                                    <input type="time" 
+                                           class="form-control" 
+                                           id="valid_pickup_end_time" 
+                                           name="valid_pickup_end_time" 
+                                           value="<?= old('valid_pickup_end_time') ?>">
+                                    <div class="form-text">Kosongkan jika berlaku jam berapa saja</div>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="mb-3">
                             <div class="alert alert-secondary">
                                 <strong><i class="fas fa-lightbulb"></i> Contoh:</strong><br>

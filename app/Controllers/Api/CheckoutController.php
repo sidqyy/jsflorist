@@ -1023,7 +1023,7 @@ class CheckoutController extends BaseController
             ];
         }
 
-        $discountRule = $this->discountRuleModel->getApplicableDiscount($subtotal);
+        $discountRule = $this->discountRuleModel->getApplicableDiscount($subtotal, $tanggalPengantaran);
         $discountPercentage = ($discountRule && isset($discountRule['discount_percentage'])) ? (float) $discountRule['discount_percentage'] : 0.0;
         $subtotalDiscountAmount = $subtotal * ($discountPercentage / 100.0);
 
@@ -1038,7 +1038,7 @@ class CheckoutController extends BaseController
                 $itemQty = (int)($item['quantity'] ?? $item['qty'] ?? 1);
                 $itemOriginal = (float)($item['original_price'] ?? $item['price'] ?? 0);
 
-                $productDiscount = $this->discountRuleModel->getProductDiscount($productId, $itemOriginal);
+                $productDiscount = $this->discountRuleModel->getProductDiscount($productId, $itemOriginal, $tanggalPengantaran);
                 
                 if ($productDiscount && isset($productDiscount['discount_amount'])) {
                     $productDiscountAmount += (float)$productDiscount['discount_amount'] * $itemQty;
@@ -1076,7 +1076,7 @@ class CheckoutController extends BaseController
 
         // KONDISI: Diskon per-item produk hanya diproses jika pengantaran dilakukan HARI INI
         if ($productId && $this->isHariIni($tanggalPengantaran)) {
-            $discountRule = $this->discountRuleModel->getProductDiscount($productId, $originalPrice);
+            $discountRule = $this->discountRuleModel->getProductDiscount($productId, $originalPrice, $tanggalPengantaran);
             if ($discountRule && !empty($discountRule['discounted_price']) && $discountRule['discounted_price'] > 0) {
                 $finalPrice = (float)$discountRule['discounted_price'];
                 if ($finalPrice < $originalPrice) {

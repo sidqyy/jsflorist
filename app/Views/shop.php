@@ -210,6 +210,9 @@
                                                             <?php if ($hasDiscount && isset($discountInfo['discounted_price']) && $discountInfo['discounted_price'] > 0): ?>
                                                                 <!-- Badge Diskon -->
                                                                 <span class="badge bg-danger mb-1">-<?= $discountPercentage ?>%</span>
+                                                                <?php if (!empty($discountInfo['valid_pickup_start_time']) && !empty($discountInfo['valid_pickup_end_time'])): ?>
+                                                                    <div style="font-size: 0.7rem;" class="badge bg-warning text-dark mb-1"><i class="fas fa-clock"></i> Khusus <?= date('H:i', strtotime($discountInfo['valid_pickup_start_time'])) ?> - <?= date('H:i', strtotime($discountInfo['valid_pickup_end_time'])) ?></div>
+                                                                <?php endif; ?>
                                                                 <!-- Harga Asli (dicoret) -->
                                                                 <p class="text-muted text-decoration-line-through mb-0" style="font-size: 0.85rem;">
                                                                     Rp<?= number_format($originalPrice, 0, ',', '.') ?>

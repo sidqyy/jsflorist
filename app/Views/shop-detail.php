@@ -153,6 +153,9 @@ $productMetaDesc = 'Pesan ' . $product['nama_produk'] . ' dengan harga Rp ' . nu
                                 <?php if ($hasDiscount && isset($productDiscount['discounted_price']) && $productDiscount['discounted_price'] > 0): ?>
                                     <div class="mb-3">
                                         <span class="badge bg-danger mb-2">DISKON <?= round($productDiscount['discount_percentage'] ?? 0) ?>%</span>
+                                        <?php if (!empty($productDiscount['valid_pickup_start_time']) && !empty($productDiscount['valid_pickup_end_time'])): ?>
+                                            <span class="badge bg-warning text-dark mb-2 ms-1"><i class="fas fa-clock"></i> Khusus Jam <?= date('H:i', strtotime($productDiscount['valid_pickup_start_time'])) ?> - <?= date('H:i', strtotime($productDiscount['valid_pickup_end_time'])) ?></span>
+                                        <?php endif; ?>
                                         <br>
                                         <span class="text-muted text-decoration-line-through fs-5">
                                             Rp<?= number_format($originalPrice, 0, ',', '.') ?>

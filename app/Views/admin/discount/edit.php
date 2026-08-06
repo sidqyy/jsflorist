@@ -190,6 +190,20 @@
                             </div>
                         </div>
 
+                        <!-- Jam Pengambilan -->
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="valid_pickup_start_time" class="form-label">Jam Mulai Berlaku (Pengambilan/Pengantaran)</label>
+                                <input type="time" class="form-control" id="valid_pickup_start_time" name="valid_pickup_start_time" value="<?= old('valid_pickup_start_time', $discount['valid_pickup_start_time'] ?? '') ?>">
+                                <div class="form-text">Kosongkan jika berlaku jam berapa saja</div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="valid_pickup_end_time" class="form-label">Jam Akhir Berlaku (Pengambilan/Pengantaran)</label>
+                                <input type="time" class="form-control" id="valid_pickup_end_time" name="valid_pickup_end_time" value="<?= old('valid_pickup_end_time', $discount['valid_pickup_end_time'] ?? '') ?>">
+                                <div class="form-text">Kosongkan jika berlaku jam berapa saja</div>
+                            </div>
+                        </div>
+
                         <div class="d-flex justify-content-between mt-4">
                             <a href="<?= base_url('admin/discounts') ?>" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> Kembali</a>
                             <button type="submit" class="btn btn-primary"><i class="fas fa-save"></i> Simpan Perubahan</button>

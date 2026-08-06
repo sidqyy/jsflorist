@@ -24,6 +24,8 @@ class DiscountRuleModel extends Model
         'usage_count',
         'start_date',
         'end_date',
+        'valid_pickup_start_time',
+        'valid_pickup_end_time',
         'created_at',
         'updated_at'
     ];
@@ -56,9 +58,10 @@ class DiscountRuleModel extends Model
      * REVISI: Menerima parameter $tanggalCheck agar validasi dinamis mengikuti pilihan customer
      * @param array $discount
      * @param string|null $tanggalCheck
+     * @param bool $strictTimeCheck
      * @return bool
      */
-    public function isDiscountValid($discount, $tanggalCheck = null)
+    public function isDiscountValid($discount, $tanggalCheck = null, $strictTimeCheck = false)
     {
         // Cek status aktif
         if ((int)($discount['is_active'] ?? 0) !== 1) {
@@ -97,6 +100,16 @@ class DiscountRuleModel extends Model
             return false;
         }
 
+        // Cek waktu pengambilan/pengantaran
+        if ($strictTimeCheck && !empty($discount['valid_pickup_start_time']) && !empty($discount['valid_pickup_end_time'])) {
+            // Jika tanggalCheck kosong, kita gunakan jam sekarang (now)
+            $timeCheck = date('H:i:s', strtotime($now));
+            
+            if ($timeCheck < $discount['valid_pickup_start_time'] || $timeCheck > $discount['valid_pickup_end_time']) {
+                return false;
+            }
+        }
+
         return true;
     }
 
@@ -126,7 +139,7 @@ class DiscountRuleModel extends Model
         
         foreach ($discounts as $discount) {
             // Lewatkan variabel tanggal pengantaran ke fungsi validasi
-            if ($this->isDiscountValid($discount, $tanggalPengantaran)) {
+            if ($this->isDiscountValid($discount, $tanggalPengantaran, true)) {
                 return $discount;
             }
         }
@@ -149,7 +162,7 @@ class DiscountRuleModel extends Model
         
         foreach ($discounts as $discount) {
             // Lewatkan variabel tanggal pengantaran ke fungsi validasi
-            if (!$this->isDiscountValid($discount, $tanggalPengantaran)) {
+            if (!$this->isDiscountValid($discount, $tanggalPengantaran, true)) {
                 continue;
             }
 
@@ -177,6 +190,8 @@ class DiscountRuleModel extends Model
                     'usage_count' => $discount['usage_count'],
                     'start_date' => $discount['start_date'],
                     'end_date' => $discount['end_date'],
+                    'valid_pickup_start_time' => $discount['valid_pickup_start_time'],
+                    'valid_pickup_end_time' => $discount['valid_pickup_end_time'],
                 ];
             }
             
@@ -196,6 +211,8 @@ class DiscountRuleModel extends Model
                     'usage_count' => $discount['usage_count'],
                     'start_date' => $discount['start_date'],
                     'end_date' => $discount['end_date'],
+                    'valid_pickup_start_time' => $discount['valid_pickup_start_time'],
+                    'valid_pickup_end_time' => $discount['valid_pickup_end_time'],
                 ];
             }
         }
