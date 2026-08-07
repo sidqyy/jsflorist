@@ -78,6 +78,7 @@ class DiscountController extends BaseController
     public function forProduct(string $productId): ResponseInterface
     {
         $product = $this->productModel->find($productId);
+        $deliveryDate = $this->request->getGet('delivery_date') ?? null;
 
         if (!$product) {
             return $this->response->setStatusCode(404)->setJSON([
@@ -87,7 +88,7 @@ class DiscountController extends BaseController
         }
 
         $originalPrice = (float) $product['harga'];
-        $discount = $this->discountModel->getProductDiscount($productId, $originalPrice);
+        $discount = $this->discountModel->getProductDiscount($productId, $originalPrice, $deliveryDate);
 
         if (!$discount) {
             return $this->response->setJSON([
@@ -130,6 +131,7 @@ class DiscountController extends BaseController
         $payload = $this->getJsonPayload();
         log_message('error', 'DISCOUNT CALCULATE CALLED: ' . json_encode($payload));
         $cartItems = $payload['cart_items'] ?? [];
+        $deliveryDate = $payload['delivery_date'] ?? $payload['tanggal_pengantaran'] ?? null;
 
         if (empty($cartItems)) {
             return $this->response->setStatusCode(400)->setJSON([
@@ -146,7 +148,7 @@ class DiscountController extends BaseController
         }
 
         // 1. Hitung Diskon Subtotal
-        $subtotalDiscount = $this->discountModel->getApplicableDiscount($subtotal);
+        $subtotalDiscount = $this->discountModel->getApplicableDiscount($subtotal, $deliveryDate);
         $subtotalDiscountAmount = 0.0;
         if ($subtotalDiscount) {
             $subtotalDiscountAmount = $subtotal * ((float)$subtotalDiscount['discount_percentage'] / 100);
@@ -163,7 +165,7 @@ class DiscountController extends BaseController
             $itemPrice = (float) ($item['price'] ?? 0);
             $itemQty = (int) ($item['quantity'] ?? 1);
             
-            $pDiscount = $this->discountModel->getProductDiscount($productId, $itemPrice);
+            $pDiscount = $this->discountModel->getProductDiscount($productId, $itemPrice, $deliveryDate);
             
             if ($pDiscount) {
                 $discountAmt = (float)$pDiscount['discount_amount'] * $itemQty;
