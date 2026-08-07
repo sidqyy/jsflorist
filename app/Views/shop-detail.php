@@ -149,21 +149,28 @@ $productMetaDesc = 'Pesan ' . $product['nama_produk'] . ' dengan harga Rp ' . nu
                                 $originalPrice = $hasDiscount ? $productDiscount['original_price'] : $defaultPrice;
                                 $displayPrice = $hasDiscount && isset($productDiscount['discounted_price']) && $productDiscount['discounted_price'] > 0 ? $productDiscount['discounted_price'] : $defaultPrice;
                                 
-                                $isFutureDiscount = false;
-                                if ($hasDiscount) {
-                                    if (!empty($productDiscount['valid_pickup_start_date']) && date('Y-m-d') < $productDiscount['valid_pickup_start_date']) {
-                                        $isFutureDiscount = true;
-                                        $displayPrice = $originalPrice;
-                                    }
-                                }
-                                ?>
-                                
-                                <?php if ($hasDiscount && $isFutureDiscount): ?>
-                                    <div class="mb-4 mt-2">
-                                        <?php 
-                                            $dt = date('d F Y', strtotime($productDiscount['valid_pickup_start_date']));
-                                            $pct = round($productDiscount['discount_percentage'] ?? 0);
-                                        ?>
+                                  $isFutureDiscount = false;
+                                  $calcPct = 0;
+                                  if ($hasDiscount) {
+                                      if (isset($productDiscount['discounted_price']) && $productDiscount['discounted_price'] > 0) {
+                                          $calcPct = round((($originalPrice - $productDiscount['discounted_price']) / $originalPrice) * 100);
+                                      } else {
+                                          $calcPct = round($productDiscount['discount_percentage'] ?? 0);
+                                      }
+                                      
+                                      if (!empty($productDiscount['valid_pickup_start_date']) && date('Y-m-d') < $productDiscount['valid_pickup_start_date']) {
+                                          $isFutureDiscount = true;
+                                          $displayPrice = $originalPrice;
+                                      }
+                                  }
+                                  ?>
+                                  
+                                  <?php if ($hasDiscount && $isFutureDiscount): ?>
+                                      <div class="mb-4 mt-2">
+                                          <?php 
+                                              $dt = date('d F Y', strtotime($productDiscount['valid_pickup_start_date']));
+                                              $pct = $calcPct;
+                                          ?>
                                         <div class="alert alert-warning p-3 mb-3 shadow-sm" style="border-left: 5px solid #ffc107 !important; background-color: #fff8e1;" role="alert">
                                             <div class="d-flex align-items-start">
                                                 <i class="fas fa-gift fa-2x text-danger me-3 mt-1"></i>
@@ -181,7 +188,7 @@ $productMetaDesc = 'Pesan ' . $product['nama_produk'] . ' dengan harga Rp ' . nu
                                     </div>
                                 <?php elseif ($hasDiscount && !$isFutureDiscount && isset($productDiscount['discounted_price']) && $productDiscount['discounted_price'] > 0): ?>
                                     <div class="mb-3">
-                                        <span class="badge bg-danger mb-2">DISKON <?= round($productDiscount['discount_percentage'] ?? 0) ?>%</span>
+                                        <span class="badge bg-danger mb-2">DISKON <?= $calcPct ?>%</span>
                                         <?php if (!empty($productDiscount['valid_pickup_start_time']) && !empty($productDiscount['valid_pickup_end_time'])): ?>
                                             <span class="badge bg-warning text-dark mb-2 ms-1"><i class="fas fa-clock"></i> Khusus Jam <?= date('H:i', strtotime($productDiscount['valid_pickup_start_time'])) ?> - <?= date('H:i', strtotime($productDiscount['valid_pickup_end_time'])) ?></span>
                                         <?php endif; ?>
@@ -379,13 +386,26 @@ $productMetaDesc = 'Pesan ' . $product['nama_produk'] . ' dengan harga Rp ' . nu
                                       <?php if ($relatedHasDiscount && $isRelatedFutureDiscount): ?>
                                           <?php 
                                               $dtR = date('d M Y', strtotime($relatedDiscount['valid_pickup_start_date'])); 
-                                              $pctR = round($relatedDiscount['discount_percentage'] ?? 0);
+                                              $pctR = 0;
+                                              if (isset($relatedDiscount['discounted_price']) && $relatedDiscount['discounted_price'] > 0) {
+                                                  $pctR = round((($related['harga'] - $relatedDiscount['discounted_price']) / $related['harga']) * 100);
+                                              } else {
+                                                  $pctR = round($relatedDiscount['discount_percentage'] ?? 0);
+                                              }
                                           ?>
                                           <div class="position-absolute bg-warning text-dark px-2 py-1 shadow-sm border border-warning" style="top: 10px; left: 10px; font-size: 0.75rem; border-radius: 4px;">
                                               <i class="fas fa-gift text-danger me-1"></i> <strong><?= $pctR ?>%</strong> Khusus <?= $dtR ?>
                                           </div>
                                       <?php elseif ($relatedHasDiscount && !$isRelatedFutureDiscount): ?>
-                                          <span class="badge bg-danger position-absolute" style="top: 10px; left: 10px;">-<?= round($relatedDiscount['discount_percentage'] ?? 0) ?>%</span>
+                                          <?php
+                                              $pctR = 0;
+                                              if (isset($relatedDiscount['discounted_price']) && $relatedDiscount['discounted_price'] > 0) {
+                                                  $pctR = round((($related['harga'] - $relatedDiscount['discounted_price']) / $related['harga']) * 100);
+                                              } else {
+                                                  $pctR = round($relatedDiscount['discount_percentage'] ?? 0);
+                                              }
+                                          ?>
+                                          <span class="badge bg-danger position-absolute" style="top: 10px; left: 10px;">-<?= $pctR ?>%</span>
                                       <?php endif; ?>
                                       <div class="p-4 pb-0 rounded-bottom">
                                           <h4><?= esc($related['nama_produk']) ?></h4>

@@ -201,7 +201,14 @@
                                                         $displayPrice = $originalPrice;
                                                         
                                                         $isFutureDiscount = false;
+                                                        $calcPct = 0;
                                                         if ($hasDiscount) {
+                                                            if (isset($discountInfo['discounted_price']) && $discountInfo['discounted_price'] > 0) {
+                                                                $calcPct = round((($originalPrice - $discountInfo['discounted_price']) / $originalPrice) * 100);
+                                                            } else {
+                                                                $calcPct = round($discountInfo['discount_percentage'] ?? 0);
+                                                            }
+                                                            
                                                             if (!empty($discountInfo['valid_pickup_start_date']) && date('Y-m-d') < $discountInfo['valid_pickup_start_date']) {
                                                                 $isFutureDiscount = true;
                                                             }
@@ -210,14 +217,14 @@
                                                         if ($hasDiscount && !$isFutureDiscount && $discountInfo['discounted_price'] > 0) {
                                                             $displayPrice = $discountInfo['discounted_price'];
                                                             $discountAmount = $originalPrice - $displayPrice;
-                                                            $discountPercentage = round(($discountAmount / $originalPrice) * 100);
+                                                            $discountPercentage = $calcPct;
                                                         }
                                                         ?>
                                                         <div class="mb-0">
                                                             <?php if ($hasDiscount && $isFutureDiscount): ?>
                                                                 <!-- Teaser Badge -->
                                                                 <?php 
-                                                                    $pct = round($discountInfo['discount_percentage'] ?? 0);
+                                                                    $pct = $calcPct;
                                                                     $dt = date('d M Y', strtotime($discountInfo['valid_pickup_start_date']));
                                                                 ?>
                                                                 <div class="alert alert-warning px-2 py-1 mb-2 shadow-sm border-warning" style="font-size: 0.75rem; border-left: 4px solid #ffc107 !important;">
