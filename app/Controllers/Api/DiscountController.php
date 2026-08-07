@@ -128,6 +128,7 @@ class DiscountController extends BaseController
     public function calculate(): ResponseInterface
     {
         $payload = $this->getJsonPayload();
+        log_message('error', 'DISCOUNT CALCULATE CALLED: ' . json_encode($payload));
         $cartItems = $payload['cart_items'] ?? [];
 
         if (empty($cartItems)) {
@@ -185,10 +186,11 @@ class DiscountController extends BaseController
                 'subtotal' => round($subtotal, 2),
                 'total_discount' => round($totalDiscount, 2),
                 'final_total' => round(max(0, $subtotal - $totalDiscount), 2),
+                'subtotal_discount' => round($subtotalDiscountAmount, 2),
                 'details' => [
-                    'subtotal_discount' => $subtotalDiscountAmount,
-                    'product_discounts' => $productDiscounts
-                ]
+                    'subtotal_discount' => round($subtotalDiscountAmount, 2),
+                    'product_discounts' => empty($productDiscounts) ? null : $productDiscounts,
+                ],
             ],
         ]);
     }

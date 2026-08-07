@@ -166,7 +166,7 @@ class ShopController extends BaseController
                 products.harga,
                 products.gambar_url,
                 products.is_active,
-                COALESCE(sub_categories.sub_cat_name, categories.nama_kategori) AS category_display,
+                COALESCE(MAX(sub_categories.sub_cat_name), MAX(categories.nama_kategori)) AS category_display,
                 MIN(product_variants.price) AS min_variant_price,
                 MAX(product_variants.price) AS max_variant_price
             ', false)

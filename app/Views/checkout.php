@@ -301,7 +301,7 @@ Checkout - <?= esc($store['name']) ?>
                                                 <p class="mb-0" id="subtotal_produk">Rp<?= number_format($subtotalSetelahVoucher, 0, ',', '.') ?></p>
                                             </div>
 
-                                            <div class="d-flex justify-content-between mb-4" id="discount_section" <?= ($totalDiskon > 0) ? '' : 'style="display:none;"' ?>>
+                                            <div class="justify-content-between mb-4 <?= ($totalDiskon > 0) ? 'd-flex' : 'd-none' ?>" id="discount_section">
                                                 <h5 class="mb-0 me-4 text-success"><i class="fas fa-tag"></i> Diskon Produk:</h5>
                                                 <p class="mb-0 text-success fw-bold" id="discount_display">-Rp<?= number_format($totalDiskon, 0, ',', '.') ?></p>
                                             </div>
@@ -570,9 +570,9 @@ Checkout - <?= esc($store['name']) ?>
                                     
                                     if (computedDiscount > 0) {
                                         $('#discount_display').text(`-Rp${computedDiscount.toLocaleString('id-ID')}`);
-                                        $('#discount_section').show();
+                                        $('#discount_section').removeClass('d-none').addClass('d-flex');
                                     } else {
-                                        $('#discount_section').hide();
+                                        $('#discount_section').removeClass('d-flex').addClass('d-none');
                                         $('.item-voucher-row').hide(); 
                                     }
 
@@ -613,10 +613,10 @@ Checkout - <?= esc($store['name']) ?>
                                 
                                 if (computedDiscount > 0) {
                                     $('#discount_display').text(`-Rp${computedDiscount.toLocaleString('id-ID')}`);
-                                    $('#discount_section').show();
+                                    $('#discount_section').removeClass('d-none').addClass('d-flex');
                                     $('.item-voucher-row').show();
                                 } else {
-                                    $('#discount_section').hide();
+                                    $('#discount_section').removeClass('d-flex').addClass('d-none');
                                     $('#voucher_container_section').html(''); 
                                 }
                                 calculateTotal(computedDiscount, 0);
@@ -984,6 +984,8 @@ Checkout - <?= esc($store['name']) ?>
                     $('#box-bonus-hadiah-co').remove();
 
                     if (!tanggalSelected) return;
+
+                      triggerRecalculateOnly();
 
                     $.ajax({
                         url: '/checkout/checkBonusAjax',

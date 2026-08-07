@@ -118,6 +118,7 @@ class CheckoutController extends BaseController
     public function estimateShipping(): ResponseInterface
     {
         $payload = $this->getJsonPayload();
+        log_message('error', 'PAYLOAD ESTIMATESHIPPING: ' . json_encode($payload));
         
         $referer = $this->request->getServer('HTTP_REFERER');
         if (strpos($referer, 'poppyflorist.com') !== false) {
@@ -132,18 +133,24 @@ class CheckoutController extends BaseController
         $subtotal    = (float) ($payload['subtotal'] ?? 0);
         $tanggalPengantaran = $payload['tanggal_pengantaran'] ?? null;
 
-        if (empty($customerLat) || empty($customerLon) || empty($cartItems)) {
+        if (empty($cartItems)) {
             return $this->response->setStatusCode(400)->setJSON([
                 'status'  => 'error',
-                'message' => 'Koordinat atau keranjang tidak lengkap.',
+                'message' => 'Keranjang kosong.',
             ]);
         }
 
-        $coordsUsed = ['lat' => $customerLat, 'lon' => $customerLon];
-        $rev = $this->getReverseGeocode($coordsUsed['lat'], $coordsUsed['lon']);
-
         $reference = $this->storeLocations[$this->primaryStore];
-        $shortestDistance = $this->calculateHaversineDistance($reference['lat'], $reference['lon'], $coordsUsed['lat'], $coordsUsed['lon']);
+        
+        if (empty($customerLat) || empty($customerLon)) {
+            $coordsUsed = ['lat' => $reference['lat'], 'lon' => $reference['lon']];
+            $rev = null;
+            $shortestDistance = 0;
+        } else {
+            $coordsUsed = ['lat' => $customerLat, 'lon' => $customerLon];
+            $rev = $this->getReverseGeocode($coordsUsed['lat'], $coordsUsed['lon']);
+            $shortestDistance = $this->calculateHaversineDistance($reference['lat'], $reference['lon'], $coordsUsed['lat'], $coordsUsed['lon']);
+        }
         $nearestStore = $this->primaryStore;
 
         $pricedItems = [];
@@ -167,6 +174,7 @@ class CheckoutController extends BaseController
         }
 
         $discounts = $this->calculateDiscounts($totalProduk, $pricedItems, $tanggalPengantaran);
+        log_message('error', 'DISCOUNTS RESULT ESTIMATESHIPPING: ' . json_encode($discounts));
         $subtotalAfterDiscount = $totalProduk - $discounts['amount'];
 
         $freeRule = $this->freeShippingRuleModel->getApplicableRule($subtotalAfterDiscount, $shortestDistance);
@@ -308,8 +316,8 @@ class CheckoutController extends BaseController
         $adminVoucherDiscount = 0.0;
         $voucherFreeShipping = false;
 
-        // KONDISI: Voucher member hanya diproses jika pengantaran dilakukan HARI INI
-        if ($memberVoucherId > 0 && $this->isHariIni($tanggalPengantaran)) {
+        // KONDISI: Cek voucher member
+        if ($memberVoucherId > 0) {
             if (!$authUserId) {
                 return $this->response->setStatusCode(401)->setJSON([
                     'status'  => 'error',
@@ -377,8 +385,8 @@ class CheckoutController extends BaseController
 
         $voucherCode = strtoupper(trim((string)($payload['voucher_code'] ?? '')));
 
-        // KONDISI: Voucher admin (kode teks) hanya berlaku jika pengantaran dilakukan HARI INI
-        if ($voucherCode !== '' && $this->isHariIni($tanggalPengantaran)) {
+        // KONDISI: Cek voucher admin
+        if ($voucherCode !== '') {
             $adminVoucher = $this->voucherModel
                 ->where('code', $voucherCode)
                 ->where('is_active', 1)
@@ -1011,18 +1019,6 @@ class CheckoutController extends BaseController
 
     private function calculateDiscounts($subtotal, $cartItems = [], ?string $tanggalPengantaran = null)
     {
-        // KONDISI: Jika tanggal pengantaran BUKAN HARI INI, seluruh diskon subtotal & produk direset ke 0
-        if (!$this->isHariIni($tanggalPengantaran)) {
-            return [
-                'amount'            => 0.0,
-                'subtotal_discount' => 0.0,
-                'product_discount'  => 0.0,
-                'percentage'        => 0.0,
-                'rule'              => null,
-                'product_rules'     => [],
-            ];
-        }
-
         $discountRule = $this->discountRuleModel->getApplicableDiscount($subtotal, $tanggalPengantaran);
         $discountPercentage = ($discountRule && isset($discountRule['discount_percentage'])) ? (float) $discountRule['discount_percentage'] : 0.0;
         $subtotalDiscountAmount = $subtotal * ($discountPercentage / 100.0);
@@ -1074,8 +1070,8 @@ class CheckoutController extends BaseController
         $discountAmount = 0.0;
         $discountRule = null;
 
-        // KONDISI: Diskon per-item produk hanya diproses jika pengantaran dilakukan HARI INI
-        if ($productId && $this->isHariIni($tanggalPengantaran)) {
+        // KONDISI: Cek diskon produk
+        if ($productId) {
             $discountRule = $this->discountRuleModel->getProductDiscount($productId, $originalPrice, $tanggalPengantaran);
             if ($discountRule && !empty($discountRule['discounted_price']) && $discountRule['discounted_price'] > 0) {
                 $finalPrice = (float)$discountRule['discounted_price'];

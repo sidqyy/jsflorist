@@ -131,8 +131,7 @@ class CheckoutController extends BaseController
         $data['subtotalProduk'] = $subtotalProduk;
         $data['discountData'] = $discountData; // Menyediakan data diskon ke view
         
-        // Voucher disembunyikan/dianggap tidak ada di view jika bukan hari ini
-        $data['appliedVoucher'] = $this->isHariIni($tanggalPengantaran) ? $this->session->get('applied_voucher') : null;
+        $data['appliedVoucher'] = $this->session->get('applied_voucher');
         
         $data['activeDiscounts'] = $this->discountRuleModel->getActiveDiscounts();
         $data['activeFreeShippingRules'] = $this->freeShippingRuleModel->getActiveRules();
@@ -438,9 +437,6 @@ class CheckoutController extends BaseController
 
         // Hitung potongan jika ada diskon subtotal / voucher
         $tanggalPengantaranInput = $customerData['tanggal_pengantaran'] ?? null;
-        if (!$this->isHariIni($tanggalPengantaranInput)) {
-            $message .= "*(Diskon tidak berlaku untuk pesanan di luar hari ini)*\n";
-        }
 
         $message .= "━━━━━━━━━━━━━━━━━━━━\n";
         $message .= "*Total: Rp" . number_format((float)$totalHarga, 0, ',', '.') . "*\n\n";
@@ -622,8 +618,8 @@ class CheckoutController extends BaseController
         $discountAmount = 0.0;
         $discountRule = null;
 
-        // KONDISI: Diskon produk dari fitur sistem harganya hanya diproses jika pengantaran adalah HARI INI
-        if ($productId && $this->isHariIni($tanggalPengantaran)) {
+        // KONDISI: Cek apakah produk memiliki diskon sesuai database
+        if ($productId) {
             $discountRule = $this->discountRuleModel->getProductDiscount($productId, $originalPrice, $tanggalPengantaran);
 
             if ($discountRule && !empty($discountRule['discounted_price']) && $discountRule['discounted_price'] > 0) {
@@ -647,18 +643,6 @@ class CheckoutController extends BaseController
 
     private function calculateDiscounts($subtotal, $cartItems = [], ?string $tanggalPengantaran = null)
     {
-        // KONDISI: Jika pengantaran BUKAN HARI INI, seluruh diskon subtotal & produk direset ke 0
-        if (!$this->isHariIni($tanggalPengantaran)) {
-            return [
-                'amount' => 0.0,
-                'subtotal_discount' => 0.0,
-                'product_discount' => 0.0,
-                'percentage' => 0.0,
-                'rule' => null,
-                'product_rules' => [],
-            ];
-        }
-
         // FIX: Lewatkan parameter $tanggalPengantaran agar model mencocokkan waktu input customer, bukan waktu server NOW()
         $discountRule = $this->discountRuleModel->getApplicableDiscount($subtotal, $tanggalPengantaran);
         $discountPercentage = 0.0;
@@ -794,20 +778,27 @@ class CheckoutController extends BaseController
         $subtotalAfterDiscount = $subtotalProdukCalculated;
         $discountAmount = 0;
 
-        if ($this->isHariIni($tanggalPengantaran)) {
-            $discountAmount = $subtotalAwal - $subtotalProdukCalculated;
-            $appliedVoucher = $this->session->get('applied_voucher');
+        $discountAmount = $subtotalAwal - $subtotalProdukCalculated;
 
-            if ($appliedVoucher) {
-                $voucherDiscount = (float)($appliedVoucher['discount_amount'] ?? 0);
+        $discountRule = $this->discountRuleModel->getApplicableDiscount($subtotalProdukCalculated, $tanggalPengantaran);
+        if ($discountRule && isset($discountRule['discount_percentage'])) {
+            $discountPercentage = (float)$discountRule['discount_percentage'];
+            $subtotalDiscountAmount = $subtotalProdukCalculated * ($discountPercentage / 100.0);
+            $discountAmount += $subtotalDiscountAmount;
+            $subtotalAfterDiscount -= $subtotalDiscountAmount;
+        }
 
-                if ($voucherDiscount > $subtotalAfterDiscount) {
-                    $voucherDiscount = $subtotalAfterDiscount;
-                }
+        $appliedVoucher = $this->session->get('applied_voucher');
 
-                $discountAmount += $voucherDiscount;
-                $subtotalAfterDiscount -= $voucherDiscount;
+        if ($appliedVoucher) {
+            $voucherDiscount = (float)($appliedVoucher['discount_amount'] ?? 0);
+
+            if ($voucherDiscount > $subtotalAfterDiscount) {
+                $voucherDiscount = $subtotalAfterDiscount;
             }
+
+            $discountAmount += $voucherDiscount;
+            $subtotalAfterDiscount -= $voucherDiscount;
         }
 
         $shippingCost = 0;
@@ -818,7 +809,7 @@ class CheckoutController extends BaseController
 
             if (
                 $freeRule ||
-                ($this->isHariIni($tanggalPengantaran) && !empty($appliedVoucher) && ($appliedVoucher['free_shipping'] ?? 0) == 1)
+                (!empty($appliedVoucher) && ($appliedVoucher['free_shipping'] ?? 0) == 1)
             ) {
                 $shippingCost = 0;
                 $freeShipping = 1;
@@ -891,10 +882,19 @@ class CheckoutController extends BaseController
 
         $subtotalAfterDiscount = $totalHargaProduk;
         $discountAmount = $subtotalAwal - $totalHargaProduk;
+
+        $discountRule = $this->discountRuleModel->getApplicableDiscount($totalHargaProduk, $tanggalPengantaranInput);
+        if ($discountRule && isset($discountRule['discount_percentage'])) {
+            $discountPercentage = (float)$discountRule['discount_percentage'];
+            $subtotalDiscountAmount = $totalHargaProduk * ($discountPercentage / 100.0);
+            $discountAmount += $subtotalDiscountAmount;
+            $subtotalAfterDiscount -= $subtotalDiscountAmount;
+        }
+
         $biayaPengiriman = 0;
 
         $appliedVoucher = $this->session->get('applied_voucher');
-        if ($appliedVoucher && $this->isHariIni($tanggalPengantaranInput)) {
+        if ($appliedVoucher) {
             $voucherDiscount = (float)($appliedVoucher['discount_amount'] ?? 0);
             if ($voucherDiscount > $subtotalAfterDiscount) {
                 $voucherDiscount = $subtotalAfterDiscount;
