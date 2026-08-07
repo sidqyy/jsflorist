@@ -256,7 +256,10 @@ class DiscountRuleModel extends Model
                             'discount_id' => $discount['discount_id'],
                             'discount_name' => $discount['name'] ?? 'Diskon Produk',
                             'discounted_price' => (float)$info['discounted_price'],
+                            'discount_percentage' => (float)($discount['discount_percentage'] ?? 0),
                             'end_date' => $discount['end_date'],
+                            'valid_pickup_start_date' => $discount['valid_pickup_start_date'] ?? null,
+                            'valid_pickup_end_date' => $discount['valid_pickup_end_date'] ?? null,
                         ];
                     }
                 }

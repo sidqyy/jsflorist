@@ -200,14 +200,29 @@
                                                         $originalPrice = $product['harga'];
                                                         $displayPrice = $originalPrice;
                                                         
-                                                        if ($hasDiscount && $discountInfo['discounted_price'] > 0) {
+                                                        $isFutureDiscount = false;
+                                                        if ($hasDiscount) {
+                                                            if (!empty($discountInfo['valid_pickup_start_date']) && date('Y-m-d') < $discountInfo['valid_pickup_start_date']) {
+                                                                $isFutureDiscount = true;
+                                                            }
+                                                        }
+
+                                                        if ($hasDiscount && !$isFutureDiscount && $discountInfo['discounted_price'] > 0) {
                                                             $displayPrice = $discountInfo['discounted_price'];
                                                             $discountAmount = $originalPrice - $displayPrice;
                                                             $discountPercentage = round(($discountAmount / $originalPrice) * 100);
                                                         }
                                                         ?>
                                                         <div class="mb-0">
-                                                            <?php if ($hasDiscount && isset($discountInfo['discounted_price']) && $discountInfo['discounted_price'] > 0): ?>
+                                                            <?php if ($hasDiscount && $isFutureDiscount): ?>
+                                                                <!-- Teaser Badge -->
+                                                                <?php 
+                                                                    $pct = $discountInfo['discount_percentage'] ?? 0;
+                                                                    $dt = date('d M', strtotime($discountInfo['valid_pickup_start_date']));
+                                                                ?>
+                                                                <span class="badge bg-warning text-dark mb-1"><i class="fas fa-tag"></i> Diskon khusus <?= $dt ?></span>
+                                                                <p class="text-dark fs-5 fw-bold mb-0">Rp<?= number_format($originalPrice, 0, ',', '.') ?></p>
+                                                            <?php elseif ($hasDiscount && !$isFutureDiscount && isset($discountInfo['discounted_price']) && $discountInfo['discounted_price'] > 0): ?>
                                                                 <!-- Badge Diskon -->
                                                                 <span class="badge bg-danger mb-1">-<?= $discountPercentage ?>%</span>
                                                                 <?php if (!empty($discountInfo['valid_pickup_start_time']) && !empty($discountInfo['valid_pickup_end_time'])): ?>

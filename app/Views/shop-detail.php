@@ -148,9 +148,27 @@ $productMetaDesc = 'Pesan ' . $product['nama_produk'] . ' dengan harga Rp ' . nu
                                 // Note: discounted_price di database adalah harga setelah diskon yang sudah ditetapkan admin
                                 $originalPrice = $hasDiscount ? $productDiscount['original_price'] : $defaultPrice;
                                 $displayPrice = $hasDiscount && isset($productDiscount['discounted_price']) && $productDiscount['discounted_price'] > 0 ? $productDiscount['discounted_price'] : $defaultPrice;
+                                
+                                $isFutureDiscount = false;
+                                if ($hasDiscount) {
+                                    if (!empty($productDiscount['valid_pickup_start_date']) && date('Y-m-d') < $productDiscount['valid_pickup_start_date']) {
+                                        $isFutureDiscount = true;
+                                        $displayPrice = $originalPrice;
+                                    }
+                                }
                                 ?>
                                 
-                                <?php if ($hasDiscount && isset($productDiscount['discounted_price']) && $productDiscount['discounted_price'] > 0): ?>
+                                <?php if ($hasDiscount && $isFutureDiscount): ?>
+                                    <div class="mb-3">
+                                        <?php 
+                                            $dt = date('d M', strtotime($productDiscount['valid_pickup_start_date']));
+                                        ?>
+                                        <span class="badge bg-warning text-dark mb-2"><i class="fas fa-tag"></i> DISKON KHUSUS <?= $dt ?></span>
+                                        <h5 class="fw-bold mb-3 price-display" id="product-price">
+                                            Rp<?= number_format($originalPrice, 0, ',', '.') ?>
+                                        </h5>
+                                    </div>
+                                <?php elseif ($hasDiscount && !$isFutureDiscount && isset($productDiscount['discounted_price']) && $productDiscount['discounted_price'] > 0): ?>
                                     <div class="mb-3">
                                         <span class="badge bg-danger mb-2">DISKON <?= round($productDiscount['discount_percentage'] ?? 0) ?>%</span>
                                         <?php if (!empty($productDiscount['valid_pickup_start_time']) && !empty($productDiscount['valid_pickup_end_time'])): ?>
@@ -329,33 +347,42 @@ $productMetaDesc = 'Pesan ' . $product['nama_produk'] . ' dengan harga Rp ' . nu
                         <?php if (!empty($relatedProducts)): ?>
                             <?php foreach ($relatedProducts as $related): 
                                 // Cek diskon untuk related product
-                                $relatedDiscount = isset($productDiscounts[$related['product_id']]) ? $productDiscounts[$related['product_id']] : null;
-                                $relatedHasDiscount = $relatedDiscount !== null && isset($relatedDiscount['discounted_price']) && $relatedDiscount['discounted_price'] > 0;
-                                $relatedOriginalPrice = $related['harga'];
-                                $relatedDisplayPrice = $relatedHasDiscount ? $relatedDiscount['discounted_price'] : $related['harga'];
-                            ?>
-                                <div class="border border-primary rounded position-relative vesitable-item">
-                                    <div class="vesitable-img" style="height: 250px; overflow: hidden;">
-                                        <a href="<?= site_url('shop/product/' . $related['product_id']) ?>">
-                                            <img src="<?= base_url('assets/img/gambar/' . esc($related['gambar_url'])) ?>" class="img-fluid w-100 rounded-top" alt="<?= esc($related['nama_produk']) ?>" style="height: 100%; object-fit: cover;">
-                                        </a>
-                                    </div>
-                                    <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;"><?= esc($related['category_display']) ?></div>
-                                    <?php if ($relatedHasDiscount): ?>
-                                        <span class="badge bg-danger position-absolute" style="top: 10px; left: 10px;">-<?= round($productDiscount['discount_percentage'] ?? 0) ?>%</span>
-                                    <?php endif; ?>
-                                    <div class="p-4 pb-0 rounded-bottom">
-                                        <h4><?= esc($related['nama_produk']) ?></h4>
-                                        <p><?= esc(substr($related['deskripsi_produk'], 0, 50)) . '...' ?></p>
-                                        <div class="d-flex justify-content-between flex-lg-wrap">
-                                            <?php if ($relatedHasDiscount): ?>
-                                                <div>
-                                                    <p class="text-muted text-decoration-line-through mb-0" style="font-size: 0.9rem;">Rp<?= number_format($relatedOriginalPrice, 0, ',', '.') ?></p>
-                                                    <p class="text-danger fs-5 fw-bold mb-0">Rp<?= number_format($relatedDisplayPrice, 0, ',', '.') ?></p>
-                                                </div>
-                                            <?php else: ?>
-                                                <p class="text-dark fs-5 fw-bold">Rp<?= number_format($related['harga'], 0, ',', '.') ?></p>
-                                            <?php endif; ?>
+                                  $relatedDiscount = isset($productDiscounts[$related['product_id']]) ? $productDiscounts[$related['product_id']] : null;
+                                  $relatedHasDiscount = $relatedDiscount !== null && isset($relatedDiscount['discounted_price']) && $relatedDiscount['discounted_price'] > 0;
+                                  
+                                  $isRelatedFutureDiscount = false;
+                                  if ($relatedHasDiscount && !empty($relatedDiscount['valid_pickup_start_date']) && date('Y-m-d') < $relatedDiscount['valid_pickup_start_date']) {
+                                      $isRelatedFutureDiscount = true;
+                                  }
+                                  
+                                  $relatedOriginalPrice = $related['harga'];
+                                  $relatedDisplayPrice = ($relatedHasDiscount && !$isRelatedFutureDiscount) ? $relatedDiscount['discounted_price'] : $related['harga'];
+                              ?>
+                                  <div class="border border-primary rounded position-relative vesitable-item">
+                                      <div class="vesitable-img" style="height: 250px; overflow: hidden;">
+                                          <a href="<?= site_url('shop/product/' . $related['product_id']) ?>">
+                                              <img src="<?= base_url('assets/img/gambar/' . esc($related['gambar_url'])) ?>" class="img-fluid w-100 rounded-top" alt="<?= esc($related['nama_produk']) ?>" style="height: 100%; object-fit: cover;">
+                                          </a>
+                                      </div>
+                                      <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;"><?= esc($related['category_display']) ?></div>
+                                      <?php if ($relatedHasDiscount && $isRelatedFutureDiscount): ?>
+                                          <?php $dtR = date('d M', strtotime($relatedDiscount['valid_pickup_start_date'])); ?>
+                                          <span class="badge bg-warning text-dark position-absolute" style="top: 10px; left: 10px;"><i class="fas fa-tag"></i> Diskon Khusus <?= $dtR ?></span>
+                                      <?php elseif ($relatedHasDiscount && !$isRelatedFutureDiscount): ?>
+                                          <span class="badge bg-danger position-absolute" style="top: 10px; left: 10px;">-<?= round($relatedDiscount['discount_percentage'] ?? 0) ?>%</span>
+                                      <?php endif; ?>
+                                      <div class="p-4 pb-0 rounded-bottom">
+                                          <h4><?= esc($related['nama_produk']) ?></h4>
+                                          <p><?= esc(substr($related['deskripsi_produk'], 0, 50)) . '...' ?></p>
+                                          <div class="d-flex justify-content-between flex-lg-wrap">
+                                              <?php if ($relatedHasDiscount && !$isRelatedFutureDiscount): ?>
+                                                  <div>
+                                                      <p class="text-muted text-decoration-line-through mb-0" style="font-size: 0.9rem;">Rp<?= number_format($relatedOriginalPrice, 0, ',', '.') ?></p>
+                                                      <p class="text-danger fs-5 fw-bold mb-0">Rp<?= number_format($relatedDisplayPrice, 0, ',', '.') ?></p>
+                                                  </div>
+                                              <?php else: ?>
+                                                  <p class="text-dark fs-5 fw-bold">Rp<?= number_format($relatedOriginalPrice, 0, ',', '.') ?></p>
+                                              <?php endif; ?>
                                             <a href="<?= site_url('shop/product/' . $related['product_id']) ?>" class="btn border border-secondary rounded-pill px-3 py-1 mb-4 text-primary"><i class="fa fa-eye me-2 text-primary"></i> Lihat Detail</a>
                                         </div>
                                     </div>
