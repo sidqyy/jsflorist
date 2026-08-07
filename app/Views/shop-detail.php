@@ -159,11 +159,22 @@ $productMetaDesc = 'Pesan ' . $product['nama_produk'] . ' dengan harga Rp ' . nu
                                 ?>
                                 
                                 <?php if ($hasDiscount && $isFutureDiscount): ?>
-                                    <div class="mb-3">
+                                    <div class="mb-4 mt-2">
                                         <?php 
-                                            $dt = date('d M', strtotime($productDiscount['valid_pickup_start_date']));
+                                            $dt = date('d F Y', strtotime($productDiscount['valid_pickup_start_date']));
+                                            $pct = round($productDiscount['discount_percentage'] ?? 0);
                                         ?>
-                                        <span class="badge bg-warning text-dark mb-2"><i class="fas fa-tag"></i> DISKON KHUSUS <?= $dt ?></span>
+                                        <div class="alert alert-warning p-3 mb-3 shadow-sm" style="border-left: 5px solid #ffc107 !important; background-color: #fff8e1;" role="alert">
+                                            <div class="d-flex align-items-start">
+                                                <i class="fas fa-gift fa-2x text-danger me-3 mt-1"></i>
+                                                <div>
+                                                    <h6 class="alert-heading fw-bold mb-1 text-dark" style="font-size: 1.1rem;">🎉 Promo Spesial! Diskon <?= $pct ?>%</h6>
+                                                    <p class="mb-0 text-dark" style="font-size: 0.9rem;">
+                                                        Pilih tanggal pengiriman <strong><?= $dt ?></strong> saat <em>Checkout</em> untuk menikmati potongan harga ini.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <h5 class="fw-bold mb-3 price-display" id="product-price">
                                             Rp<?= number_format($originalPrice, 0, ',', '.') ?>
                                         </h5>
@@ -366,8 +377,13 @@ $productMetaDesc = 'Pesan ' . $product['nama_produk'] . ' dengan harga Rp ' . nu
                                       </div>
                                       <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;"><?= esc($related['category_display']) ?></div>
                                       <?php if ($relatedHasDiscount && $isRelatedFutureDiscount): ?>
-                                          <?php $dtR = date('d M', strtotime($relatedDiscount['valid_pickup_start_date'])); ?>
-                                          <span class="badge bg-warning text-dark position-absolute" style="top: 10px; left: 10px;"><i class="fas fa-tag"></i> Diskon Khusus <?= $dtR ?></span>
+                                          <?php 
+                                              $dtR = date('d M Y', strtotime($relatedDiscount['valid_pickup_start_date'])); 
+                                              $pctR = round($relatedDiscount['discount_percentage'] ?? 0);
+                                          ?>
+                                          <div class="position-absolute bg-warning text-dark px-2 py-1 shadow-sm border border-warning" style="top: 10px; left: 10px; font-size: 0.75rem; border-radius: 4px;">
+                                              <i class="fas fa-gift text-danger me-1"></i> <strong><?= $pctR ?>%</strong> Khusus <?= $dtR ?>
+                                          </div>
                                       <?php elseif ($relatedHasDiscount && !$isRelatedFutureDiscount): ?>
                                           <span class="badge bg-danger position-absolute" style="top: 10px; left: 10px;">-<?= round($relatedDiscount['discount_percentage'] ?? 0) ?>%</span>
                                       <?php endif; ?>

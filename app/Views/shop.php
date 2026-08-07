@@ -217,10 +217,12 @@
                                                             <?php if ($hasDiscount && $isFutureDiscount): ?>
                                                                 <!-- Teaser Badge -->
                                                                 <?php 
-                                                                    $pct = $discountInfo['discount_percentage'] ?? 0;
-                                                                    $dt = date('d M', strtotime($discountInfo['valid_pickup_start_date']));
+                                                                    $pct = round($discountInfo['discount_percentage'] ?? 0);
+                                                                    $dt = date('d M Y', strtotime($discountInfo['valid_pickup_start_date']));
                                                                 ?>
-                                                                <span class="badge bg-warning text-dark mb-1"><i class="fas fa-tag"></i> Diskon khusus <?= $dt ?></span>
+                                                                <div class="alert alert-warning px-2 py-1 mb-2 shadow-sm border-warning" style="font-size: 0.75rem; border-left: 4px solid #ffc107 !important;">
+                                                                    <i class="fas fa-gift text-danger me-1"></i> Diskon <strong><?= $pct ?>%</strong> khusus krm <strong><?= $dt ?></strong>
+                                                                </div>
                                                                 <p class="text-dark fs-5 fw-bold mb-0">Rp<?= number_format($originalPrice, 0, ',', '.') ?></p>
                                                             <?php elseif ($hasDiscount && !$isFutureDiscount && isset($discountInfo['discounted_price']) && $discountInfo['discounted_price'] > 0): ?>
                                                                 <!-- Badge Diskon -->
