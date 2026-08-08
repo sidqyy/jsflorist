@@ -260,12 +260,27 @@ protected function transformProduct(array $product): array
         $finalPrice = $priceDisplay;
         $isDiscounted = false;
         $discountPercent = 0;
+        $isFutureDiscount = false;
+        $futureDiscountDate = null;
+        $futureDiscountPercent = 0;
 
         if ($discountData) {
-            // Jika ada promo aktif di DiscountRuleModel (seperti promo 100rb)
-            $finalPrice = (float) $discountData['discounted_price']; 
-            $discountPercent = (float) $discountData['discount_percentage'];
-            $isDiscounted = $finalPrice < $priceDisplay;
+            $calcPct = 0;
+            if (isset($discountData['discounted_price']) && $discountData['discounted_price'] > 0) {
+                $calcPct = round((($priceDisplay - $discountData['discounted_price']) / $priceDisplay) * 100);
+            } else {
+                $calcPct = round($discountData['discount_percentage'] ?? 0);
+            }
+            
+            if (!empty($discountData['valid_pickup_start_date']) && date('Y-m-d') < $discountData['valid_pickup_start_date']) {
+                $isFutureDiscount = true;
+                $futureDiscountDate = date('d M Y', strtotime($discountData['valid_pickup_start_date']));
+                $futureDiscountPercent = $calcPct;
+            } else {
+                $finalPrice = (float) $discountData['discounted_price']; 
+                $discountPercent = $calcPct;
+                $isDiscounted = $finalPrice < $priceDisplay;
+            }
         }
 
         // 3. Handle Variant Range Label
@@ -301,6 +316,11 @@ protected function transformProduct(array $product): array
             // FLAG DISKON (Frontend React akan mengecek field ini)
             'is_discounted'      => $isDiscounted, 
             'discount'           => $discountPercent,
+            
+            // FLAG TEASER BADGE MASA DEPAN
+            'is_future_discount' => $isFutureDiscount,
+            'future_discount_date' => $futureDiscountDate,
+            'future_discount_percent' => $futureDiscountPercent,
 
             'variant_range'      => $variantRange,
             'image_url'          => $imageUrl,
