@@ -86,35 +86,41 @@ class DiscountRuleModel extends Model
         }
 
         // valid_pickup_start_date & valid_pickup_end_date = Masa berlaku tanggal pengantaran
-        if ($strictTimeCheck && !empty($tanggalCheck)) {
-            // Normalisasi format string tanggal/jam pengantaran agar seragam standar SQL
-            $cleanDate = str_replace('T', ' ', $tanggalCheck);
-            if (strpos($cleanDate, '/') !== false) {
-                $parts = explode(' ', $cleanDate);
-                $dateParts = explode('/', $parts[0]);
-                $timePart = $parts[1] ?? '00:00:00';
-                if (count($dateParts) === 3) {
-                    $cleanDate = $dateParts[2] . '-' . $dateParts[1] . '-' . $dateParts[0] . ' ' . $timePart;
+        if ($strictTimeCheck) {
+            if (empty($tanggalCheck)) {
+                // Jika butuh tanggal pengantaran tapi user belum milih tanggal, diskon tidak berlaku
+                if (!empty($discount['valid_pickup_start_date']) || !empty($discount['valid_pickup_end_date'])) {
+                    return false;
                 }
-            }
-            $deliveryTimestamp = strtotime($cleanDate);
-            
-            if ($deliveryTimestamp !== false) {
-                $dateCheck = date('Y-m-d', $deliveryTimestamp);
-                file_put_contents(WRITEPATH . 'debug.log', "isDiscountValid | tanggalCheck: {$tanggalCheck} | dateCheck: {$dateCheck} | valid_start: " . ($discount['valid_pickup_start_date'] ?? 'NULL') . "\n", FILE_APPEND);
+            } else {
+                // Normalisasi format string tanggal/jam pengantaran agar seragam standar SQL
+                $cleanDate = str_replace('T', ' ', $tanggalCheck);
+                if (strpos($cleanDate, '/') !== false) {
+                    $parts = explode(' ', $cleanDate);
+                    $dateParts = explode('/', $parts[0]);
+                    $timePart = $parts[1] ?? '00:00:00';
+                    if (count($dateParts) === 3) {
+                        $cleanDate = $dateParts[2] . '-' . $dateParts[1] . '-' . $dateParts[0] . ' ' . $timePart;
+                    }
+                }
+                $deliveryTimestamp = strtotime($cleanDate);
                 
-                if (!empty($discount['valid_pickup_start_date']) && $dateCheck < $discount['valid_pickup_start_date']) {
-                    return false;
-                }
-                if (!empty($discount['valid_pickup_end_date']) && $dateCheck > $discount['valid_pickup_end_date']) {
-                    return false;
-                }
-
-                // Cek waktu pengambilan/pengantaran
-                if (!empty($discount['valid_pickup_start_time']) && !empty($discount['valid_pickup_end_time'])) {
-                    $timeCheck = date('H:i:s', $deliveryTimestamp);
-                    if ($timeCheck < $discount['valid_pickup_start_time'] || $timeCheck > $discount['valid_pickup_end_time']) {
+                if ($deliveryTimestamp !== false) {
+                    $dateCheck = date('Y-m-d', $deliveryTimestamp);
+                    
+                    if (!empty($discount['valid_pickup_start_date']) && $dateCheck < $discount['valid_pickup_start_date']) {
                         return false;
+                    }
+                    if (!empty($discount['valid_pickup_end_date']) && $dateCheck > $discount['valid_pickup_end_date']) {
+                        return false;
+                    }
+
+                    // Cek waktu pengambilan/pengantaran
+                    if (!empty($discount['valid_pickup_start_time']) && !empty($discount['valid_pickup_end_time'])) {
+                        $timeCheck = date('H:i:s', $deliveryTimestamp);
+                        if ($timeCheck < $discount['valid_pickup_start_time'] || $timeCheck > $discount['valid_pickup_end_time']) {
+                            return false;
+                        }
                     }
                 }
             }
